@@ -1,6 +1,78 @@
 {
- "updated": "2026-11-14T21:43:09+00:00",
+ "updated": "2026-11-14T21:47:40+00:00",
  "stories": [
+  {
+   "title": "The OpenAI board member who fired Sam Altman says we still can’t trust AI CEOs",
+   "url": "https://www.theverge.com/podcast/1032907/helen-toner-openai-cset-ai-safety-policy-interview",
+   "summary": "Today, I’m talking with Helen Toner, the executive director of the Center for Security and Emerging Technology at Georgetown University. This episode is part two of our series on AI in real life.",
+   "source": "The Verge",
+   "category": "AI",
+   "when": "2026-11-14T00:06:40+00:00",
+   "batch": "2026-11-14T21:47:40+00:00"
+  },
+  {
+   "title": "Jensen Huang’s departure blasts big hole in AI startup funding, VCs and founders say",
+   "url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
+   "summary": "Nvidia poured tens of billions into AI startups under Huang. Without him at the helm, founders and VCs are bracing for smaller checks and lower valuations.",
+   "source": "TechCrunch AI",
+   "category": "AI",
+   "when": "2026-11-13T22:43:00+00:00",
+   "batch": "2026-11-14T21:47:40+00:00"
+  },
+  {
+   "title": "Optimizing PySpark UDFs on AWS Glue 6.0 with native Arrow UDFs",
+   "url": "https://aws.amazon.com/blogs/big-data/optimizing-pyspark-udfs-on-aws-glue-6-0-with-native-arrow-udfs/",
+   "summary": "Python UDFs in PySpark can be slow because data is serialized between the JVM and the Python runtime. We benchmark five approaches on AWS Glue 6.0 (standard Python, Arrow-optimized Python, vectorized pandas, native Arrow UDFs…",
+   "source": "AWS Big Data",
+   "category": "Data Engineering",
+   "when": "2026-11-13T20:58:25+00:00",
+   "batch": "2026-11-14T21:47:40+00:00"
+  },
+  {
+   "title": "Multi-statement transactions for Apache Iceberg tables in Amazon Redshift",
+   "url": "https://aws.amazon.com/blogs/big-data/multi-statement-transactions-for-apache-iceberg-tables-in-amazon-redshift/",
+   "summary": "Amazon Redshift now supports multi-statement transactions for Apache Iceberg tables, so you can run several DML statements against one Iceberg table inside a single BEGIN…COMMIT and publish them as one atomic Iceberg snapshot.",
+   "source": "AWS Big Data",
+   "category": "Data Engineering",
+   "when": "2026-11-13T19:32:46+00:00",
+   "batch": "2026-11-14T21:47:40+00:00"
+  },
+  {
+   "title": "Data From 100+ AI Agents Shows They Fail by Silent Drift, Not Errors",
+   "url": "https://towardsdatascience.com/data-from-100-ai-agents-shows-they-fail-by-silent-drift-not-errors/",
+   "summary": "Quality and token alerts were early signals for 38% of agents and errors for about 1%, so monitoring should start with quality, cost, and latency.",
+   "source": "Towards Data Science",
+   "category": "Data Science",
+   "when": "2026-11-14T13:00:00+00:00",
+   "batch": "2026-11-14T21:47:40+00:00"
+  },
+  {
+   "title": "Magic: The Gathering is getting a Netflix animated series. For real this time",
+   "url": "https://www.theverge.com/entertainment/1033909/magic-the-gathering-netflix-series",
+   "summary": "\"It's really happening. I promise. For real.\" Those are the first words from Roy Graham, Head of Story at Magic: The Gathering, in a video posted yesterday announcing Planeswalker, the animated series heading to Netflix in 2027.",
+   "source": "The Verge",
+   "category": "Tech",
+   "when": "2026-11-14T19:47:40+00:00",
+   "batch": "2026-11-14T21:47:40+00:00"
+  },
+  {
+   "title": "Got an iPhone Duo? These 9 settings make it easier to use",
+   "url": "https://techcrunch.com/2026/11/14/got-an-iphone-duo-these-9-settings-make-it-easier-to-use/",
+   "summary": "From Touch ID shortcuts to smarter volume buttons and camera tricks, these tweaks make Apple's foldable iPhone easier to use every day.",
+   "source": "TechCrunch",
+   "category": "Startups",
+   "when": "2026-11-14T18:00:00+00:00",
+   "batch": "2026-11-14T21:47:40+00:00"
+  },
+  {
+   "title": "Here's when a dedicated graphics card is worth it",
+   "url": "https://www.engadget.com/2312688/when-dedicated-graphics-card-worth-it/",
+   "summary": "Modern iGPUs are surprisingly capable, but they aren't without limitations.",
+   "source": "Engadget",
+   "category": "Gadgets",
+   "when": "2026-11-14T21:45:00+00:00",
+   "batch": "2026-11-14T21:47:40+00:00"
+  },
   {
    "title": "Elon Musk, other tech execs sign petition calling on Nvidia to reinstate Jensen Huang",
    "url": "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/",
