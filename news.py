@@ -341,52 +341,80 @@ def wait_until_live(updated, tries=24, pause=10):
     print("  site still not updated after {}s - notifying anyway".format(tries * pause))
 
 
-def notify():
+def report(level, msg):
+    """Print the outcome. On GitHub Actions it also shows on the run's summary page."""
+    if os.environ.get("GITHUB_ACTIONS"):
+        print("::{} title=Push notification::{}".format(level, msg))
+    else:
+        print(msg)
+
+
+def notify(test=False):
     key = os.environ.get("VAPID_PRIVATE_KEY", "").strip()
     sub_raw = os.environ.get("PUSH_SUBSCRIPTION", "").strip()
-    if not (key and sub_raw):
-        print("VAPID_PRIVATE_KEY / PUSH_SUBSCRIPTION not set - no notification sent.")
-        return 0
+    missing = [n for n, v in (("VAPID_PRIVATE_KEY", key), ("PUSH_SUBSCRIPTION", sub_raw)) if not v]
+    if missing:
+        report("warning", "No notification sent: the secret {} is missing or empty. Check the "
+               "name is spelled exactly like this under Settings > Secrets and variables > "
+               "Actions > Repository secrets.".format(" and ".join(missing)))
+        return 1 if test else 0
     try:
         sub = json.loads(sub_raw)
-    except ValueError:
-        print("PUSH_SUBSCRIPTION is not valid JSON - copy it again from the app.")
+        ok = bool(sub["endpoint"] and sub["keys"]["p256dh"] and sub["keys"]["auth"])
+    except (ValueError, KeyError, TypeError):
+        ok = False
+    if not ok:
+        report("error", "PUSH_SUBSCRIPTION is not the full text from the app. Tap the bell, tap "
+               "Copy, and paste everything from the first { to the last } into the secret.")
         return 1
-    try:
-        with open(NEWS_FILE, encoding="utf-8") as f:
-            data = json.load(f)
-    except (OSError, ValueError):
-        data = {}
-    updated = data.get("updated")
-    latest = [s for s in data.get("stories") or [] if s.get("batch") == updated]
-    if not latest:
-        print("No digest to notify about.")
-        return 0
 
-    wait_until_live(updated)
+    if test:
+        payload = json.dumps({"title": "Tech Pulse — test",
+                              "body": "Notifications are working on this phone."})
+    else:
+        try:
+            with open(NEWS_FILE, encoding="utf-8") as f:
+                data = json.load(f)
+        except (OSError, ValueError):
+            data = {}
+        updated = data.get("updated")
+        latest = [s for s in data.get("stories") or [] if s.get("batch") == updated]
+        if not latest:
+            print("No digest to notify about.")
+            return 0
+        wait_until_live(updated)
+        payload = json.dumps({
+            "title": "Tech Pulse — {} new {}".format(len(latest), "story" if len(latest) == 1 else "stories"),
+            "body": "\n".join("• " + s["title"] for s in latest[:3]),
+        })
+
     from pywebpush import webpush, WebPushException
-    payload = json.dumps({
-        "title": "Tech Pulse — {} new {}".format(len(latest), "story" if len(latest) == 1 else "stories"),
-        "body": "\n".join("• " + s["title"] for s in latest[:3]),
-    })
+    host = urllib.parse.urlsplit(sub["endpoint"]).netloc
     try:
-        webpush(subscription_info=sub, data=payload, vapid_private_key=key, ttl=PUSH_TTL,
-                vapid_claims={"sub": os.environ.get("VAPID_SUBJECT", "mailto:noreply@example.com")})
+        # Urgency high so a phone that is idle / in Doze still shows it straight away.
+        res = webpush(subscription_info=sub, data=payload, vapid_private_key=key, ttl=PUSH_TTL,
+                      headers={"Urgency": "high"},
+                      vapid_claims={"sub": os.environ.get("VAPID_SUBJECT", "mailto:noreply@example.com")})
     except WebPushException as e:
         code = getattr(e.response, "status_code", None)
         if code in (404, 410):
-            print("The phone's push subscription has expired. Open the app, tap the bell, "
-                  "copy the text and update the PUSH_SUBSCRIPTION secret.")
+            report("error", "The phone's push subscription has expired. Open the app, tap the "
+                   "bell, copy the text and update the PUSH_SUBSCRIPTION secret.")
+        elif code in (400, 401, 403):
+            report("error", "Push rejected (HTTP {}): the subscription does not match the "
+                   "current key. On the phone clear the site's data in Chrome, reopen the app, "
+                   "turn notifications on again and update PUSH_SUBSCRIPTION.".format(code))
         else:
-            print("Push failed (HTTP {}): {}".format(code, e))
+            report("error", "Push failed (HTTP {}) at {}.".format(code, host))
         return 1
-    print("Notification sent.")
+    report("notice", "Accepted by {} (HTTP {}). If nothing shows on the phone, the phone is "
+           "blocking it.".format(host, getattr(res, "status_code", "?")))
     return 0
 
 
 def main():
     if "--notify" in sys.argv:
-        return notify()
+        return notify(test="--test" in sys.argv)
     dry = "--dry-run" in sys.argv
 
     print("Fetching feeds...")

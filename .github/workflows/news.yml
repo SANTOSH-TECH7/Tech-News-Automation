@@ -5,6 +5,11 @@ on:
     # UTC. Equals 7:30, 10:30, 13:30, 16:30, 19:30 and 22:30 IST.
     - cron: "0 2,5,8,11,14,17 * * *"
   workflow_dispatch:
+    inputs:
+      test_push:
+        description: "Only send a test notification (no news fetch)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -25,10 +30,12 @@ jobs:
           python-version: "3.12"
 
       - name: Fetch news and update the feed
+        if: ${{ !inputs.test_push }}
         run: python news.py
 
       - name: Publish feed and sent-list
         id: save
+        if: ${{ !inputs.test_push }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -42,10 +49,10 @@ jobs:
           echo "changed=true" >> "$GITHUB_OUTPUT"
 
       - name: Send push notification
-        if: steps.save.outputs.changed == 'true'
+        if: ${{ steps.save.outputs.changed == 'true' || inputs.test_push }}
         env:
           VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
           PUSH_SUBSCRIPTION: ${{ secrets.PUSH_SUBSCRIPTION }}
         run: |
           pip install --quiet pywebpush
-          python news.py --notify
+          python news.py --notify ${{ inputs.test_push && '--test' || '' }}

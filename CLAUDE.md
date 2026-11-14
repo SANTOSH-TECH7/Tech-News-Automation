@@ -50,7 +50,9 @@ phone number or other personal details to a third party. One user only.
 
 - **Modes:** `python news.py` (fetch + write files), `--dry-run` (print only, writes
   nothing; on Windows set `PYTHONUTF8=1` so the emoji print), `--notify` (send the push
-  for the latest digest in `docs/news.json`).
+  for the latest digest in `docs/news.json`), `--notify --test` (send a test push without
+  fetching; in Actions tick "Only send a test notification" on Run workflow). The push
+  outcome is written as an annotation on the run's summary page.
 - **Settings at the top:** `MAX_ITEMS = 8` stories per run, `MAX_PER_SOURCE = 2`,
   `MAX_AGE_HOURS = 36`, `SUMMARY_CHARS = 230`, `FEED_KEEP = 80`, `PUSH_TTL = 3h`.
 - **Feeds:** `FEEDS` list of `(source name, default category, url)`, 21 entries.
