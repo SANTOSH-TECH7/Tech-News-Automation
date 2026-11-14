@@ -158,6 +158,7 @@
   .btn { height: 42px; padding: 0 18px; border: 0; border-radius: 12px; cursor: pointer; color: #06121f;
          background: linear-gradient(135deg, var(--accent), var(--accent2)); font: 700 14px var(--sans); }
   .btn:active { transform: scale(.98); }
+  .btn.ghost { margin-left: 6px; color: var(--text); background: transparent; border: 1px solid var(--line2); }
 
   /* ---------- states ---------- */
   .empty { margin: 36px auto; max-width: 420px; padding: 34px 22px; text-align: center; color: var(--muted);
@@ -212,7 +213,10 @@
       <p>Copy this text and save it as the GitHub secret <b>PUSH_SUBSCRIPTION</b>
          (repo &rarr; Settings &rarr; Secrets and variables &rarr; Actions). You only do this once.</p>
       <textarea id="subText" readonly></textarea>
-      <p style="margin:12px 0 0"><button class="btn" id="copyBtn">Copy</button></p>
+      <p style="margin:12px 0"><button class="btn" id="copyBtn">Copy</button>
+         <button class="btn ghost" id="localBtn">Test on this device</button></p>
+      <p style="margin:0">Device ID <b id="devId">&hellip;</b> &mdash; a test run on GitHub reports the ID it sent to.
+         If the two differ, the secret belongs to another device: copy again from here.</p>
     </div>
   </div>
   <div id="list"><div class="grid"><div class="skel"></div><div class="skel"></div><div class="skel"></div><div class="skel"></div></div></div>
@@ -380,7 +384,24 @@ function showSub(sub) {
   $("pushBtn").hidden = true;
   $("pushMsg").textContent = "Notifications are on for this phone.";
   $("bell").classList.add("live");
+  deviceId(sub.endpoint).then((id) => { $("devId").textContent = id; }).catch(() => {});
 }
+// Short fingerprint of this device's subscription; news.py prints the same one for the secret.
+async function deviceId(endpoint) {
+  const hash = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(endpoint));
+  return Array.from(new Uint8Array(hash).slice(0, 4), (b) => b.toString(16).padStart(2, "0")).join("");
+}
+$("localBtn").onclick = async () => {
+  try {
+    const reg = await navigator.serviceWorker.ready;
+    await reg.showNotification("Tech Pulse — local test", {
+      body: "This device can show notifications.", icon: "icon-192.png", badge: "icon-192.png",
+      tag: "tech-pulse-local" });
+    $("localBtn").textContent = "Sent ✓";
+  } catch (err) {
+    $("pushMsg").textContent = "This device refused to show a notification: " + err.message;
+  }
+};
 async function initPush(openPanel) {
   const panel = $("push");
   if (!("serviceWorker" in navigator) || !("PushManager" in window) || !("Notification" in window)) {

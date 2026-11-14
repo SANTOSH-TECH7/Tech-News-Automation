@@ -13,6 +13,7 @@ pywebpush package (installed by the workflow) and these env vars:
   VAPID_PRIVATE_KEY   private half of the key pair whose public half is in docs/index.html
   PUSH_SUBSCRIPTION   the JSON text the app shows after notifications are turned on
 """
+import hashlib
 import html
 import json
 import os
@@ -390,6 +391,8 @@ def notify(test=False):
 
     from pywebpush import webpush, WebPushException
     host = urllib.parse.urlsplit(sub["endpoint"]).netloc
+    # Same fingerprint the app shows as "Device ID", to check the secret is this phone's.
+    device = hashlib.sha256(sub["endpoint"].encode("utf-8")).hexdigest()[:8]
     try:
         # Urgency high so a phone that is idle / in Doze still shows it straight away.
         res = webpush(subscription_info=sub, data=payload, vapid_private_key=key, ttl=PUSH_TTL,
@@ -407,8 +410,9 @@ def notify(test=False):
         else:
             report("error", "Push failed (HTTP {}) at {}.".format(code, host))
         return 1
-    report("notice", "Accepted by {} (HTTP {}). If nothing shows on the phone, the phone is "
-           "blocking it.".format(host, getattr(res, "status_code", "?")))
+    report("notice", "Accepted by {} (HTTP {}) for device ID {}. If nothing shows, compare this "
+           "ID with the one in the app's bell panel; if they match, the phone is blocking "
+           "it.".format(host, getattr(res, "status_code", "?"), device))
     return 0
 
 
