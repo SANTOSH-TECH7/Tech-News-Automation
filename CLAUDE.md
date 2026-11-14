@@ -1,176 +1,133 @@
-# Tech News → WhatsApp digest
+# Tech Pulse - personal tech news app
 
-Personal project (not related to any client work). This file is the full handover from the
-session that designed and built it on 12–13 Nov 2026. Read it before changing anything.
+Personal project (not related to any client work). Handover notes: read before changing
+anything. Designed 12-13 Nov 2026 as a WhatsApp digest; switched on 15 Nov 2026 to an
+installable web app with push notifications (see "History").
 
 ## Goal
 
-The owner wants the latest tech news pushed to their own WhatsApp number, automatically,
-throughout the day, at **zero cost**. Only one recipient: their own phone.
+The owner wants the latest tech news on their own Android phone, automatically, throughout
+the day, with a notification for each digest, at **zero cost**, and without handing their
+phone number or other personal details to a third party. One user only.
 
 ## Requirements the owner gave
 
-- **Channel:** WhatsApp, via CallMeBot (free personal-use gateway). Chosen by the owner.
-- **Cost:** nothing paid, anywhere. No paid APIs, no paid hosting.
+- **Cost:** nothing paid, anywhere.
+- **Privacy:** no phone number / email shared with outside gateways.
+- **Phone:** Android. No sideloaded APK, no changes to phone security settings.
+- **Notifications:** yes, one per digest.
 - **Topics:** general tech, AI, data science, data engineering and its tools (Databricks,
   Fabric, Spark, dbt, etc.), data analyst / BI (Power BI, Tableau), gadgets, startups.
-- **Frequency:** updates throughout the day.
-- **Format:** each story has a headline, a short few-line description and a link to the
-  article on its own site. Must look neat and attractive in WhatsApp.
+- **Format:** each story has a headline, a short description and a link to the article.
 - **Hosting:** the owner's personal GitHub account.
 
-## Design (agreed with the owner)
+## Design
 
 1. **Sources:** RSS/Atom feeds plus Hacker News (via hnrss.org). Free, no API keys.
 2. **Script:** `news.py` fetches feeds, drops anything already sent, picks a balanced set
-   of fresh stories, formats WhatsApp messages.
-3. **Scheduler:** GitHub Actions cron. Runs without any PC being on.
-4. **State:** the "already sent" list is `state/sent.json`, committed back to the repo by
-   the workflow after each run.
-5. **Delivery:** CallMeBot — one HTTP GET per message.
-
-### Options considered and rejected
-
-| Option | Why not |
-|---|---|
-| Meta WhatsApp Cloud API (official) | Bot-initiated messages need approved templates and are charged per message |
-| Unofficial libraries (Baileys, whatsapp-web.js) | Against WhatsApp terms, ban risk, needs an always-on machine |
-| Twilio sandbox | Trial credit only; must re-join every 72 hours |
-| TextMeBot | Paid |
-| AI-written summaries | Needs an LLM API; summaries use the feed's own description instead |
-| Telegram bot | Not rejected — it is the agreed **fallback** if CallMeBot stays unavailable (free, official, no waiting list). Owner has not chosen it yet |
+   of fresh stories and prepends them to `docs/news.json`.
+3. **App:** static site in `docs/`, served by GitHub Pages (main branch, `/docs` folder).
+   Installed on the phone from Chrome ("Install app"). Reads `news.json`.
+4. **Scheduler:** GitHub Actions cron. Runs without any PC being on.
+5. **State:** `state/sent.json` (already-sent list) and `docs/news.json` are committed back
+   to the repo by the workflow after each run.
+6. **Notification:** standard Web Push. After the commit, the workflow waits until GitHub
+   Pages serves the new `news.json`, then sends one push to the phone.
 
 ## Files
 
 | File | Purpose |
 |---|---|
-| `news.py` | The whole program. Python standard library only (no pip installs). Works on Python 3.9+ |
-| `.github/workflows/news.yml` | Schedule + run + commit of `state/sent.json` |
-| `state/sent.json` | Created on the first real send. List of `{u: url, t: title, ts: iso-time}`, pruned to 30 days |
-| `.gitignore` | `__pycache__`, `.env` |
+| `news.py` | Fetch, select, publish, notify. Standard library only, except `--notify` which needs `pywebpush` |
+| `.github/workflows/news.yml` | Schedule, run, commit, notify |
+| `docs/index.html` | The app: story feed, category filter, notification setup panel (bell button) |
+| `docs/sw.js` | Service worker: shows push notifications, offline fallback |
+| `docs/manifest.webmanifest`, `docs/icon-*.png` | Make the page installable |
+| `docs/news.json` | Feed shown by the app: `{updated, stories: [{title, url, summary, source, category, when, batch}]}`, newest first, capped at 80 |
+| `state/sent.json` | Created on the first real run. List of `{u, t, ts}`, pruned to 30 days |
 
 ## How `news.py` works
 
-- **Settings at the top:** `MAX_ITEMS = 8` stories per run, `ITEMS_PER_MESSAGE = 4`
-  (so two WhatsApp messages per digest), `MAX_PER_SOURCE = 2`, `MAX_AGE_HOURS = 36`,
-  `SUMMARY_CHARS = 230`.
-- **Feeds:** `FEEDS` list of `(source name, default category, url)`, 21 entries:
-  TechCrunch AI, VentureBeat, MIT Tech Review, Google AI, OpenAI, Hugging Face,
-  Databricks, Microsoft Fabric, AWS Big Data, Data Engineering Weekly, Seattle Data Guy,
-  Confluent, KDnuggets, Towards Data Science, Power BI Blog, Tableau, The Verge,
-  Ars Technica, Hacker News (front page, 200+ points), TechCrunch, Engadget.
+- **Modes:** `python news.py` (fetch + write files), `--dry-run` (print only, writes
+  nothing; on Windows set `PYTHONUTF8=1` so the emoji print), `--notify` (send the push
+  for the latest digest in `docs/news.json`).
+- **Settings at the top:** `MAX_ITEMS = 8` stories per run, `MAX_PER_SOURCE = 2`,
+  `MAX_AGE_HOURS = 36`, `SUMMARY_CHARS = 230`, `FEED_KEEP = 80`, `PUSH_TTL = 3h`.
+- **Feeds:** `FEEDS` list of `(source name, default category, url)`, 21 entries.
 - **Categories:** AI, Data Engineering, Data Science, BI & Analytics, Tech, Startups,
-  Gadgets. Stories from the general feeds (Tech / Startups / Gadgets) are re-filed into a
-  specific category when the title matches a regex in `TOPIC_RULES`.
-- **Selection (`select`):** only stories from the last 36 hours that are not in the sent
-  list; round-robin across categories, newest first, max 2 per source.
-- **De-duplication:** by cleaned URL (utm_ parameters stripped) and by title similarity
-  (`similar`: 3+ shared words longer than 3 letters, or word-set Jaccard ≥ 0.6), checked
-  against this run's picks and titles sent in the last 24 hours.
-- **Summary:** the feed's description, HTML stripped, boilerplate removed, cut at a
-  sentence boundary. Hacker News items get "Trending on Hacker News — N points, M comments".
-- **Message format** (WhatsApp markdown: `*bold*`, `_italic_`):
+  Gadgets. Stories from the general feeds are re-filed when the title matches a regex in
+  `TOPIC_RULES`.
+- **Selection (`select`):** stories from the last 36 hours not in the sent list;
+  round-robin across categories, newest first, max 2 per source.
+- **De-duplication:** by cleaned URL and by title similarity (`similar`), against this
+  run's picks and titles sent in the last 24 hours.
+- **Delivery (`publish`):** one swappable function that writes `docs/news.json`.
+- **Notification (`notify`):** needs env vars `VAPID_PRIVATE_KEY` and `PUSH_SUBSCRIPTION`.
+  If either is missing it skips quietly, so the feed works before notifications are set
+  up. HTTP 404/410 from the push service means the subscription expired: the owner opens
+  the app, taps the bell, copies the text and updates the `PUSH_SUBSCRIPTION` secret.
+  Optional `VAPID_SUBJECT` (default `mailto:noreply@example.com`) and `PAGES_URL`
+  (default derived from `GITHUB_REPOSITORY`).
 
-  ```
-  🗞️ *TECH PULSE* (1/2)
-  🕒 Thu 12 Nov, 10:05 PM IST
-  ━━━━━━━━━━━━━━━
+## Push keys
 
-  🛠️ *DATA ENGINEERING*
-
-  ▪️ *Headline*
-  _Two-line summary._
-  📰 Source · 1h ago
-  🔗 https://...
-  ```
-
-- **Sending (`send_whatsapp`):**
-  `https://api.callmebot.com/whatsapp.php?phone=<phone>&text=<url-encoded text>&apikey=<key>`,
-  up to 3 attempts, 6 s pause between messages. A story is added to the sent list only
-  if its message was accepted.
-- **Dry run:** `python news.py --dry-run`, or simply run without the two env vars. Prints
-  the messages, sends nothing, does not touch the state file. On Windows set
-  `PYTHONIOENCODING=utf-8` first so the emoji print.
-- **Env vars:** `CALLMEBOT_PHONE` (number with country code, no spaces),
-  `CALLMEBOT_APIKEY`.
+- The VAPID **public** key is hard-coded in `docs/index.html` (`VAPID_PUBLIC_KEY`).
+- The matching **private** key is only in the GitHub secret `VAPID_PRIVATE_KEY`
+  (base64url of the raw 32-byte P-256 key). It is not stored in the repo.
+- If the key pair is ever regenerated, both must change together and the phone must
+  re-subscribe (clear the site's data in Chrome, reopen, tap the bell).
 
 ## Schedule
 
 `cron: "0 2,5,8,11,14,17 * * *"` (UTC) = 7:30, 10:30, 13:30, 16:30, 19:30, 22:30 IST.
 Six digests a day, up to 8 stories each. GitHub's scheduler can start several minutes
-late. Also has `workflow_dispatch` for manual runs. Usage is roughly 200 of the 2,000
-free Actions minutes a month on a private repo.
+late. Also has `workflow_dispatch` for manual runs.
 
-## Current status (as of 13 Nov 2026)
+## Status (15 Nov 2026)
 
-Done:
-- `news.py` and the workflow are written.
-- Dry run against the live feeds worked: 19 of 21 feeds returned data, 8 stories selected,
-  output formatted as above.
-- Local git repo initialised on `main` with the code committed.
+Done and checked locally: `news.py` compiles; against the live feeds 20 of 21 loaded
+(VentureBeat failed) and 8 stories were selected; `publish` produced a valid feed file.
 
-Not done / never tested:
-- **Nothing has ever been sent to WhatsApp.** The send path is untested end to end.
-- The GitHub repo has not been created and nothing is pushed (GitHub CLI was not
-  installed on the first laptop).
-- The GitHub Actions workflow has never run.
+Never tested: the GitHub Actions workflow, GitHub Pages hosting, installing the app on the
+phone, and the push notification end to end.
 
-### Blocker: CallMeBot is full
+## Owner setup steps
 
-On 13 Nov 2026 the CallMeBot page
-(https://www.callmebot.com/blog/free-api-whatsapp-messages/) said the free WhatsApp bot
-is full and hid the bot's phone number (`+34*********`), with "check back in a few days".
-No API key can be obtained until the number is visible again. Re-check the page before
-assuming this still holds.
-
-## Remaining steps for the owner
-
-1. **Get the CallMeBot key** (once the number is visible on the page above):
-   1. Save the bot's `+34…` number from the page as a contact.
-   2. Send it this exact WhatsApp message: `I allow callmebot to send me messages`
-   3. Within about two minutes it replies "API Activated for your phone number. Your
-      APIKEY is NNNNNN".
-   4. If no reply in two minutes, the page says to retry after 24 hours, not immediately.
-   5. Quick test in a browser:
-      `https://api.callmebot.com/whatsapp.php?phone=+91XXXXXXXXXX&text=hello&apikey=KEY`
-2. **Create an empty repo** on the owner's personal GitHub, e.g. `tech-news-whatsapp`
-   (private is fine).
-3. **Add two Actions secrets** (Settings → Secrets and variables → Actions):
-   `CALLMEBOT_PHONE` and `CALLMEBOT_APIKEY`.
-4. **Push:**
-   ```
-   git remote add origin https://github.com/<username>/tech-news-whatsapp.git
-   git push -u origin main
-   ```
-5. **Test:** Actions tab → "Tech News Digest" → "Run workflow". A digest should arrive
-   within a minute, and the run should commit `state/sent.json`.
+1. Create a **public** repo on GitHub (free GitHub Pages needs public) and push.
+2. Repo Settings -> Pages -> Deploy from a branch -> `main`, folder `/docs`.
+3. Add the Actions secret `VAPID_PRIVATE_KEY`.
+4. On the phone, open `https://<username>.github.io/<repo>/` in Chrome, tap
+   "Install app", open it, tap "Turn on notifications", allow, tap "Copy".
+5. Save the copied text as the Actions secret `PUSH_SUBSCRIPTION`.
+6. Actions tab -> "Tech News Digest" -> "Run workflow" to test.
 
 ## Known gaps
 
-- **Repeated big stories:** when one event dominates the news, two or three differently
-  worded takes on it can land in the same digest. The similarity check only catches
-  headlines that share words.
-- **Two feeds failed from the first laptop:** VentureBeat (HTTP 429 rate limit) and
-  Engadget (SSL handshake failure on Python 3.9). Failed feeds are skipped, not fatal.
-  Whether they work from GitHub's runners is unknown.
-- **CallMeBot message length limit is unknown.** If digests arrive cut off, lower
-  `ITEMS_PER_MESSAGE` from 4 to 2.
-- **CallMeBot is a third party:** free, personal use only, text only, can have downtime.
-- **OpenAI and Hugging Face feeds return ~1,000 items each;** harmless because of the
-  36-hour filter, but they dominate the "stories fetched" count in the log.
+- **Public page:** anyone with the link can read the feed (headlines only; marked noindex).
+- **Subscription can expire** (reinstall, cleared Chrome data, long inactivity) and then
+  needs the manual re-copy in step 4-5.
+- **Battery savers** on some Android brands can delay notifications; exempt Chrome.
+- **Repeated big stories:** differently worded takes on one event can land in one digest.
+- **VentureBeat** returns HTTP 429 from the owner's laptop; failed feeds are skipped.
+- **Windows laptop quirk (15 Nov 2026):** C: was full and only PowerShell could write
+  into this folder (Git Bash, Python and Node writes were refused).
 
-## If switching to Telegram (fallback)
+## History / options rejected
 
-Only delivery changes: replace `send_whatsapp` and the two env vars / secrets with a bot
-token and chat id, calling `https://api.telegram.org/bot<token>/sendMessage`. Telegram's
-markdown differs from WhatsApp's, so `build_messages` formatting needs adjusting too.
-Ask the owner before switching — they asked for WhatsApp.
+| Option | Why not |
+|---|---|
+| CallMeBot WhatsApp gateway (original plan) | Owner did not want to share their phone number with a third party |
+| Meta WhatsApp Cloud API | Needs approved templates, charged per message |
+| Unofficial WhatsApp libraries, or posting to the "You" chat | Against WhatsApp terms, ban risk, full access to chats |
+| Email digest via a spare Gmail account | Offered; owner preferred an app |
+| Telegram bot | Offered; owner preferred an app |
+| Native APK | Needs "install unknown apps", Play Protect warnings, heavier build |
 
 ## Working rules for this repo
 
-- Keep everything zero-cost and standard-library-only unless the owner says otherwise.
-- Never commit the phone number or API key; they live only in GitHub secrets (or a local
-  `.env`, which is git-ignored).
+- Keep everything zero-cost. Standard library only, apart from `pywebpush` for `--notify`.
+- Never commit the VAPID private key or the push subscription; they live only in GitHub
+  secrets (or a local `.env`, which is git-ignored).
 - Commit messages: plain, no Co-Authored-By or "Generated with" lines.
 - Keep delivery in one swappable function so the channel can change without touching
   fetching or selection.

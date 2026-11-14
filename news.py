@@ -1,23 +1,24 @@
-"""Tech news digest -> WhatsApp (via CallMeBot).
+"""Tech news digest -> Tech Pulse web app (GitHub Pages) + push notification.
 
 Fetches RSS/Atom feeds, drops anything already sent, picks a balanced set of
-fresh stories and sends them as formatted WhatsApp messages.
+fresh stories and adds them to docs/news.json, which the web app in docs/
+displays. A second mode sends a push notification to the owner's phone.
 
-Standard library only. Runs without secrets in dry-run mode (prints instead
-of sending and does not touch the state file).
+  python news.py            fetch, pick, update docs/news.json and state/sent.json
+  python news.py --dry-run  print the digest, write nothing
+  python news.py --notify   send a push notification for the latest digest
 
-Env vars:
-  CALLMEBOT_PHONE   your WhatsApp number with country code, e.g. +919876543210
-  CALLMEBOT_APIKEY  the key CallMeBot sent you
+The first two modes use the standard library only. --notify needs the
+pywebpush package (installed by the workflow) and these env vars:
+  VAPID_PRIVATE_KEY   private half of the key pair whose public half is in docs/index.html
+  PUSH_SUBSCRIPTION   the JSON text the app shows after notifications are turned on
 """
-
 import html
 import json
 import os
 import re
 import sys
 import time
-import urllib.error
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -27,12 +28,15 @@ from email.utils import parsedate_to_datetime
 
 # ----------------------------------------------------------------- settings
 MAX_ITEMS = 8            # stories per run
-ITEMS_PER_MESSAGE = 4    # stories per WhatsApp message
+ITEMS_PER_MESSAGE = 4    # stories per block in the dry-run printout
 MAX_PER_SOURCE = 2       # keeps one site from dominating a digest
 MAX_AGE_HOURS = 36       # ignore anything older than this
 SUMMARY_CHARS = 230
 STATE_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "state", "sent.json")
 STATE_KEEP_DAYS = 30
+NEWS_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "docs", "news.json")
+FEED_KEEP = 80           # stories kept in the app's feed
+PUSH_TTL = 3 * 3600      # seconds a notification may wait if the phone is offline
 IST = timezone(timedelta(hours=5, minutes=30))
 
 AI, DE, DS, BI, TECH, STARTUP, GADGET = (
@@ -288,29 +292,102 @@ def build_messages(picked):
     return messages
 
 
-# ------------------------------------------------------------------- sending
-def send_whatsapp(phone, apikey, text):
-    url = "https://api.callmebot.com/whatsapp.php?" + urllib.parse.urlencode(
-        {"phone": phone, "text": text, "apikey": apikey})
-    for attempt in (1, 2, 3):
+# ---------------------------------------------------------------- publishing
+def load_feed():
+    try:
+        with open(NEWS_FILE, encoding="utf-8") as f:
+            return json.load(f).get("stories") or []
+    except (OSError, ValueError, AttributeError):
+        return []
+
+
+def publish(picked, now):
+    """Delivery: add this digest to the feed the web app reads (docs/news.json)."""
+    batch = now.isoformat(timespec="seconds")
+    new = [{"title": i["title"], "url": i["url"], "summary": i["summary"],
+            "source": i["source"], "category": i["category"],
+            "when": i["when"].isoformat(timespec="seconds"), "batch": batch} for i in picked]
+    stories = (new + load_feed())[:FEED_KEEP]
+    os.makedirs(os.path.dirname(NEWS_FILE), exist_ok=True)
+    with open(NEWS_FILE, "w", encoding="utf-8") as f:
+        json.dump({"updated": batch, "stories": stories}, f, ensure_ascii=False, indent=1)
+
+
+# ------------------------------------------------------------- notification
+def pages_url():
+    url = os.environ.get("PAGES_URL", "").strip()
+    repo = os.environ.get("GITHUB_REPOSITORY", "")
+    if not url and "/" in repo:
+        owner, name = repo.split("/", 1)
+        url = "https://{}.github.io/{}/".format(owner.lower(), name)
+    return url.rstrip("/") + "/" if url else ""
+
+
+def wait_until_live(updated, tries=24, pause=10):
+    """GitHub Pages takes a minute or so to publish a commit. Wait for it, so the
+    app already shows the new stories when the notification is tapped."""
+    base = pages_url()
+    if not base:
+        return
+    for _ in range(tries):
         try:
-            body = http_get(url, timeout=60).decode("utf-8", "replace")
-            if re.search(r"apikey is invalid|error|not allowed", body, re.I):
-                print("  CallMeBot rejected the message: " + clean_text(body)[:300])
-                return False
-            return True
-        except urllib.error.HTTPError as e:
-            print("  attempt {}: HTTP {} {}".format(attempt, e.code, clean_text(e.read().decode("utf-8", "replace"))[:200]))
-        except Exception as e:
-            print("  attempt {}: {}".format(attempt, e))
-        time.sleep(15 * attempt)
-    return False
+            raw = http_get("{}news.json?t={}".format(base, int(time.time())), timeout=15)
+            if json.loads(raw.decode("utf-8")).get("updated") == updated:
+                print("  site is showing the new digest")
+                return
+        except Exception:
+            pass
+        time.sleep(pause)
+    print("  site still not updated after {}s - notifying anyway".format(tries * pause))
+
+
+def notify():
+    key = os.environ.get("VAPID_PRIVATE_KEY", "").strip()
+    sub_raw = os.environ.get("PUSH_SUBSCRIPTION", "").strip()
+    if not (key and sub_raw):
+        print("VAPID_PRIVATE_KEY / PUSH_SUBSCRIPTION not set - no notification sent.")
+        return 0
+    try:
+        sub = json.loads(sub_raw)
+    except ValueError:
+        print("PUSH_SUBSCRIPTION is not valid JSON - copy it again from the app.")
+        return 1
+    try:
+        with open(NEWS_FILE, encoding="utf-8") as f:
+            data = json.load(f)
+    except (OSError, ValueError):
+        data = {}
+    updated = data.get("updated")
+    latest = [s for s in data.get("stories") or [] if s.get("batch") == updated]
+    if not latest:
+        print("No digest to notify about.")
+        return 0
+
+    wait_until_live(updated)
+    from pywebpush import webpush, WebPushException
+    payload = json.dumps({
+        "title": "Tech Pulse — {} new {}".format(len(latest), "story" if len(latest) == 1 else "stories"),
+        "body": "\n".join("• " + s["title"] for s in latest[:3]),
+    })
+    try:
+        webpush(subscription_info=sub, data=payload, vapid_private_key=key, ttl=PUSH_TTL,
+                vapid_claims={"sub": os.environ.get("VAPID_SUBJECT", "mailto:noreply@example.com")})
+    except WebPushException as e:
+        code = getattr(e.response, "status_code", None)
+        if code in (404, 410):
+            print("The phone's push subscription has expired. Open the app, tap the bell, "
+                  "copy the text and update the PUSH_SUBSCRIPTION secret.")
+        else:
+            print("Push failed (HTTP {}): {}".format(code, e))
+        return 1
+    print("Notification sent.")
+    return 0
 
 
 def main():
-    phone = os.environ.get("CALLMEBOT_PHONE", "").strip()
-    apikey = os.environ.get("CALLMEBOT_APIKEY", "").strip()
-    dry = "--dry-run" in sys.argv or not (phone and apikey)
+    if "--notify" in sys.argv:
+        return notify()
+    dry = "--dry-run" in sys.argv
 
     print("Fetching feeds...")
     items = fetch_all()
@@ -318,33 +395,25 @@ def main():
     picked = select(items, sent)
     print("{} stories fetched, {} selected".format(len(items), len(picked)))
     if not picked:
-        print("Nothing new - no message sent.")
+        print("Nothing new - feed left unchanged.")
         return 0
 
-    messages = build_messages(picked)
     if dry:
-        print("\n[dry run - nothing sent, state untouched]\n")
+        print("\n[dry run - nothing written]\n")
         out = getattr(sys.stdout, "buffer", None)
-        for m in messages:
+        for m in build_messages(picked):
             if out:
                 out.write((m + "\n\n" + "=" * 40 + "\n\n").encode("utf-8"))
             else:
                 print(m)
         return 0
 
-    failed = False
-    now = datetime.now(timezone.utc).isoformat()
-    for n, m in enumerate(messages):
-        if n:
-            time.sleep(6)
-        if send_whatsapp(phone, apikey, m):
-            chunk = picked[n * ITEMS_PER_MESSAGE:(n + 1) * ITEMS_PER_MESSAGE]
-            sent += [{"u": i["url"], "t": i["title"], "ts": now} for i in chunk]
-            print("  sent message {}/{}".format(n + 1, len(messages)))
-        else:
-            failed = True
+    now = datetime.now(timezone.utc)
+    publish(picked, now)
+    sent += [{"u": i["url"], "t": i["title"], "ts": now.isoformat()} for i in picked]
     save_state(sent)
-    return 1 if failed else 0
+    print("Feed updated with {} stories.".format(len(picked)))
+    return 0
 
 
 if __name__ == "__main__":

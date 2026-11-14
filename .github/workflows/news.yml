@@ -16,22 +16,36 @@ concurrency:
 jobs:
   digest:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
 
-      - name: Send digest
-        env:
-          CALLMEBOT_PHONE: ${{ secrets.CALLMEBOT_PHONE }}
-          CALLMEBOT_APIKEY: ${{ secrets.CALLMEBOT_APIKEY }}
-        run: python3 news.py
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
 
-      - name: Save sent-list
-        if: always()
+      - name: Fetch news and update the feed
+        run: python news.py
+
+      - name: Publish feed and sent-list
+        id: save
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add state/sent.json 2>/dev/null || exit 0
-          git diff --cached --quiet && exit 0
-          git commit -m "Update sent list"
+          git add docs/news.json state/sent.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git commit -m "Update news feed"
           git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Send push notification
+        if: steps.save.outputs.changed == 'true'
+        env:
+          VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
+          PUSH_SUBSCRIPTION: ${{ secrets.PUSH_SUBSCRIPTION }}
+        run: |
+          pip install --quiet pywebpush
+          python news.py --notify

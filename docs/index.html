@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b1220">
+<meta name="robots" content="noindex">
+<title>Tech Pulse</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<style>
+  :root {
+    --bg: #0b1220; --card: #141d30; --line: #24304a; --text: #e8edf7; --muted: #93a0b8;
+    --accent: #5aa9ff; --chip: #1c2740;
+  }
+  @media (prefers-color-scheme: light) {
+    :root { --bg: #f3f5f9; --card: #ffffff; --line: #dde3ee; --text: #131a29; --muted: #5d6980;
+            --accent: #1767d2; --chip: #e7ecf5; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 16px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  header { position: sticky; top: 0; z-index: 2; background: var(--bg);
+           border-bottom: 1px solid var(--line); padding: 12px 16px 8px; }
+  .top { display: flex; align-items: center; gap: 10px; }
+  h1 { font-size: 20px; margin: 0; flex: 1; letter-spacing: .3px; }
+  .updated { color: var(--muted); font-size: 12px; margin-top: 2px; }
+  button { font: inherit; color: var(--text); background: var(--chip); border: 1px solid var(--line);
+           border-radius: 999px; padding: 6px 12px; cursor: pointer; }
+  button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .chips { display: flex; gap: 8px; overflow-x: auto; padding: 10px 0 4px; scrollbar-width: none; }
+  .chips::-webkit-scrollbar { display: none; }
+  .chips button { white-space: nowrap; font-size: 13px; }
+  .chips button.on { background: var(--accent); border-color: var(--accent); color: #fff; }
+  main { max-width: 720px; margin: 0 auto; padding: 12px 16px 48px; }
+  .batch { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .8px;
+           margin: 18px 0 8px; }
+  a.card { display: block; text-decoration: none; color: inherit; background: var(--card);
+           border: 1px solid var(--line); border-radius: 14px; padding: 14px; margin-bottom: 10px; }
+  a.card:active { border-color: var(--accent); }
+  .cat { color: var(--accent); font-size: 12px; font-weight: 600; letter-spacing: .5px; }
+  .title { font-weight: 650; font-size: 16.5px; margin: 4px 0 6px; overflow-wrap: anywhere; }
+  .sum { color: var(--muted); font-size: 14px; margin: 0 0 8px; overflow-wrap: anywhere; }
+  .meta { color: var(--muted); font-size: 12px; }
+  .panel { background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+           padding: 14px; margin-bottom: 14px; font-size: 14px; }
+  .panel p { margin: 0 0 10px; }
+  .panel textarea { width: 100%; height: 110px; font: 12px/1.3 ui-monospace, monospace;
+                    background: var(--bg); color: var(--text); border: 1px solid var(--line);
+                    border-radius: 8px; padding: 8px; }
+  .empty { color: var(--muted); text-align: center; padding: 48px 0; }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<header>
+  <div class="top">
+    <h1>&#x1F5DE;&#xFE0F; Tech Pulse</h1>
+    <button id="bell" title="Notifications">&#x1F514;</button>
+    <button id="reload" title="Refresh">&#x21BB;</button>
+  </div>
+  <div class="updated" id="updated">Loading&hellip;</div>
+  <div class="chips" id="chips"></div>
+</header>
+
+<main>
+  <div class="panel" id="push" hidden>
+    <p id="pushMsg"></p>
+    <button class="primary" id="pushBtn">Turn on notifications</button>
+    <div id="subBox" hidden>
+      <p>Copy this text and save it as the GitHub secret <b>PUSH_SUBSCRIPTION</b>
+         (repo &rarr; Settings &rarr; Secrets and variables &rarr; Actions). You only do this once.</p>
+      <textarea id="subText" readonly></textarea>
+      <p style="margin-top:10px"><button class="primary" id="copyBtn">Copy</button></p>
+    </div>
+  </div>
+  <div id="list"></div>
+</main>
+
+<script>
+const VAPID_PUBLIC_KEY = "BFIQP4B6ZxPC3Nj4itIYyKTQt3zqlbu_PT36IACFAU5_cZjxo8fBRcJQOBzRWQ1XIfcQ6LKOH5hb0HWOncieDhc";
+const EMOJI = { "AI": "\u{1F916}", "Data Engineering": "\u{1F6E0}️", "Data Science": "\u{1F4CA}",
+                "BI & Analytics": "\u{1F4C8}", "Tech": "\u{1F4BB}", "Startups": "\u{1F680}",
+                "Gadgets": "\u{1F4F1}" };
+const $ = (id) => document.getElementById(id);
+let stories = [], filter = "All";
+
+function ago(iso) {
+  const mins = Math.max(1, Math.floor((Date.now() - new Date(iso)) / 60000));
+  if (mins < 60) return mins + "m ago";
+  if (mins < 1440) return Math.floor(mins / 60) + "h ago";
+  return Math.floor(mins / 1440) + "d ago";
+}
+function stamp(iso) {
+  return new Date(iso).toLocaleString([], { weekday: "short", day: "numeric", month: "short",
+                                            hour: "numeric", minute: "2-digit" });
+}
+function el(tag, cls, text) {
+  const e = document.createElement(tag);
+  if (cls) e.className = cls;
+  if (text != null) e.textContent = text;
+  return e;
+}
+
+function render() {
+  const cats = ["All"].concat(Object.keys(EMOJI).filter((c) => stories.some((s) => s.category === c)));
+  const chips = $("chips");
+  chips.replaceChildren();
+  for (const c of cats) {
+    const b = el("button", c === filter ? "on" : "", c === "All" ? "All" : EMOJI[c] + " " + c);
+    b.onclick = () => { filter = c; render(); };
+    chips.appendChild(b);
+  }
+  const list = $("list");
+  list.replaceChildren();
+  const shown = stories.filter((s) => filter === "All" || s.category === filter);
+  if (!shown.length) { list.appendChild(el("div", "empty", "No stories yet.")); return; }
+  let lastBatch = null;
+  for (const s of shown) {
+    if (s.batch !== lastBatch) {
+      list.appendChild(el("div", "batch", stamp(s.batch)));
+      lastBatch = s.batch;
+    }
+    const a = el("a", "card");
+    a.href = /^https?:\/\//i.test(s.url) ? s.url : "#";
+    a.target = "_blank";
+    a.rel = "noopener noreferrer";
+    a.appendChild(el("div", "cat", (EMOJI[s.category] || "") + " " + s.category.toUpperCase()));
+    a.appendChild(el("div", "title", s.title));
+    if (s.summary) a.appendChild(el("p", "sum", s.summary));
+    a.appendChild(el("div", "meta", "\u{1F4F0} " + s.source + " · " + ago(s.when)));
+    list.appendChild(a);
+  }
+}
+
+async function load() {
+  try {
+    const res = await fetch("news.json?t=" + Date.now(), { cache: "no-store" });
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    const data = await res.json();
+    stories = data.stories || [];
+    $("updated").textContent = data.updated ? "Updated " + stamp(data.updated) : "No digest yet";
+  } catch (err) {
+    $("updated").textContent = stories.length ? "Offline — showing saved stories" : "Could not load news";
+  }
+  render();
+}
+
+// ---------------------------------------------------------------- notifications
+function keyBytes(b64) {
+  const s = atob(b64.replace(/-/g, "+").replace(/_/g, "/") + "=".repeat((4 - b64.length % 4) % 4));
+  return Uint8Array.from(s, (ch) => ch.charCodeAt(0));
+}
+function showSub(sub) {
+  $("subText").value = JSON.stringify(sub);
+  $("subBox").hidden = false;
+  $("pushBtn").hidden = true;
+  $("pushMsg").textContent = "Notifications are on for this phone.";
+}
+async function initPush(openPanel) {
+  const panel = $("push");
+  if (!("serviceWorker" in navigator) || !("PushManager" in window) || !("Notification" in window)) {
+    if (openPanel) {
+      panel.hidden = false;
+      $("pushBtn").hidden = true;
+      $("pushMsg").textContent = "This browser does not support notifications. Open the page in Chrome.";
+    }
+    return;
+  }
+  const reg = await navigator.serviceWorker.ready;
+  const sub = await reg.pushManager.getSubscription();
+  if (sub) { if (openPanel) { panel.hidden = false; showSub(sub); } return; }
+  panel.hidden = false;
+  if (Notification.permission === "denied") {
+    $("pushBtn").hidden = true;
+    $("pushMsg").textContent = "Notifications are blocked. Allow them for this site in Chrome's site settings, then reopen the app.";
+    return;
+  }
+  $("pushBtn").hidden = false;
+  $("pushMsg").textContent = "Get a notification each time a new digest is ready.";
+}
+$("pushBtn").onclick = async () => {
+  try {
+    if (await Notification.requestPermission() !== "granted") { initPush(true); return; }
+    const reg = await navigator.serviceWorker.ready;
+    const sub = await reg.pushManager.subscribe({ userVisibleOnly: true,
+                                                  applicationServerKey: keyBytes(VAPID_PUBLIC_KEY) });
+    showSub(sub);
+  } catch (err) {
+    $("pushMsg").textContent = "Could not turn on notifications: " + err.message;
+  }
+};
+$("copyBtn").onclick = async () => {
+  try { await navigator.clipboard.writeText($("subText").value); }
+  catch (err) { $("subText").select(); document.execCommand("copy"); }
+  $("copyBtn").textContent = "Copied ✓";
+};
+$("bell").onclick = () => { if ($("push").hidden) initPush(true); else $("push").hidden = true; };
+$("reload").onclick = load;
+document.addEventListener("visibilitychange", () => { if (!document.hidden) load(); });
+
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("sw.js").then(() => initPush(false)).catch(() => {});
+  navigator.serviceWorker.addEventListener("message", (e) => { if (e.data === "refresh") load(); });
+}
+load();
+</script>
+</body>
+</html>
