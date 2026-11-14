@@ -40,7 +40,7 @@ phone number or other personal details to a third party. One user only.
 |---|---|
 | `news.py` | Fetch, select, publish, notify. Standard library only, except `--notify` which needs `pywebpush` |
 | `.github/workflows/news.yml` | Schedule, run, commit, notify |
-| `docs/index.html` | The app: story feed, category filter, notification setup panel (bell button) |
+| `docs/index.html` | The app: story feed grouped by digest, category filter chips with counts, search, NEW badge for stories since the last visit, notification setup panel (bell button). No external fonts, scripts or CDNs |
 | `docs/sw.js` | Service worker: shows push notifications, offline fallback |
 | `docs/manifest.webmanifest`, `docs/icon-*.png` | Make the page installable |
 | `docs/news.json` | Feed shown by the app: `{updated, stories: [{title, url, summary, source, category, when, batch}]}`, newest first, capped at 80 |
@@ -88,8 +88,14 @@ late. Also has `workflow_dispatch` for manual runs.
 Done and checked locally: `news.py` compiles; against the live feeds 20 of 21 loaded
 (VentureBeat failed) and 8 stories were selected; `publish` produced a valid feed file.
 
-Never tested: the GitHub Actions workflow, GitHub Pages hosting, installing the app on the
-phone, and the push notification end to end.
+Later on 15 Nov 2026: repo pushed to `SANTOSH-TECH7/Tech-News-Automation`, GitHub Pages live
+at `https://santosh-tech7.github.io/Tech-News-Automation/`. The original VAPID private key
+was lost before it was saved as a secret, so the key pair was regenerated; the private key
+is in the local git-ignored `.env`. The app page was redesigned and checked in headless
+Chrome at phone and desktop widths with sample stories.
+
+Never tested: the GitHub Actions workflow, installing the app on the phone, and the push
+notification end to end.
 
 ## Owner setup steps
 

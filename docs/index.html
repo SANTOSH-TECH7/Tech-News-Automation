@@ -11,80 +11,230 @@
 <link rel="apple-touch-icon" href="icon-192.png">
 <style>
   :root {
-    --bg: #0b1220; --card: #141d30; --line: #24304a; --text: #e8edf7; --muted: #93a0b8;
-    --accent: #5aa9ff; --chip: #1c2740;
+    color-scheme: dark;
+    --bg: #0b1220; --bg2: #0e1728; --card: #121b2e; --card2: #16213a; --line: #223050;
+    --line2: #2c3d63; --text: #e9eef8; --muted: #8f9db8; --faint: #64728f;
+    --accent: #38bdf8; --accent2: #818cf8; --ok: #34d399; --warn: #fbbf24;
+    --grid: rgba(120, 150, 210, .055); --glow: rgba(56, 189, 248, .13);
+    --shadow: 0 10px 30px -12px rgba(0, 0, 0, .65);
+    --ai: #a78bfa; --de: #22d3ee; --ds: #34d399; --bi: #fbbf24; --tech: #60a5fa;
+    --su: #f472b6; --ga: #fb923c;
+    --mono: ui-monospace, "SFMono-Regular", "Cascadia Mono", "Roboto Mono", Menlo, Consolas, monospace;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   }
   @media (prefers-color-scheme: light) {
-    :root { --bg: #f3f5f9; --card: #ffffff; --line: #dde3ee; --text: #131a29; --muted: #5d6980;
-            --accent: #1767d2; --chip: #e7ecf5; }
+    :root {
+      color-scheme: light;
+      --bg: #f4f6fb; --bg2: #edf1f8; --card: #ffffff; --card2: #f7f9fd; --line: #dbe2ef;
+      --line2: #c3cee2; --text: #111a2c; --muted: #55627a; --faint: #7d899f;
+      --accent: #0b7fc4; --accent2: #5458d6; --ok: #0f8a5f; --warn: #a16207;
+      --grid: rgba(40, 70, 130, .05); --glow: rgba(11, 127, 196, .09);
+      --shadow: 0 10px 26px -14px rgba(30, 50, 90, .35);
+      --ai: #6d4fd6; --de: #0b7f96; --ds: #0f8a5f; --bi: #a16207; --tech: #1d5fd1;
+      --su: #c0277a; --ga: #c2530a;
+    }
   }
   * { box-sizing: border-box; }
-  body { margin: 0; background: var(--bg); color: var(--text);
-         font: 16px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
-  header { position: sticky; top: 0; z-index: 2; background: var(--bg);
-           border-bottom: 1px solid var(--line); padding: 12px 16px 8px; }
-  .top { display: flex; align-items: center; gap: 10px; }
-  h1 { font-size: 20px; margin: 0; flex: 1; letter-spacing: .3px; }
-  .updated { color: var(--muted); font-size: 12px; margin-top: 2px; }
-  button { font: inherit; color: var(--text); background: var(--chip); border: 1px solid var(--line);
-           border-radius: 999px; padding: 6px 12px; cursor: pointer; }
-  button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
-  .chips { display: flex; gap: 8px; overflow-x: auto; padding: 10px 0 4px; scrollbar-width: none; }
-  .chips::-webkit-scrollbar { display: none; }
-  .chips button { white-space: nowrap; font-size: 13px; }
-  .chips button.on { background: var(--accent); border-color: var(--accent); color: #fff; }
-  main { max-width: 720px; margin: 0 auto; padding: 12px 16px 48px; }
-  .batch { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .8px;
-           margin: 18px 0 8px; }
-  a.card { display: block; text-decoration: none; color: inherit; background: var(--card);
-           border: 1px solid var(--line); border-radius: 14px; padding: 14px; margin-bottom: 10px; }
-  a.card:active { border-color: var(--accent); }
-  .cat { color: var(--accent); font-size: 12px; font-weight: 600; letter-spacing: .5px; }
-  .title { font-weight: 650; font-size: 16.5px; margin: 4px 0 6px; overflow-wrap: anywhere; }
-  .sum { color: var(--muted); font-size: 14px; margin: 0 0 8px; overflow-wrap: anywhere; }
-  .meta { color: var(--muted); font-size: 12px; }
-  .panel { background: var(--card); border: 1px solid var(--line); border-radius: 14px;
-           padding: 14px; margin-bottom: 14px; font-size: 14px; }
-  .panel p { margin: 0 0 10px; }
-  .panel textarea { width: 100%; height: 110px; font: 12px/1.3 ui-monospace, monospace;
-                    background: var(--bg); color: var(--text); border: 1px solid var(--line);
-                    border-radius: 8px; padding: 8px; }
-  .empty { color: var(--muted); text-align: center; padding: 48px 0; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; min-height: 100vh; color: var(--text); font: 16px/1.5 var(--sans);
+    background:
+      radial-gradient(900px 420px at 85% -120px, var(--glow), transparent 70%),
+      linear-gradient(var(--grid) 1px, transparent 1px) 0 0 / 28px 28px,
+      linear-gradient(90deg, var(--grid) 1px, transparent 1px) 0 0 / 28px 28px,
+      var(--bg);
+    background-attachment: fixed;
+  }
   [hidden] { display: none !important; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
+
+  /* ---------- header ---------- */
+  header {
+    position: sticky; top: 0; z-index: 5; border-bottom: 1px solid var(--line);
+    background: color-mix(in srgb, var(--bg) 86%, transparent);
+    -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px);
+    padding-top: env(safe-area-inset-top);
+  }
+  .top { display: flex; align-items: center; gap: 12px; padding-top: 12px; }
+  .logo {
+    width: 38px; height: 38px; flex: none; border-radius: 11px; display: grid; place-items: center;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    box-shadow: 0 6px 18px -6px var(--accent);
+  }
+  .logo svg { width: 24px; height: 24px; }
+  .brand { flex: 1; min-width: 0; }
+  h1 { margin: 0; font: 700 17px/1.15 var(--mono); letter-spacing: 2.2px; text-transform: uppercase; }
+  h1 span { color: var(--accent); }
+  .status { display: flex; align-items: center; gap: 7px; margin-top: 3px; color: var(--muted);
+            font: 11.5px/1.3 var(--mono); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .dot { width: 7px; height: 7px; border-radius: 50%; flex: none; background: var(--ok);
+         box-shadow: 0 0 0 0 var(--ok); animation: pulse 2.4s infinite; }
+  .dot.off { background: var(--warn); animation: none; }
+  @keyframes pulse {
+    0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--ok) 70%, transparent); }
+    70% { box-shadow: 0 0 0 7px transparent; }
+    100% { box-shadow: 0 0 0 0 transparent; }
+  }
+  .icon {
+    position: relative; width: 40px; height: 40px; flex: none; padding: 0; display: grid; place-items: center;
+    color: var(--text); background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    cursor: pointer; transition: border-color .15s, background .15s, color .15s;
+  }
+  .icon svg { width: 19px; height: 19px; }
+  .icon:hover, .icon.on { border-color: var(--accent); color: var(--accent); }
+  .icon.live::after { content: ""; position: absolute; top: 8px; right: 9px; width: 7px; height: 7px;
+                      border-radius: 50%; background: var(--ok); border: 2px solid var(--card); }
+  .icon.spin svg { animation: spin .8s linear infinite; }
+  @media (max-width: 430px) { .top { gap: 8px; } .icon { width: 36px; height: 36px; border-radius: 11px; } }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .search { padding-top: 10px; }
+  .search input {
+    width: 100%; height: 42px; padding: 0 14px; color: var(--text); background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; font: 14px var(--mono); outline: none;
+  }
+  .search input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--glow); }
+  .search input::placeholder { color: var(--faint); }
+
+  .chips { display: flex; gap: 8px; overflow-x: auto; padding: 12px 0; scrollbar-width: none; }
+  .chips::-webkit-scrollbar { display: none; }
+  .chip {
+    --c: var(--accent); display: inline-flex; align-items: center; gap: 7px; flex: none; height: 34px;
+    padding: 0 12px; color: var(--muted); background: var(--card); border: 1px solid var(--line);
+    border-radius: 999px; font: 600 12.5px var(--sans); white-space: nowrap; cursor: pointer;
+    transition: border-color .15s, color .15s, background .15s;
+  }
+  .chip i { width: 7px; height: 7px; border-radius: 50%; background: var(--c); }
+  .chip b { font: 500 11px var(--mono); color: var(--faint); }
+  .chip.on { color: var(--text); border-color: var(--c);
+             background: color-mix(in srgb, var(--c) 16%, var(--card)); }
+  .chip.on b { color: var(--c); }
+
+  /* ---------- content ---------- */
+  main.wrap { padding-top: 16px; padding-bottom: 28px; }
+  .batch { display: flex; align-items: center; gap: 10px; margin: 22px 0 12px;
+           color: var(--muted); font: 600 11.5px var(--mono); letter-spacing: 1.3px; text-transform: uppercase; }
+  .batch:first-child { margin-top: 4px; }
+  .batch em { font-style: normal; color: var(--accent); }
+  .batch::after { content: ""; flex: 1; height: 1px; background: linear-gradient(90deg, var(--line2), transparent); }
+  .batch small { order: 3; font: 500 11px var(--mono); letter-spacing: .4px; color: var(--faint); text-transform: none; }
+  .grid { display: grid; gap: 12px; grid-template-columns: 1fr; }
+  @media (min-width: 780px) { .grid { grid-template-columns: 1fr 1fr; } }
+
+  a.card {
+    --c: var(--accent); position: relative; display: flex; flex-direction: column; min-width: 0;
+    padding: 15px 16px 13px 19px; color: inherit; text-decoration: none; overflow: hidden;
+    background: linear-gradient(180deg, var(--card2), var(--card)); border: 1px solid var(--line);
+    border-radius: 16px; box-shadow: var(--shadow);
+    transition: transform .15s, border-color .15s;
+  }
+  a.card::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: var(--c); }
+  a.card:hover, a.card:focus-visible { border-color: var(--c); transform: translateY(-2px); outline: none; }
+  a.card:active { transform: scale(.992); }
+  .row { display: flex; align-items: center; gap: 8px; }
+  .tag { padding: 3px 8px; border-radius: 6px; color: var(--c); font: 700 10.5px var(--mono);
+         letter-spacing: 1px; text-transform: uppercase;
+         background: color-mix(in srgb, var(--c) 14%, transparent); }
+  .new { padding: 3px 7px; border-radius: 6px; color: var(--bg); background: var(--ok);
+         font: 700 10px var(--mono); letter-spacing: 1px; }
+  .time { margin-left: auto; color: var(--faint); font: 11.5px var(--mono); }
+  .title { margin: 10px 0 6px; font: 650 16.5px/1.35 var(--sans); letter-spacing: -.1px; overflow-wrap: anywhere; }
+  .sum { margin: 0 0 12px; color: var(--muted); font-size: 14px; line-height: 1.5; overflow-wrap: anywhere; }
+  .foot { display: flex; align-items: center; gap: 8px; margin-top: auto; padding-top: 10px;
+          border-top: 1px dashed var(--line); font: 12px var(--mono); color: var(--muted); }
+  .foot .src { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .foot .go { margin-left: auto; flex: none; color: var(--c); font-weight: 600; }
+
+  /* ---------- notification panel ---------- */
+  .panel { margin-bottom: 16px; padding: 16px; background: var(--card); border: 1px solid var(--line2);
+           border-radius: 16px; box-shadow: var(--shadow); font-size: 14px; }
+  .panel h2 { margin: 0 0 6px; font: 700 12px var(--mono); letter-spacing: 1.5px; text-transform: uppercase;
+              color: var(--accent); }
+  .panel p { margin: 0 0 12px; color: var(--muted); }
+  .panel p b { color: var(--text); font: 600 12.5px var(--mono); }
+  .panel textarea { display: block; width: 100%; height: 116px; padding: 10px; resize: none; color: var(--text);
+                    background: var(--bg2); border: 1px solid var(--line); border-radius: 10px;
+                    font: 11.5px/1.4 var(--mono); }
+  .btn { height: 42px; padding: 0 18px; border: 0; border-radius: 12px; cursor: pointer; color: #06121f;
+         background: linear-gradient(135deg, var(--accent), var(--accent2)); font: 700 14px var(--sans); }
+  .btn:active { transform: scale(.98); }
+
+  /* ---------- states ---------- */
+  .empty { margin: 36px auto; max-width: 420px; padding: 34px 22px; text-align: center; color: var(--muted);
+           background: var(--card); border: 1px dashed var(--line2); border-radius: 18px; }
+  .empty svg { width: 42px; height: 42px; color: var(--accent); margin-bottom: 10px; }
+  .empty strong { display: block; margin-bottom: 6px; color: var(--text); font: 700 13px var(--mono);
+                  letter-spacing: 1.4px; text-transform: uppercase; }
+  .empty span { font-size: 14px; }
+  .skel { height: 150px; border-radius: 16px; border: 1px solid var(--line);
+          background: linear-gradient(100deg, var(--card) 30%, var(--card2) 50%, var(--card) 70%) 0 0 / 300% 100%;
+          animation: shimmer 1.4s linear infinite; }
+  @keyframes shimmer { to { background-position: -300% 0; } }
+  footer { padding: 4px 16px calc(28px + env(safe-area-inset-bottom)); text-align: center; color: var(--faint);
+           font: 11px/1.7 var(--mono); letter-spacing: .4px; }
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
 </style>
 </head>
 <body>
 <header>
-  <div class="top">
-    <h1>&#x1F5DE;&#xFE0F; Tech Pulse</h1>
-    <button id="bell" title="Notifications">&#x1F514;</button>
-    <button id="reload" title="Refresh">&#x21BB;</button>
+  <div class="wrap">
+    <div class="top">
+      <div class="logo" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#06121f" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 12.5h4l2.5-7 4.5 13 2.5-6h5.5"/></svg>
+      </div>
+      <div class="brand">
+        <h1>Tech<span>Pulse</span></h1>
+        <div class="status"><i class="dot" id="dot"></i><span id="updated">Loading&hellip;</span></div>
+      </div>
+      <button class="icon" id="searchBtn" title="Search" aria-label="Search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg>
+      </button>
+      <button class="icon" id="bell" title="Notifications" aria-label="Notifications">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9a6 6 0 1 1 12 0c0 6 2.5 7.5 2.5 7.5h-17S6 15 6 9Z"/><path d="M10 20a2.2 2.2 0 0 0 4 0"/></svg>
+      </button>
+      <button class="icon" id="reload" title="Refresh" aria-label="Refresh">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11a8 8 0 1 0-2.3 6.3"/><path d="M20 4v7h-7"/></svg>
+      </button>
+    </div>
+    <div class="search" id="searchBox" hidden>
+      <input id="q" type="search" placeholder="Search headlines, sources&hellip;" autocomplete="off" enterkeyhint="search">
+    </div>
+    <div class="chips" id="chips"></div>
   </div>
-  <div class="updated" id="updated">Loading&hellip;</div>
-  <div class="chips" id="chips"></div>
 </header>
 
-<main>
+<main class="wrap">
   <div class="panel" id="push" hidden>
+    <h2>Notifications</h2>
     <p id="pushMsg"></p>
-    <button class="primary" id="pushBtn">Turn on notifications</button>
+    <button class="btn" id="pushBtn">Turn on notifications</button>
     <div id="subBox" hidden>
       <p>Copy this text and save it as the GitHub secret <b>PUSH_SUBSCRIPTION</b>
          (repo &rarr; Settings &rarr; Secrets and variables &rarr; Actions). You only do this once.</p>
       <textarea id="subText" readonly></textarea>
-      <p style="margin-top:10px"><button class="primary" id="copyBtn">Copy</button></p>
+      <p style="margin:12px 0 0"><button class="btn" id="copyBtn">Copy</button></p>
     </div>
   </div>
-  <div id="list"></div>
+  <div id="list"><div class="grid"><div class="skel"></div><div class="skel"></div><div class="skel"></div><div class="skel"></div></div></div>
 </main>
+
+<footer>
+  <div id="summary"></div>
+  <div>6 digests daily &middot; 07:30 &ndash; 22:30 IST</div>
+</footer>
 
 <script>
 const VAPID_PUBLIC_KEY = "BPjTWSjESnNwzeSGDTXrjPEZqsElBll4kOw5Hj4GdvjVvfEcXIbME3uGoUde-OFREfPsoMnPBIv7XG9ibqMQcYg";
-const EMOJI = { "AI": "\u{1F916}", "Data Engineering": "\u{1F6E0}️", "Data Science": "\u{1F4CA}",
-                "BI & Analytics": "\u{1F4C8}", "Tech": "\u{1F4BB}", "Startups": "\u{1F680}",
-                "Gadgets": "\u{1F4F1}" };
+// Category -> CSS colour variable. Order here is the order of the filter chips.
+const CATS = { "AI": "--ai", "Data Engineering": "--de", "Data Science": "--ds", "BI & Analytics": "--bi",
+               "Tech": "--tech", "Startups": "--su", "Gadgets": "--ga" };
+const RUN_HOURS_UTC = [2, 5, 8, 11, 14, 17];   // keep in step with the cron in news.yml
 const $ = (id) => document.getElementById(id);
-let stories = [], filter = "All";
+let stories = [], filter = "All", query = "", loaded = false;
+
+// Stories newer than the digest seen on the previous visit get a NEW badge.
+let seenBefore = null;
+try { seenBefore = localStorage.getItem("tp_seen"); } catch (err) {}
 
 function ago(iso) {
   const mins = Math.max(1, Math.floor((Date.now() - new Date(iso)) / 60000));
@@ -96,56 +246,128 @@ function stamp(iso) {
   return new Date(iso).toLocaleString([], { weekday: "short", day: "numeric", month: "short",
                                             hour: "numeric", minute: "2-digit" });
 }
+function clock(d) { return d.toLocaleTimeString([], { hour: "numeric", minute: "2-digit" }); }
+function nextRun() {
+  const now = new Date();
+  for (let day = 0; day < 2; day++) {
+    for (const h of RUN_HOURS_UTC) {
+      const t = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() + day, h, 0));
+      if (t > now) return t;
+    }
+  }
+  return null;
+}
 function el(tag, cls, text) {
   const e = document.createElement(tag);
   if (cls) e.className = cls;
   if (text != null) e.textContent = text;
   return e;
 }
+function colour(node, cat) { if (CATS[cat]) node.style.setProperty("--c", "var(" + CATS[cat] + ")"); }
+function emptyBox(head, text) {
+  const box = el("div", "empty");
+  box.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 12.5h4l2.5-7 4.5 13 2.5-6h5.5"/></svg>';
+  box.appendChild(el("strong", "", head));
+  box.appendChild(el("span", "", text));
+  return box;
+}
 
 function render() {
-  const cats = ["All"].concat(Object.keys(EMOJI).filter((c) => stories.some((s) => s.category === c)));
   const chips = $("chips");
   chips.replaceChildren();
+  const cats = ["All"].concat(Object.keys(CATS).filter((c) => stories.some((s) => s.category === c)));
   for (const c of cats) {
-    const b = el("button", c === filter ? "on" : "", c === "All" ? "All" : EMOJI[c] + " " + c);
-    b.onclick = () => { filter = c; render(); };
+    const b = el("button", "chip" + (c === filter ? " on" : ""));
+    colour(b, c);
+    if (c !== "All") b.appendChild(el("i"));
+    b.appendChild(el("span", "", c));
+    b.appendChild(el("b", "", String(c === "All" ? stories.length : stories.filter((s) => s.category === c).length)));
+    b.onclick = () => { filter = c; render(); window.scrollTo({ top: 0 }); };
     chips.appendChild(b);
   }
+
   const list = $("list");
   list.replaceChildren();
-  const shown = stories.filter((s) => filter === "All" || s.category === filter);
-  if (!shown.length) { list.appendChild(el("div", "empty", "No stories yet.")); return; }
-  let lastBatch = null;
+  const q = query.trim().toLowerCase();
+  const shown = stories.filter((s) =>
+    (filter === "All" || s.category === filter) &&
+    (!q || (s.title + " " + (s.summary || "") + " " + s.source).toLowerCase().includes(q)));
+  const batches = new Set(stories.map((s) => s.batch));
+  $("summary").textContent = stories.length
+    ? stories.length + " stories · " + batches.size + (batches.size === 1 ? " digest" : " digests") : "";
+
+  if (!shown.length) {
+    const next = nextRun();
+    if (!loaded) list.appendChild(emptyBox("Offline", "Could not load the news feed. Check the connection and tap refresh."));
+    else if (stories.length) list.appendChild(emptyBox("No matches", "Nothing fits this filter. Try another category or search."));
+    else list.appendChild(emptyBox("Waiting for first digest",
+      "Stories will appear here after the next scheduled run" + (next ? ", around " + clock(next) + "." : ".")));
+    return;
+  }
+
+  let lastBatch = null, grid = null;
   for (const s of shown) {
     if (s.batch !== lastBatch) {
-      list.appendChild(el("div", "batch", stamp(s.batch)));
       lastBatch = s.batch;
+      const count = shown.filter((x) => x.batch === s.batch).length;
+      const head = el("div", "batch");
+      head.appendChild(el("em", "", "Digest"));
+      head.appendChild(el("span", "", stamp(s.batch)));
+      head.appendChild(el("small", "", count + (count === 1 ? " story" : " stories")));
+      list.appendChild(head);
+      grid = el("div", "grid");
+      list.appendChild(grid);
     }
     const a = el("a", "card");
+    colour(a, s.category);
     a.href = /^https?:\/\//i.test(s.url) ? s.url : "#";
     a.target = "_blank";
     a.rel = "noopener noreferrer";
-    a.appendChild(el("div", "cat", (EMOJI[s.category] || "") + " " + s.category.toUpperCase()));
+    const row = el("div", "row");
+    row.appendChild(el("span", "tag", s.category));
+    if (seenBefore && s.batch > seenBefore) row.appendChild(el("span", "new", "NEW"));
+    row.appendChild(el("span", "time", ago(s.when)));
+    a.appendChild(row);
     a.appendChild(el("div", "title", s.title));
     if (s.summary) a.appendChild(el("p", "sum", s.summary));
-    a.appendChild(el("div", "meta", "\u{1F4F0} " + s.source + " · " + ago(s.when)));
-    list.appendChild(a);
+    const foot = el("div", "foot");
+    foot.appendChild(el("span", "src", s.source));
+    foot.appendChild(el("span", "go", "Read ↗"));
+    a.appendChild(foot);
+    grid.appendChild(a);
   }
 }
 
 async function load() {
+  $("reload").classList.add("spin");
   try {
     const res = await fetch("news.json?t=" + Date.now(), { cache: "no-store" });
     if (!res.ok) throw new Error("HTTP " + res.status);
     const data = await res.json();
     stories = data.stories || [];
-    $("updated").textContent = data.updated ? "Updated " + stamp(data.updated) : "No digest yet";
+    loaded = true;
+    const next = nextRun();
+    $("dot").classList.remove("off");
+    $("updated").textContent = (data.updated ? ago(data.updated) : "No digest") +
+                               (next ? " · next " + clock(next) : "");
+    $("updated").title = data.updated ? "Updated " + stamp(data.updated) : "";
+    if (data.updated) { try { localStorage.setItem("tp_seen", data.updated); } catch (err) {} }
   } catch (err) {
+    $("dot").classList.add("off");
     $("updated").textContent = stories.length ? "Offline — showing saved stories" : "Could not load news";
   }
+  $("reload").classList.remove("spin");
   render();
 }
+
+// ---------------------------------------------------------------- search
+$("searchBtn").onclick = () => {
+  const box = $("searchBox");
+  box.hidden = !box.hidden;
+  $("searchBtn").classList.toggle("on", !box.hidden);
+  if (box.hidden) { query = ""; $("q").value = ""; render(); } else $("q").focus();
+};
+$("q").oninput = (e) => { query = e.target.value; render(); };
 
 // ---------------------------------------------------------------- notifications
 function keyBytes(b64) {
@@ -157,6 +379,7 @@ function showSub(sub) {
   $("subBox").hidden = false;
   $("pushBtn").hidden = true;
   $("pushMsg").textContent = "Notifications are on for this phone.";
+  $("bell").classList.add("live");
 }
 async function initPush(openPanel) {
   const panel = $("push");
@@ -170,7 +393,11 @@ async function initPush(openPanel) {
   }
   const reg = await navigator.serviceWorker.ready;
   const sub = await reg.pushManager.getSubscription();
-  if (sub) { if (openPanel) { panel.hidden = false; showSub(sub); } return; }
+  if (sub) {
+    $("bell").classList.add("live");
+    if (openPanel) { panel.hidden = false; showSub(sub); }
+    return;
+  }
   panel.hidden = false;
   if (Notification.permission === "denied") {
     $("pushBtn").hidden = true;
@@ -196,7 +423,9 @@ $("copyBtn").onclick = async () => {
   catch (err) { $("subText").select(); document.execCommand("copy"); }
   $("copyBtn").textContent = "Copied ✓";
 };
-$("bell").onclick = () => { if ($("push").hidden) initPush(true); else $("push").hidden = true; };
+$("bell").onclick = () => {
+  if ($("push").hidden) { initPush(true); window.scrollTo({ top: 0 }); } else $("push").hidden = true;
+};
 $("reload").onclick = load;
 document.addEventListener("visibilitychange", () => { if (!document.hidden) load(); });
 
