@@ -1,1 +1,77 @@
-{"updated": null, "stories": []}
+{
+ "updated": "2026-11-14T21:43:09+00:00",
+ "stories": [
+  {
+   "title": "Elon Musk, other tech execs sign petition calling on Nvidia to reinstate Jensen Huang",
+   "url": "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/",
+   "summary": "The petition had attracted more than 115,000 signatures as of Saturday afternoon.",
+   "source": "TechCrunch AI",
+   "category": "AI",
+   "when": "2026-11-14T21:41:22+00:00",
+   "batch": "2026-11-14T21:43:09+00:00"
+  },
+  {
+   "title": "The AI graveyard: a running list of projects and startups that didn’t make it",
+   "url": "https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
+   "summary": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations.",
+   "source": "TechCrunch AI",
+   "category": "AI",
+   "when": "2026-11-14T17:30:00+00:00",
+   "batch": "2026-11-14T21:43:09+00:00"
+  },
+  {
+   "title": "Apache Spark vs Apache Flink: which should you use?",
+   "url": "https://www.databricks.com/blog/spark-vs-flink",
+   "summary": "For most teams, Apache Spark™ is the better choice. Spark runs batch ETL, SQL analytics,.",
+   "source": "Databricks",
+   "category": "Data Engineering",
+   "when": "2026-11-14T07:02:42+00:00",
+   "batch": "2026-11-14T21:43:09+00:00"
+  },
+  {
+   "title": "Understanding span queries in Amazon OpenSearch Service",
+   "url": "https://aws.amazon.com/blogs/big-data/understanding-span-queries-in-amazon-opensearch-service/",
+   "summary": "Among OpenSearch query types, span queries give you precise control over where terms appear in a document and how they relate to one another.",
+   "source": "AWS Big Data",
+   "category": "Data Engineering",
+   "when": "2026-11-13T22:00:29+00:00",
+   "batch": "2026-11-14T21:43:09+00:00"
+  },
+  {
+   "title": "How to Build a Markov Chain in Python With NumPy",
+   "url": "https://towardsdatascience.com/how-to-build-a-markov-chain-in-python-with-numpy/",
+   "summary": "A step-by-step guide to transition matrices, the Chapman–Kolmogorov equation, and stationary distributions, built around a three-state writing example.",
+   "source": "Towards Data Science",
+   "category": "Data Science",
+   "when": "2026-11-14T15:00:00+00:00",
+   "batch": "2026-11-14T21:43:09+00:00"
+  },
+  {
+   "title": "Work to replace old copper wire led to the FAA’s ground stop",
+   "url": "https://www.theverge.com/transportation/1033898/faa-ground-stop-sean-duffy-faa-copper-wire",
+   "summary": "At a press conference today, Transportation Secretary Sean Duffy said that Friday's nationwide ground stop ordered by the FAA was related to work replacing outdated copper wire with a fiber optic line at a \"remote FAA facility.\"…",
+   "source": "The Verge",
+   "category": "Tech",
+   "when": "2026-11-14T20:46:54+00:00",
+   "batch": "2026-11-14T21:43:09+00:00"
+  },
+  {
+   "title": "Tesla opens Cybercab pre-orders ‘for personal use,’ with geo restrictions and a $299 monthly fee",
+   "url": "https://techcrunch.com/2026/11/14/tesla-opens-cybercab-pre-orders-for-personal-use-with-geo-restrictions-and-a-299-monthly-fee/",
+   "summary": "Even Elon Musk said the monthly fee is \"too high.\".",
+   "source": "TechCrunch",
+   "category": "Startups",
+   "when": "2026-11-14T20:04:44+00:00",
+   "batch": "2026-11-14T21:43:09+00:00"
+  },
+  {
+   "title": "The reasons why your TV soundbar has an audio delay",
+   "url": "https://www.engadget.com/2312648/reasons-why-tv-soundbar-audio-delay/",
+   "summary": "Audio delays are really irritating, especially when watching sports and live events. We've got several possible causes and what you can do about them.",
+   "source": "Engadget",
+   "category": "Gadgets",
+   "when": "2026-11-14T21:30:00+00:00",
+   "batch": "2026-11-14T21:43:09+00:00"
+  }
+ ]
+}
