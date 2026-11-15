@@ -1,6 +1,78 @@
 {
- "updated": "2026-11-14T21:47:40+00:00",
+ "updated": "2026-11-15T08:54:02+00:00",
  "stories": [
+  {
+   "title": "Where was Nvidia’s security team?",
+   "url": "https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/",
+   "summary": "Nvidia’s security chief quietly left in August, and now that CEO Jensen Huang has stepped down over his relationships, including one with an executive at a company suspected of funneling chips to China, a former intelligence…",
+   "source": "TechCrunch AI",
+   "category": "AI",
+   "when": "2026-11-15T00:08:07+00:00",
+   "batch": "2026-11-15T08:54:02+00:00"
+  },
+  {
+   "title": "How to get better results from Google Gemini",
+   "url": "https://www.engadget.com/2312834/how-to-get-better-results-google-gemini/",
+   "summary": "These tips and tricks will help you prompt Gemini better.",
+   "source": "Engadget",
+   "category": "AI",
+   "when": "2026-11-14T22:15:00+00:00",
+   "batch": "2026-11-15T08:54:02+00:00"
+  },
+  {
+   "title": "FAA expands AI advice to manage air traffic congestion across entire US airspace",
+   "url": "https://arstechnica.com/features/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace/",
+   "summary": "Airlines praised the AI tool, but the air traffic controllers’ union wasn’t involved.",
+   "source": "Ars Technica",
+   "category": "AI",
+   "when": "2026-11-13T21:20:47+00:00",
+   "batch": "2026-11-15T08:54:02+00:00"
+  },
+  {
+   "title": "We're Asking an Appeals Court to Require a Warrant for ALPR Searches",
+   "url": "https://www.eff.org/deeplinks/2026/11/were-asking-appeals-court-require-warrant-alpr-searches",
+   "summary": "Trending on Hacker News — 213 points, 56 comments.",
+   "source": "Hacker News",
+   "category": "Tech",
+   "when": "2026-11-15T02:00:54+00:00",
+   "batch": "2026-11-15T08:54:02+00:00"
+  },
+  {
+   "title": "SpaceX returned its Starship rocket on Saturday—but there's a catch",
+   "url": "https://arstechnica.com/space/2026/11/with-starship-catch-spacex-still-shows-it-can-dazzle-the-world/",
+   "summary": "It felt like stepping into the future.",
+   "source": "Ars Technica",
+   "category": "Tech",
+   "when": "2026-11-15T00:40:59+00:00",
+   "batch": "2026-11-15T08:54:02+00:00"
+  },
+  {
+   "title": "Transportation secretary blames ‘routine’ equipment upgrade for grounding flights nationwide",
+   "url": "https://techcrunch.com/2026/11/14/transportation-secretary-blames-routine-equipment-upgrade-for-grounding-flights-nationwide/",
+   "summary": "FAA administrator Bryan Bedford also said there's \"zero evidence of anything AI-related.\".",
+   "source": "TechCrunch",
+   "category": "Startups",
+   "when": "2026-11-14T17:45:04+00:00",
+   "batch": "2026-11-15T08:54:02+00:00"
+  },
+  {
+   "title": "Amazon’s new Kindle Colorsoft is a premium e-reader with a premium price",
+   "url": "https://techcrunch.com/2026/11/13/amazons-new-kindle-colorsoft-is-a-premium-e-reader-with-a-premium-price/",
+   "summary": "The latest model is lighter and thinner than its predecessor and features an edge-to-edge display. But if you already own the first-generation Colorsoft, there’s little reason to upgrade.",
+   "source": "TechCrunch",
+   "category": "Startups",
+   "when": "2026-11-13T23:00:00+00:00",
+   "batch": "2026-11-15T08:54:02+00:00"
+  },
+  {
+   "title": "Which NVIDIA GPU is closest to the PS5? The answer isn't so simple",
+   "url": "https://www.engadget.com/2313644/nvidia-gpu-ps5-closest-match-answer-not-simple/",
+   "summary": "One of the biggest questions when it comes to purchasing a gaming rig is whether to go console or PC. This NVIDIA GPU gives the closest results to a PS5.",
+   "source": "Engadget",
+   "category": "Gadgets",
+   "when": "2026-11-15T01:00:00+00:00",
+   "batch": "2026-11-15T08:54:02+00:00"
+  },
   {
    "title": "The OpenAI board member who fired Sam Altman says we still can’t trust AI CEOs",
    "url": "https://www.theverge.com/podcast/1032907/helen-toner-openai-cset-ai-safety-policy-interview",
