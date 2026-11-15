@@ -1,6 +1,78 @@
 {
- "updated": "2026-11-15T08:54:02+00:00",
+ "updated": "2026-11-15T17:36:02+00:00",
  "stories": [
+  {
+   "title": "Some places have already banned AI glasses, and the list just keeps growing",
+   "url": "https://www.engadget.com/2313707/ai-glasses-banned-places-list-keeps-growing/",
+   "summary": "Safety and privacy concerns have led to bans on AI glasses in a number of public places, including courtrooms, schools and theaters.",
+   "source": "Engadget",
+   "category": "AI",
+   "when": "2026-11-15T16:00:00+00:00",
+   "batch": "2026-11-15T17:36:02+00:00"
+  },
+  {
+   "title": "All AI-generated code should be Open Source",
+   "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+   "summary": "Trending on Hacker News — 444 points, 271 comments.",
+   "source": "Hacker News",
+   "category": "AI",
+   "when": "2026-11-15T14:46:58+00:00",
+   "batch": "2026-11-15T17:36:02+00:00"
+  },
+  {
+   "title": "A Practitioner's Guide to 6 Agentic GraphRAG Patterns",
+   "url": "https://towardsdatascience.com/a-practitioners-guide-to-6-agentic-graphrag-patterns/",
+   "summary": "How autonomous agents turn static knowledge graphs into living Context Graphs that remember decisions, user intent, and operational history.",
+   "source": "Towards Data Science",
+   "category": "Data Science",
+   "when": "2026-11-15T15:00:00+00:00",
+   "batch": "2026-11-15T17:36:02+00:00"
+  },
+  {
+   "title": "Computing Effective Dimension for Quantum ML Models in PyTorch",
+   "url": "https://towardsdatascience.com/computing-effective-dimension-for-quantum-ml-models-in-pytorch/",
+   "summary": "Local and global variants, Fisher estimation, epsilon-ball sampling, and log-space stability, with PennyLane code and a time-series experiment.",
+   "source": "Towards Data Science",
+   "category": "Data Science",
+   "when": "2026-11-15T13:00:00+00:00",
+   "batch": "2026-11-15T17:36:02+00:00"
+  },
+  {
+   "title": "Apple’s first smart glasses are coming together",
+   "url": "https://www.theverge.com/tech/1033968/apples-first-smart-glasses-are-coming-together",
+   "summary": "Apple's smart glasses are among the worst-kept secrets in the tech world. Bloomberg's Mark Gurman says the company's first model, which will lack augmented reality features, will be announced at June's WWDC next year.",
+   "source": "The Verge",
+   "category": "Tech",
+   "when": "2026-11-15T16:59:16+00:00",
+   "batch": "2026-11-15T17:36:02+00:00"
+  },
+  {
+   "title": "The Sony Aibo was a robot revolution dressed like a dog",
+   "url": "https://www.theverge.com/podcast/1033948/sony-aibo-robot-dog-version-history",
+   "summary": "In the 1990s, Sony was absolutely convinced that we were on the precipice of a robot takeover. Pretty soon, the company decided, we'd all be living among countless humanoid robots.",
+   "source": "The Verge",
+   "category": "Tech",
+   "when": "2026-11-15T13:57:30+00:00",
+   "batch": "2026-11-15T17:36:02+00:00"
+  },
+  {
+   "title": "TechCrunch Mobility: The Nvidia backup plan for China’s self-driving industry",
+   "url": "https://techcrunch.com/2026/11/15/techcrunch-mobility-the-nvidia-backup-plan-for-chinas-self-driving-industry/",
+   "summary": "Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, the role AI is playing in it.",
+   "source": "TechCrunch",
+   "category": "Startups",
+   "when": "2026-11-15T17:05:00+00:00",
+   "batch": "2026-11-15T17:36:02+00:00"
+  },
+  {
+   "title": "Should you keep your smart home gadgets on a separate home network?",
+   "url": "https://www.engadget.com/2313757/should-smart-devices-use-separate-wifi/",
+   "summary": "A dedicated network for smart home devices may sound excessive, but there may be reasons to separate those gadgets from everything else on your network.",
+   "source": "Engadget",
+   "category": "Gadgets",
+   "when": "2026-11-15T17:15:00+00:00",
+   "batch": "2026-11-15T17:36:02+00:00"
+  },
   {
    "title": "Where was Nvidia’s security team?",
    "url": "https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/",
