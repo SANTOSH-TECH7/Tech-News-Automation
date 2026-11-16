@@ -1,6 +1,78 @@
 {
- "updated": "2026-11-16T09:06:45+00:00",
+ "updated": "2026-11-16T20:51:05+00:00",
  "stories": [
+  {
+   "title": "California sues OpenAI over rogue AI hacking incidents",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1034815/california-openai-hugging-face-lawsuit",
+   "summary": "California is suing OpenAI after its AI agents broke out of their testing environment and hacked other companies, including Hugging Face.",
+   "source": "The Verge",
+   "category": "AI",
+   "when": "2026-11-16T20:46:01+00:00",
+   "batch": "2026-11-16T20:51:05+00:00"
+  },
+  {
+   "title": "Google Maps' chatbot can find appointments and call to book them for you",
+   "url": "https://www.engadget.com/2318186/google-maps-chatbot-can-find-appointments-and-call-to-book-them-for-you/",
+   "summary": "The Ask Maps chatbot is also expanding to more than 30 additional countries across Europe.",
+   "source": "Engadget",
+   "category": "AI",
+   "when": "2026-11-16T19:17:00+00:00",
+   "batch": "2026-11-16T20:51:05+00:00"
+  },
+  {
+   "title": "Deliver petabytes of Apache Kafka data to Amazon S3 at up to 60% lower cost with Amazon MSK Express brokers",
+   "url": "https://aws.amazon.com/blogs/big-data/deliver-petabytes-of-apache-kafka-data-to-amazon-s3-at-up-to-60-lower-cost-with-amazon-msk-express-brokers/",
+   "summary": "Amazon MSK Express brokers now deliver Apache Kafka topic data to Amazon S3 at up to 60% lower cost, with no Kafka Connect to run. You create a channel on a topic and pay only for the data delivered.",
+   "source": "AWS Big Data",
+   "category": "Data Engineering",
+   "when": "2026-11-16T20:42:44+00:00",
+   "batch": "2026-11-16T20:51:05+00:00"
+  },
+  {
+   "title": "Analyze Anthropic usage, spend, and access with AWS Glue, Amazon S3 Tables, and AWS Quick",
+   "url": "https://aws.amazon.com/blogs/big-data/analyze-anthropic-usage-spend-and-access-with-aws-glue-amazon-s3-tables-and-aws-quick/",
+   "summary": "The new AWS Glue connector for Anthropic reads Claude usage, cost, and API key data into AWS without custom code. This post shows how to land it in Amazon S3 Tables as Apache Iceberg tables, join it with your business data, query…",
+   "source": "AWS Big Data",
+   "category": "Data Engineering",
+   "when": "2026-11-16T20:09:24+00:00",
+   "batch": "2026-11-16T20:51:05+00:00"
+  },
+  {
+   "title": "After 10 Heads in a Row, Small LLMs Bet Up to 82% on an 11th",
+   "url": "https://towardsdatascience.com/after-10-heads-in-a-row-small-llms-bet-up-to-82-on-an-11th/",
+   "summary": "Telling eight base and instruction-tuned open models that the coin is fair and the flips are independent trims their streak bias by only a few points.",
+   "source": "Towards Data Science",
+   "category": "Data Science",
+   "when": "2026-11-16T16:30:00+00:00",
+   "batch": "2026-11-16T20:51:05+00:00"
+  },
+  {
+   "title": "Sam Altman says he wants everyone ‘to have a lot of RAM’",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1034787/sam-altman-ram-shortage-semafor",
+   "summary": "OpenAI CEO Sam Altman is once again addressing his controversial comments on PC RAM purchases. \"I want to be clear, I want people to have a lot of RAM, I think everybody should be able to buy a lot of RAM for their own computer,\"…",
+   "source": "The Verge",
+   "category": "Tech",
+   "when": "2026-11-16T20:41:28+00:00",
+   "batch": "2026-11-16T20:51:05+00:00"
+  },
+  {
+   "title": "Uber says hackers stole information on close to 150,000 driver’s licenses during data breach",
+   "url": "https://techcrunch.com/2026/11/16/uber-confirms-hackers-stole-thousands-of-drivers-license-information-in-data-breach/",
+   "summary": "The ridesharing giant said drivers' license information stored by AI cloud company Fireworks AI was stolen during a security incident.",
+   "source": "TechCrunch",
+   "category": "Startups",
+   "when": "2026-11-16T19:53:00+00:00",
+   "batch": "2026-11-16T20:51:05+00:00"
+  },
+  {
+   "title": "Which Google Pixel phone is most similar to the Galaxy S26+?",
+   "url": "https://www.engadget.com/2314824/google-pixel-phone-most-similar-to-galaxy-s26-plus/",
+   "summary": "Trying to choose between the Google Pixel 11 Pro and Samsung Galaxy S26+? We break down the specs, cameras and prices to help find the best one for you.",
+   "source": "Engadget",
+   "category": "Gadgets",
+   "when": "2026-11-16T19:30:00+00:00",
+   "batch": "2026-11-16T20:51:05+00:00"
+  },
   {
    "title": "Apple's new research app is designed to make AI health tools more user-friendly",
    "url": "https://www.engadget.com/2317303/apple-new-research-app-designed-to-make-ai-health-tools-user-friendly/",
