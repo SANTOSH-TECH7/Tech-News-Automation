@@ -1,6 +1,78 @@
 {
- "updated": "2026-11-16T20:51:05+00:00",
+ "updated": "2026-11-17T10:19:03+00:00",
  "stories": [
+  {
+   "title": "Apple adds new disk controls to prevent AI agents from running amok",
+   "url": "https://www.engadget.com/2318790/apple-adds-new-disk-controls-to-prevent-ai-agents-from-running-amok/",
+   "summary": "After sounding an alarm about the issue, Apple is taking steps to limit Mac disk access to AI agents.",
+   "source": "Engadget",
+   "category": "AI",
+   "when": "2026-11-17T06:22:11+00:00",
+   "batch": "2026-11-17T10:19:03+00:00"
+  },
+  {
+   "title": "Strengthening NATO and allied cyber defenses with AI",
+   "url": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai",
+   "summary": "How OpenAI is working with NATO and allied cyber agencies to help trusted defenders find vulnerabilities, test fixes and protect essential systems.",
+   "source": "OpenAI",
+   "category": "AI",
+   "when": "2026-11-17T00:00:00+00:00",
+   "batch": "2026-11-17T10:19:03+00:00"
+  },
+  {
+   "title": "Talk to your clinical data: unlocking AWS HealthLake with OpenSharing and Genie One",
+   "url": "https://www.databricks.com/blog/talk-your-clinical-data-unlocking-aws-healthlake-opensharing-and-genie-one",
+   "summary": "Many healthcare and life sciences organizations have standardized on AWS HealthLake to manage clinical data.",
+   "source": "Databricks",
+   "category": "Data Engineering",
+   "when": "2026-11-17T08:30:00+00:00",
+   "batch": "2026-11-17T10:19:03+00:00"
+  },
+  {
+   "title": "Introducing enhanced snapshots for Amazon Managed Service for Apache Flink",
+   "url": "https://aws.amazon.com/blogs/big-data/introducing-enhanced-snapshots-for-amazon-managed-service-for-apache-flink/",
+   "summary": "Enhanced snapshots for Amazon Managed Service for Apache Flink are now generally available. An enhanced snapshot is an AWS resource with its own ARN, decoupled from the application that created it, so you can start another…",
+   "source": "AWS Big Data",
+   "category": "Data Engineering",
+   "when": "2026-11-16T18:17:18+00:00",
+   "batch": "2026-11-17T10:19:03+00:00"
+  },
+  {
+   "title": "5 Things That Break When AI Agents Start Acting on Their Own",
+   "url": "https://www.kdnuggets.com/2026/11/collibra/5-things-that-break-when-ai-agents-start-acting-on-their-own",
+   "summary": "Five governance problems emerge when AI agents begin taking real-world actions, from unmanaged access and identity sprawl to approval bottlenecks and manual oversight.",
+   "source": "KDnuggets",
+   "category": "Data Science",
+   "when": "2026-11-16T18:00:47+00:00",
+   "batch": "2026-11-17T10:19:03+00:00"
+  },
+  {
+   "title": "United Airlines system outage disrupts departures just days after the big ground stop",
+   "url": "https://www.theverge.com/transportation/1035025/united-airlines-outage-down-departures",
+   "summary": "Less than a week after an issue with air traffic control communications and radar caused the FAA to halt takeoffs nationwide, United Airlines departing flights are being disrupted by an outage.",
+   "source": "The Verge",
+   "category": "Tech",
+   "when": "2026-11-17T01:02:40+00:00",
+   "batch": "2026-11-17T10:19:03+00:00"
+  },
+  {
+   "title": "Cyber giant Infoblox confirms security incident after hackers access ‘company information’",
+   "url": "https://techcrunch.com/2026/11/16/cyber-giant-infoblox-confirms-security-incident-after-hackers-access-company-information/",
+   "summary": "The cybersecurity and automation giant said it's working with outside investigators to understand the scale of the breach.",
+   "source": "TechCrunch",
+   "category": "Startups",
+   "when": "2026-11-16T22:12:31+00:00",
+   "batch": "2026-11-17T10:19:03+00:00"
+  },
+  {
+   "title": "Adam Mosseri thinks it will be 'pretty challenging' to design Instagram for the iPhone Duo",
+   "url": "https://www.engadget.com/2318832/adam-mosseri-pretty-challenging-design-instagram-iphone-duo/",
+   "summary": "Instagram head Adam Mosseri briefly talks about the challenges of redesigning the app for the iPhone Duo.",
+   "source": "Engadget",
+   "category": "Gadgets",
+   "when": "2026-11-17T09:09:40+00:00",
+   "batch": "2026-11-17T10:19:03+00:00"
+  },
   {
    "title": "California sues OpenAI over rogue AI hacking incidents",
    "url": "https://www.theverge.com/ai-artificial-intelligence/1034815/california-openai-hugging-face-lawsuit",
