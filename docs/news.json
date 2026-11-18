@@ -1,6 +1,78 @@
 {
- "updated": "2026-11-18T09:50:31+00:00",
+ "updated": "2026-11-18T19:15:38+00:00",
  "stories": [
+  {
+   "title": "Why your fine-tuning job takes longer than the FLOPs say",
+   "url": "https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time",
+   "summary": "",
+   "source": "Hugging Face",
+   "category": "AI",
+   "when": "2026-11-18T18:53:43+00:00",
+   "batch": "2026-11-18T19:15:38+00:00"
+  },
+  {
+   "title": "What is Nvidia without AI’s sugar daddy in charge?",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1036776/nvidia-earnings-kress-jensen-huang-petition",
+   "summary": "If the glorious AI revolution rests entirely on the well-being of one man, AI is perhaps not as robust a technology as I had previously been led to believe.",
+   "source": "The Verge",
+   "category": "AI",
+   "when": "2026-11-18T18:34:15+00:00",
+   "batch": "2026-11-18T19:15:38+00:00"
+  },
+  {
+   "title": "Bringing trusted Fabric IQ context to wherever people and agents work",
+   "url": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Bringing-trusted-Fabric-IQ-context-to-wherever-people-and-agents/ba-p/5423049",
+   "summary": "If you haven’t already, read Arun Ulag’s Ignite blog post to learn how Microsoft is bringing together databases, analytics, and intelligent applications across Azure and Microsoft Fabric.",
+   "source": "Microsoft Fabric",
+   "category": "Data Engineering",
+   "when": "2026-11-18T17:59:46+00:00",
+   "batch": "2026-11-18T19:15:38+00:00"
+  },
+  {
+   "title": "Fabric Data Warehouse at Ignite: Built for AI-era analytics",
+   "url": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Fabric-Data-Warehouse-at-Ignite-Built-for-AI-era-analytics/ba-p/5414274",
+   "summary": "If you haven’t already, read Arun Ulag’s Ignite blog post to learn how Microsoft is bringing together databases, analytics, and intelligent applications across Azure and Microsoft Fabric.",
+   "source": "Microsoft Fabric",
+   "category": "Data Engineering",
+   "when": "2026-11-18T17:22:22+00:00",
+   "batch": "2026-11-18T19:15:38+00:00"
+  },
+  {
+   "title": "How AI Agents Become a Tool for Attackers, and How to Stop It",
+   "url": "https://towardsdatascience.com/how-ai-agents-become-a-tool-for-attackers-and-how-to-stop-it/",
+   "summary": "Managing Security When You’re Deploying AI, Part 1: Compromised credentials, salaries inferred from budgets, and doctored documents show why agents need permission checks before the model ever sees the data.",
+   "source": "Towards Data Science",
+   "category": "Data Science",
+   "when": "2026-11-18T16:30:00+00:00",
+   "batch": "2026-11-18T19:15:38+00:00"
+  },
+  {
+   "title": "The leaked Lenovo Legion Go Beam could be the affordable handheld we need",
+   "url": "https://www.theverge.com/games/1036819/the-leaked-lenovo-legion-go-beam-could-be-the-affordable-handheld-we-need",
+   "summary": "For a while there, it seemed like Lenovo had given up on selling handheld gaming PCs, hiking the price of its Legion Go 2 and Legion Go S even higher than other RAM-starved competitors.",
+   "source": "The Verge",
+   "category": "Tech",
+   "when": "2026-11-18T19:13:35+00:00",
+   "batch": "2026-11-18T19:15:38+00:00"
+  },
+  {
+   "title": "David Ellison says HBO will air critical Elon Musk documentary despite his $1B investment in Skydance",
+   "url": "https://techcrunch.com/2026/11/18/david-ellison-says-hbo-will-air-critical-elon-musk-documentary-despite-1b-investment-in-skydance/",
+   "summary": "Following news of the investment, questions emerged over how Musk's sizable stake in the company might affect Skydance's plans to distribute a documentary that is highly critical of him.",
+   "source": "TechCrunch",
+   "category": "Startups",
+   "when": "2026-11-18T17:30:56+00:00",
+   "batch": "2026-11-18T19:15:38+00:00"
+  },
+  {
+   "title": "You can't use GTA 6 cheats until you beat the game",
+   "url": "https://www.engadget.com/2320852/you-cant-use-gta-6-cheats-until-you-beat-the-game/",
+   "summary": "Some even require players to complete specific challenges.",
+   "source": "Engadget",
+   "category": "Gadgets",
+   "when": "2026-11-18T18:25:40+00:00",
+   "batch": "2026-11-18T19:15:38+00:00"
+  },
   {
    "title": "AI is killing All About Berlin",
    "url": "https://nicolasbouliane.com/blog/death-by-ai",
