@@ -1,6 +1,78 @@
 {
- "updated": "2026-11-19T09:58:06+00:00",
+ "updated": "2026-11-19T19:23:16+00:00",
  "stories": [
+  {
+   "title": "Anthropic’s IPO could deliver $156 billion to charity",
+   "url": "https://techcrunch.com/2026/11/19/anthropics-ipo-could-deliver-156-billion-to-charity/",
+   "summary": "At a stock price of $95, the frontier lab's Public Benefit Foundation, its employee donations, and the company's match tot up to $156 billion.",
+   "source": "TechCrunch AI",
+   "category": "AI",
+   "when": "2026-11-19T19:10:45+00:00",
+   "batch": "2026-11-19T19:23:16+00:00"
+  },
+  {
+   "title": "Gemini on Mac can now use your computer",
+   "url": "https://www.theverge.com/tech/1037902/google-gemini-macos-ai-computer-use",
+   "summary": "Google's Gemini app for macOS now has computer use, meaning it can help you \"get multi-step tasks done across your local files, desktop apps, and the web,\" the company says.",
+   "source": "The Verge",
+   "category": "AI",
+   "when": "2026-11-19T19:07:41+00:00",
+   "batch": "2026-11-19T19:23:16+00:00"
+  },
+  {
+   "title": "How Moonfrog scales analytics and lowers query cost with Amazon Redshift RG instances",
+   "url": "https://aws.amazon.com/blogs/big-data/how-moonfrog-scales-analytics-and-lowers-query-cost-with-amazon-redshift-rg-instances/",
+   "summary": "Moonfrog Labs migrated a 148 TB Amazon Redshift warehouse from RA3 to Graviton-based RG instances with a single elastic resize.",
+   "source": "AWS Big Data",
+   "category": "Data Engineering",
+   "when": "2026-11-19T19:07:32+00:00",
+   "batch": "2026-11-19T19:23:16+00:00"
+  },
+  {
+   "title": "How partners use Genie's free tier on Azure Databricks",
+   "url": "https://www.databricks.com/blog/how-partners-use-genies-free-tier-azure-databricks",
+   "summary": "Every Azure Databricks user gets $10 of free Genie usage each month, usage that many.",
+   "source": "Databricks",
+   "category": "Data Engineering",
+   "when": "2026-11-19T18:00:00+00:00",
+   "batch": "2026-11-19T19:23:16+00:00"
+  },
+  {
+   "title": "The 0.95 Expectile Is Not the 95th Percentile",
+   "url": "https://towardsdatascience.com/the-095-expectile-is-not-the-95th-percentile/",
+   "summary": "Exact uniform math and 100 synthetic Python runs show when to target 95% coverage and when asymmetric squared-error costs call for the expectile.",
+   "source": "Towards Data Science",
+   "category": "Data Science",
+   "when": "2026-11-19T16:30:00+00:00",
+   "batch": "2026-11-19T19:23:16+00:00"
+  },
+  {
+   "title": "Some creators are skeptical of Instagram’s new affiliate program",
+   "url": "https://www.theverge.com/news/1037951/instagram-amazon-affiliate-links-influencers-ads",
+   "summary": "For years, influencers have come up with workarounds on social media to figure out how to share affiliate links with followers.",
+   "source": "The Verge",
+   "category": "Tech",
+   "when": "2026-11-19T19:12:30+00:00",
+   "batch": "2026-11-19T19:23:16+00:00"
+  },
+  {
+   "title": "Former Alibaba exec’s Everful raises $48.5M to connect retailers with Chinese factories",
+   "url": "https://techcrunch.com/2026/11/19/former-alibaba-execs-everful-raises-48-5m-to-connect-retailers-with-chinese-factories/",
+   "summary": "Everful has raised $48.5 million to expand its factory-direct sourcing platform, helping retailers source products from overseas manufacturers.",
+   "source": "TechCrunch",
+   "category": "Startups",
+   "when": "2026-11-19T17:00:00+00:00",
+   "batch": "2026-11-19T19:23:16+00:00"
+  },
+  {
+   "title": "Apple TV expands its racing coverage with the all-female F1 Academy",
+   "url": "https://www.engadget.com/2322221/apple-tv-expands-its-racing-coverage-with-the-all-female-f1-academy/",
+   "summary": "The platform will air \"every qualifying session and race throughout the season.\".",
+   "source": "Engadget",
+   "category": "Gadgets",
+   "when": "2026-11-19T19:16:42+00:00",
+   "batch": "2026-11-19T19:23:16+00:00"
+  },
   {
    "title": "Microsoft CEO Satya Nadella explains why he asked 60K employees to quit",
    "url": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit/",
@@ -648,78 +720,6 @@
    "category": "Gadgets",
    "when": "2026-11-15T01:00:00+00:00",
    "batch": "2026-11-15T08:54:02+00:00"
-  },
-  {
-   "title": "The OpenAI board member who fired Sam Altman says we still can’t trust AI CEOs",
-   "url": "https://www.theverge.com/podcast/1032907/helen-toner-openai-cset-ai-safety-policy-interview",
-   "summary": "Today, I’m talking with Helen Toner, the executive director of the Center for Security and Emerging Technology at Georgetown University. This episode is part two of our series on AI in real life.",
-   "source": "The Verge",
-   "category": "AI",
-   "when": "2026-11-14T00:06:40+00:00",
-   "batch": "2026-11-14T21:47:40+00:00"
-  },
-  {
-   "title": "Jensen Huang’s departure blasts big hole in AI startup funding, VCs and founders say",
-   "url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
-   "summary": "Nvidia poured tens of billions into AI startups under Huang. Without him at the helm, founders and VCs are bracing for smaller checks and lower valuations.",
-   "source": "TechCrunch AI",
-   "category": "AI",
-   "when": "2026-11-13T22:43:00+00:00",
-   "batch": "2026-11-14T21:47:40+00:00"
-  },
-  {
-   "title": "Optimizing PySpark UDFs on AWS Glue 6.0 with native Arrow UDFs",
-   "url": "https://aws.amazon.com/blogs/big-data/optimizing-pyspark-udfs-on-aws-glue-6-0-with-native-arrow-udfs/",
-   "summary": "Python UDFs in PySpark can be slow because data is serialized between the JVM and the Python runtime. We benchmark five approaches on AWS Glue 6.0 (standard Python, Arrow-optimized Python, vectorized pandas, native Arrow UDFs…",
-   "source": "AWS Big Data",
-   "category": "Data Engineering",
-   "when": "2026-11-13T20:58:25+00:00",
-   "batch": "2026-11-14T21:47:40+00:00"
-  },
-  {
-   "title": "Multi-statement transactions for Apache Iceberg tables in Amazon Redshift",
-   "url": "https://aws.amazon.com/blogs/big-data/multi-statement-transactions-for-apache-iceberg-tables-in-amazon-redshift/",
-   "summary": "Amazon Redshift now supports multi-statement transactions for Apache Iceberg tables, so you can run several DML statements against one Iceberg table inside a single BEGIN…COMMIT and publish them as one atomic Iceberg snapshot.",
-   "source": "AWS Big Data",
-   "category": "Data Engineering",
-   "when": "2026-11-13T19:32:46+00:00",
-   "batch": "2026-11-14T21:47:40+00:00"
-  },
-  {
-   "title": "Data From 100+ AI Agents Shows They Fail by Silent Drift, Not Errors",
-   "url": "https://towardsdatascience.com/data-from-100-ai-agents-shows-they-fail-by-silent-drift-not-errors/",
-   "summary": "Quality and token alerts were early signals for 38% of agents and errors for about 1%, so monitoring should start with quality, cost, and latency.",
-   "source": "Towards Data Science",
-   "category": "Data Science",
-   "when": "2026-11-14T13:00:00+00:00",
-   "batch": "2026-11-14T21:47:40+00:00"
-  },
-  {
-   "title": "Magic: The Gathering is getting a Netflix animated series. For real this time",
-   "url": "https://www.theverge.com/entertainment/1033909/magic-the-gathering-netflix-series",
-   "summary": "\"It's really happening. I promise. For real.\" Those are the first words from Roy Graham, Head of Story at Magic: The Gathering, in a video posted yesterday announcing Planeswalker, the animated series heading to Netflix in 2027.",
-   "source": "The Verge",
-   "category": "Tech",
-   "when": "2026-11-14T19:47:40+00:00",
-   "batch": "2026-11-14T21:47:40+00:00"
-  },
-  {
-   "title": "Got an iPhone Duo? These 9 settings make it easier to use",
-   "url": "https://techcrunch.com/2026/11/14/got-an-iphone-duo-these-9-settings-make-it-easier-to-use/",
-   "summary": "From Touch ID shortcuts to smarter volume buttons and camera tricks, these tweaks make Apple's foldable iPhone easier to use every day.",
-   "source": "TechCrunch",
-   "category": "Startups",
-   "when": "2026-11-14T18:00:00+00:00",
-   "batch": "2026-11-14T21:47:40+00:00"
-  },
-  {
-   "title": "Here's when a dedicated graphics card is worth it",
-   "url": "https://www.engadget.com/2312688/when-dedicated-graphics-card-worth-it/",
-   "summary": "Modern iGPUs are surprisingly capable, but they aren't without limitations.",
-   "source": "Engadget",
-   "category": "Gadgets",
-   "when": "2026-11-14T21:45:00+00:00",
-   "batch": "2026-11-14T21:47:40+00:00"
   }
  ]
 }
