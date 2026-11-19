@@ -1,6 +1,78 @@
 {
- "updated": "2026-11-18T19:15:38+00:00",
+ "updated": "2026-11-19T09:58:06+00:00",
  "stories": [
+  {
+   "title": "Microsoft CEO Satya Nadella explains why he asked 60K employees to quit",
+   "url": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit/",
+   "summary": "Microsoft CEO Satya Nadella explained why he offered buyouts to 60,000 of his employees in October, essentially urging them to voluntarily quit, rather than reducing the workforce via another massive layoff.",
+   "source": "TechCrunch AI",
+   "category": "AI",
+   "when": "2026-11-19T00:42:56+00:00",
+   "batch": "2026-11-19T09:58:06+00:00"
+  },
+  {
+   "title": "Amidst fears of AI cyberattacks, Satya Nadella says lots of critical infrastructure is ‘unpatchable’",
+   "url": "https://techcrunch.com/2026/11/18/amidst-fears-of-ai-cyberattacks-satya-nadella-says-lots-of-critical-infrastructure-is-unpatchable/",
+   "summary": "The Microsoft CEO downplayed the recent Outlook outage while noting that AI was causing both opportunities and new challenges for securing much of the connected world.",
+   "source": "TechCrunch AI",
+   "category": "AI",
+   "when": "2026-11-18T23:45:00+00:00",
+   "batch": "2026-11-19T09:58:06+00:00"
+  },
+  {
+   "title": "Databricks Wins A-Team Award for AI in Capital Markets",
+   "url": "https://www.databricks.com/blog/databricks-wins-team-award-ai-capital-markets-0",
+   "summary": "Recognized for AI and governance, together.Capital markets have no shortage of AI.",
+   "source": "Databricks",
+   "category": "Data Engineering",
+   "when": "2026-11-19T03:54:28+00:00",
+   "batch": "2026-11-19T09:58:06+00:00"
+  },
+  {
+   "title": "Introducing automatic version upgrades for AWS Glue jobs",
+   "url": "https://aws.amazon.com/blogs/big-data/introducing-automatic-version-upgrades-for-aws-glue-jobs/",
+   "summary": "Today we're announcing automatic version upgrades for AWS Glue jobs. Set a job's version to auto, and AWS Glue checks for breaking changes, asks for your approval, then moves the job to the latest stable version and validates the…",
+   "source": "AWS Big Data",
+   "category": "Data Engineering",
+   "when": "2026-11-19T00:45:54+00:00",
+   "batch": "2026-11-19T09:58:06+00:00"
+  },
+  {
+   "title": "Introducing Gemini Decision 1: A Model That Picks Answers Instead of Writing Them",
+   "url": "https://www.kdnuggets.com/introducing-gemini-decision-1-a-model-that-picks-answers-instead-of-writing-them",
+   "summary": "Google's newest model has one job, and it never writes a word doing it. Decision 1 reads text, images, video, audio and PDFs in a single forward pass, up to 262,144 input tokens per request.",
+   "source": "KDnuggets",
+   "category": "Data Science",
+   "when": "2026-11-18T17:00:00+00:00",
+   "batch": "2026-11-19T09:58:06+00:00"
+  },
+  {
+   "title": "Elon Musk tries to explain what’s going on with Ukraine and Starlink",
+   "url": "https://www.theverge.com/tech/1037448/elon-musk-ukraine-starlink-starshield-nyt-dealbook",
+   "summary": "Elon Musk said Ukrainian president Volodymyr Zelenskyy is lying about disruptions to Starshield in Ukraine and that he's trying to misuse SpaceX's consumer service, Starlink, for military purposes.",
+   "source": "The Verge",
+   "category": "Tech",
+   "when": "2026-11-19T01:39:45+00:00",
+   "batch": "2026-11-19T09:58:06+00:00"
+  },
+  {
+   "title": "Palmer Luckey doesn’t deny that he’s a prepper",
+   "url": "https://techcrunch.com/2026/11/18/palmer-luckey-doesnt-deny-that-hes-a-prepper/",
+   "summary": "The Anduril founder said Wednesday that Americans should always have three days of food, water, and medicine — just in case.",
+   "source": "TechCrunch",
+   "category": "Startups",
+   "when": "2026-11-18T22:04:03+00:00",
+   "batch": "2026-11-19T09:58:06+00:00"
+  },
+  {
+   "title": "Waymo pauses service in San Francisco after robotaxis get stuck on flooded streets",
+   "url": "https://www.engadget.com/2321312/waymo-pauses-service-in-san-francisco-after-robotaxis-get-stuck-on-flooded-streets/",
+   "summary": "Waymo temporarily paused service in San Francisco after several robotaxis caused traffic jams as they were unable to navigate flooded streets during a storm.",
+   "source": "Engadget",
+   "category": "Gadgets",
+   "when": "2026-11-18T23:23:57+00:00",
+   "batch": "2026-11-19T09:58:06+00:00"
+  },
   {
    "title": "Why your fine-tuning job takes longer than the FLOPs say",
    "url": "https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time",
@@ -648,78 +720,6 @@
    "category": "Gadgets",
    "when": "2026-11-14T21:45:00+00:00",
    "batch": "2026-11-14T21:47:40+00:00"
-  },
-  {
-   "title": "Elon Musk, other tech execs sign petition calling on Nvidia to reinstate Jensen Huang",
-   "url": "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/",
-   "summary": "The petition had attracted more than 115,000 signatures as of Saturday afternoon.",
-   "source": "TechCrunch AI",
-   "category": "AI",
-   "when": "2026-11-14T21:41:22+00:00",
-   "batch": "2026-11-14T21:43:09+00:00"
-  },
-  {
-   "title": "The AI graveyard: a running list of projects and startups that didn’t make it",
-   "url": "https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
-   "summary": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations.",
-   "source": "TechCrunch AI",
-   "category": "AI",
-   "when": "2026-11-14T17:30:00+00:00",
-   "batch": "2026-11-14T21:43:09+00:00"
-  },
-  {
-   "title": "Apache Spark vs Apache Flink: which should you use?",
-   "url": "https://www.databricks.com/blog/spark-vs-flink",
-   "summary": "For most teams, Apache Spark™ is the better choice. Spark runs batch ETL, SQL analytics,.",
-   "source": "Databricks",
-   "category": "Data Engineering",
-   "when": "2026-11-14T07:02:42+00:00",
-   "batch": "2026-11-14T21:43:09+00:00"
-  },
-  {
-   "title": "Understanding span queries in Amazon OpenSearch Service",
-   "url": "https://aws.amazon.com/blogs/big-data/understanding-span-queries-in-amazon-opensearch-service/",
-   "summary": "Among OpenSearch query types, span queries give you precise control over where terms appear in a document and how they relate to one another.",
-   "source": "AWS Big Data",
-   "category": "Data Engineering",
-   "when": "2026-11-13T22:00:29+00:00",
-   "batch": "2026-11-14T21:43:09+00:00"
-  },
-  {
-   "title": "How to Build a Markov Chain in Python With NumPy",
-   "url": "https://towardsdatascience.com/how-to-build-a-markov-chain-in-python-with-numpy/",
-   "summary": "A step-by-step guide to transition matrices, the Chapman–Kolmogorov equation, and stationary distributions, built around a three-state writing example.",
-   "source": "Towards Data Science",
-   "category": "Data Science",
-   "when": "2026-11-14T15:00:00+00:00",
-   "batch": "2026-11-14T21:43:09+00:00"
-  },
-  {
-   "title": "Work to replace old copper wire led to the FAA’s ground stop",
-   "url": "https://www.theverge.com/transportation/1033898/faa-ground-stop-sean-duffy-faa-copper-wire",
-   "summary": "At a press conference today, Transportation Secretary Sean Duffy said that Friday's nationwide ground stop ordered by the FAA was related to work replacing outdated copper wire with a fiber optic line at a \"remote FAA facility.\"…",
-   "source": "The Verge",
-   "category": "Tech",
-   "when": "2026-11-14T20:46:54+00:00",
-   "batch": "2026-11-14T21:43:09+00:00"
-  },
-  {
-   "title": "Tesla opens Cybercab pre-orders ‘for personal use,’ with geo restrictions and a $299 monthly fee",
-   "url": "https://techcrunch.com/2026/11/14/tesla-opens-cybercab-pre-orders-for-personal-use-with-geo-restrictions-and-a-299-monthly-fee/",
-   "summary": "Even Elon Musk said the monthly fee is \"too high.\".",
-   "source": "TechCrunch",
-   "category": "Startups",
-   "when": "2026-11-14T20:04:44+00:00",
-   "batch": "2026-11-14T21:43:09+00:00"
-  },
-  {
-   "title": "The reasons why your TV soundbar has an audio delay",
-   "url": "https://www.engadget.com/2312648/reasons-why-tv-soundbar-audio-delay/",
-   "summary": "Audio delays are really irritating, especially when watching sports and live events. We've got several possible causes and what you can do about them.",
-   "source": "Engadget",
-   "category": "Gadgets",
-   "when": "2026-11-14T21:30:00+00:00",
-   "batch": "2026-11-14T21:43:09+00:00"
   }
  ]
 }
