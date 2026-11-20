@@ -479,6 +479,46 @@
 "u": "https://www.engadget.com/2322221/apple-tv-expands-its-racing-coverage-with-the-all-female-f1-academy/",
 "t": "Apple TV expands its racing coverage with the all-female F1 Academy",
 "ts": "2026-11-19T19:23:16.625545+00:00"
+},
+{
+"u": "https://www.engadget.com/2322656/openai-is-testing-dots-personal-agents-on-its-20-per-month-plus-tier/",
+"t": "OpenAI is testing Dots personal agents on its $20 per month Plus tier",
+"ts": "2026-11-20T09:46:26.064905+00:00"
+},
+{
+"u": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/",
+"t": "Apple may be developing its own AI agent that runs your Mac",
+"ts": "2026-11-20T09:46:26.064905+00:00"
+},
+{
+"u": "https://aws.amazon.com/blogs/big-data/how-klaviyo-processes-3-billion-daily-events-at-scale-with-amazon-msk-express/",
+"t": "How Klaviyo processes 3 billion daily events at scale with Amazon MSK Express",
+"ts": "2026-11-20T09:46:26.064905+00:00"
+},
+{
+"u": "https://aws.amazon.com/blogs/big-data/announcing-in-place-upgrades-from-standard-brokers-to-express-brokers-for-amazon-msk/",
+"t": "Announcing in-place upgrades from Standard brokers to Express brokers for Amazon MSK",
+"ts": "2026-11-20T09:46:26.064905+00:00"
+},
+{
+"u": "https://www.kdnuggets.com/what-i-learned-from-kaggle-googles-free-agentic-ai-course",
+"t": "What I Learned From Kaggle + Google’s Free Agentic AI Course",
+"ts": "2026-11-20T09:46:26.064905+00:00"
+},
+{
+"u": "https://github.com/openssl/openssl/pull/33652",
+"t": "OpenSSL: Buffer overflow in EVP EncodeBlock() (CVE-2026-121481, CVSS 9.8)",
+"ts": "2026-11-20T09:46:26.064905+00:00"
+},
+{
+"u": "https://techcrunch.com/2026/11/20/the-u-s-national-cyber-director-is-stepping-down/",
+"t": "The U.S. national cyber director is stepping down",
+"ts": "2026-11-20T09:46:26.064905+00:00"
+},
+{
+"u": "https://www.engadget.com/2322650/uber-kids-rides-children-aged-10-to-12-years-old/",
+"t": "Uber Kids will let parents book trips for their children aged 10 to 12 years old",
+"ts": "2026-11-20T09:46:26.064905+00:00"
 }
 ]
 }
