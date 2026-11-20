@@ -1,6 +1,78 @@
 {
- "updated": "2026-11-20T09:46:26+00:00",
+ "updated": "2026-11-20T18:59:13+00:00",
  "stories": [
+  {
+   "title": "The most misunderstood graph in AI just got a major update",
+   "url": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
+   "summary": "A new report from the AI evaluation nonprofit METR finds that some AI capabilities are continuing to improve along an exponential trajectory—but it also indicates that models aren’t quite as good at tasks that require judgment as…",
+   "source": "MIT Tech Review",
+   "category": "AI",
+   "when": "2026-11-20T18:15:15+00:00",
+   "batch": "2026-11-20T18:59:13+00:00"
+  },
+  {
+   "title": "OpenAI brings its collaborative Space hubs to Plus users",
+   "url": "https://www.engadget.com/2323016/openai-brings-its-collaborative-space-hubs-to-plus-users/",
+   "summary": "You can upload documents, files and more to the hubs for easy sharing.",
+   "source": "Engadget",
+   "category": "AI",
+   "when": "2026-11-20T18:00:00+00:00",
+   "batch": "2026-11-20T18:59:13+00:00"
+  },
+  {
+   "title": "Interactive Databricks Reference Architectures Across 70 Industries",
+   "url": "https://www.databricks.com/blog/interactive-databricks-reference-architectures-across-70-industries",
+   "summary": "Why we built itMost Databricks architecture talks used to start with the same slide: ingestion on the left.",
+   "source": "Databricks",
+   "category": "Data Engineering",
+   "when": "2026-11-20T14:48:28+00:00",
+   "batch": "2026-11-20T18:59:13+00:00"
+  },
+  {
+   "title": "On-premises data gateway November 2026 release",
+   "url": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/On-premises-data-gateway-November-2026-release/ba-p/5430005",
+   "summary": "The November 2026 release of the on-premises data gateway (version 3000.342) continues our commitment to secure, reliable and accessible connectivity between on-premises data sources and Microsoft Fabric services.",
+   "source": "Microsoft Fabric",
+   "category": "Data Engineering",
+   "when": "2026-11-20T12:45:00+00:00",
+   "batch": "2026-11-20T18:59:13+00:00"
+  },
+  {
+   "title": "LightGBM vs. a Four-Week Average for Forecasting Bike-Share Rentals",
+   "url": "https://towardsdatascience.com/lightgbm-vs-a-four-week-average-for-forecasting-bike-share-rentals/",
+   "summary": "A 48-hour Capital Bikeshare experiment pits XGBoost, Ridge, SARIMA, and Prophet against simple baselines, with care for missing hours and leakage.",
+   "source": "Towards Data Science",
+   "category": "Data Science",
+   "when": "2026-11-20T16:30:00+00:00",
+   "batch": "2026-11-20T18:59:13+00:00"
+  },
+  {
+   "title": "Google says it’s going to shut off Google Assistant on smart speakers next year",
+   "url": "https://www.theverge.com/tech/1038834/google-assistant-smart-speakers-nest-app-killed-shut-down",
+   "summary": "Google is announcing some significant changes to its smart home software. Starting next year, the company will shut down the Nest app in favor of the Google Home app and retire Google Assistant on its smart home devices.",
+   "source": "The Verge",
+   "category": "Tech",
+   "when": "2026-11-20T18:06:41+00:00",
+   "batch": "2026-11-20T18:59:13+00:00"
+  },
+  {
+   "title": "Super-hot rock geothermal could end data center energy woes",
+   "url": "https://techcrunch.com/2026/11/20/super-hot-rock-geothermal-could-end-data-center-energy-woes/",
+   "summary": "A new wave of geothermal startups are betting that they can leapfrog today's leaders to deliver terawatts of electricity nearly anywhere.",
+   "source": "TechCrunch",
+   "category": "Startups",
+   "when": "2026-11-20T18:34:00+00:00",
+   "batch": "2026-11-20T18:59:13+00:00"
+  },
+  {
+   "title": "Here's everything GTA+ gets you in GTA 6: Is it worth $8 a month?",
+   "url": "https://www.engadget.com/2323323/gta-plus-benefits-gta-6-is-it-worth-it/",
+   "summary": "A GTA+ membership adds a few extras to GTA 6 for $8 a month. Here's what's included and which players are most likely to get their money's worth.",
+   "source": "Engadget",
+   "category": "Gadgets",
+   "when": "2026-11-20T18:27:59+00:00",
+   "batch": "2026-11-20T18:59:13+00:00"
+  },
   {
    "title": "OpenAI is testing Dots personal agents on its $20 per month Plus tier",
    "url": "https://www.engadget.com/2322656/openai-is-testing-dots-personal-agents-on-its-20-per-month-plus-tier/",
@@ -648,78 +720,6 @@
    "category": "Gadgets",
    "when": "2026-11-16T04:56:53+00:00",
    "batch": "2026-11-16T09:06:45+00:00"
-  },
-  {
-   "title": "Some places have already banned AI glasses, and the list just keeps growing",
-   "url": "https://www.engadget.com/2313707/ai-glasses-banned-places-list-keeps-growing/",
-   "summary": "Safety and privacy concerns have led to bans on AI glasses in a number of public places, including courtrooms, schools and theaters.",
-   "source": "Engadget",
-   "category": "AI",
-   "when": "2026-11-15T16:00:00+00:00",
-   "batch": "2026-11-15T17:36:02+00:00"
-  },
-  {
-   "title": "All AI-generated code should be Open Source",
-   "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
-   "summary": "Trending on Hacker News — 444 points, 271 comments.",
-   "source": "Hacker News",
-   "category": "AI",
-   "when": "2026-11-15T14:46:58+00:00",
-   "batch": "2026-11-15T17:36:02+00:00"
-  },
-  {
-   "title": "A Practitioner's Guide to 6 Agentic GraphRAG Patterns",
-   "url": "https://towardsdatascience.com/a-practitioners-guide-to-6-agentic-graphrag-patterns/",
-   "summary": "How autonomous agents turn static knowledge graphs into living Context Graphs that remember decisions, user intent, and operational history.",
-   "source": "Towards Data Science",
-   "category": "Data Science",
-   "when": "2026-11-15T15:00:00+00:00",
-   "batch": "2026-11-15T17:36:02+00:00"
-  },
-  {
-   "title": "Computing Effective Dimension for Quantum ML Models in PyTorch",
-   "url": "https://towardsdatascience.com/computing-effective-dimension-for-quantum-ml-models-in-pytorch/",
-   "summary": "Local and global variants, Fisher estimation, epsilon-ball sampling, and log-space stability, with PennyLane code and a time-series experiment.",
-   "source": "Towards Data Science",
-   "category": "Data Science",
-   "when": "2026-11-15T13:00:00+00:00",
-   "batch": "2026-11-15T17:36:02+00:00"
-  },
-  {
-   "title": "Apple’s first smart glasses are coming together",
-   "url": "https://www.theverge.com/tech/1033968/apples-first-smart-glasses-are-coming-together",
-   "summary": "Apple's smart glasses are among the worst-kept secrets in the tech world. Bloomberg's Mark Gurman says the company's first model, which will lack augmented reality features, will be announced at June's WWDC next year.",
-   "source": "The Verge",
-   "category": "Tech",
-   "when": "2026-11-15T16:59:16+00:00",
-   "batch": "2026-11-15T17:36:02+00:00"
-  },
-  {
-   "title": "The Sony Aibo was a robot revolution dressed like a dog",
-   "url": "https://www.theverge.com/podcast/1033948/sony-aibo-robot-dog-version-history",
-   "summary": "In the 1990s, Sony was absolutely convinced that we were on the precipice of a robot takeover. Pretty soon, the company decided, we'd all be living among countless humanoid robots.",
-   "source": "The Verge",
-   "category": "Tech",
-   "when": "2026-11-15T13:57:30+00:00",
-   "batch": "2026-11-15T17:36:02+00:00"
-  },
-  {
-   "title": "TechCrunch Mobility: The Nvidia backup plan for China’s self-driving industry",
-   "url": "https://techcrunch.com/2026/11/15/techcrunch-mobility-the-nvidia-backup-plan-for-chinas-self-driving-industry/",
-   "summary": "Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, the role AI is playing in it.",
-   "source": "TechCrunch",
-   "category": "Startups",
-   "when": "2026-11-15T17:05:00+00:00",
-   "batch": "2026-11-15T17:36:02+00:00"
-  },
-  {
-   "title": "Should you keep your smart home gadgets on a separate home network?",
-   "url": "https://www.engadget.com/2313757/should-smart-devices-use-separate-wifi/",
-   "summary": "A dedicated network for smart home devices may sound excessive, but there may be reasons to separate those gadgets from everything else on your network.",
-   "source": "Engadget",
-   "category": "Gadgets",
-   "when": "2026-11-15T17:15:00+00:00",
-   "batch": "2026-11-15T17:36:02+00:00"
   }
  ]
 }
