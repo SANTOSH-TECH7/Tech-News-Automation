@@ -1,6 +1,78 @@
 {
- "updated": "2026-11-20T18:59:13+00:00",
+ "updated": "2026-11-21T09:19:16+00:00",
  "stories": [
+  {
+   "title": "Google rolls out new search homepage with AI chat history and no search button",
+   "url": "https://arstechnica.com/ai/2026/11/googles-latest-search-page-redesign-drops-the-search-button-adds-ai-sidebar/",
+   "summary": "Google search is making it even easier to access AI tools on the search page.",
+   "source": "Ars Technica",
+   "category": "AI",
+   "when": "2026-11-20T21:58:29+00:00",
+   "batch": "2026-11-21T09:19:16+00:00"
+  },
+  {
+   "title": "Meta reconsiders 2030 net-zero goal amid record emissions from AI data centers",
+   "url": "https://arstechnica.com/ai/2026/11/meta-reconsiders-2030-net-zero-goal-amid-record-emissions-from-ai-data-centers/",
+   "summary": "Meta is “re-evaluating” 2030 sustainability goals. Will others follow?",
+   "source": "Ars Technica",
+   "category": "AI",
+   "when": "2026-11-20T21:47:10+00:00",
+   "batch": "2026-11-21T09:19:16+00:00"
+  },
+  {
+   "title": "How Twilio modernized billing at 70% lower cost with Amazon Redshift",
+   "url": "https://aws.amazon.com/blogs/big-data/how-twilio-modernized-billing-at-70-lower-cost-with-amazon-redshift/",
+   "summary": "How Twilio's Commerce Platform team modernized their billing pipeline on Amazon Redshift Serverless, cutting infrastructure costs 70% and speeding billing recalculations 12x with streaming ingestion from Amazon MSK and Zero-ETL…",
+   "source": "AWS Big Data",
+   "category": "Data Engineering",
+   "when": "2026-11-19T22:24:02+00:00",
+   "batch": "2026-11-21T09:19:16+00:00"
+  },
+  {
+   "title": "Why PostgreSQL 19 shipped late",
+   "url": "https://www.databricks.com/blog/why-postgresql-19-shipped-late",
+   "summary": "PostgreSQL 19 is now generally available, and there are some really cool things in.",
+   "source": "Databricks",
+   "category": "Data Engineering",
+   "when": "2026-11-19T22:04:02+00:00",
+   "batch": "2026-11-21T09:19:16+00:00"
+  },
+  {
+   "title": "Open Source vs. Proprietary LLMs: A Decision Framework for 2026",
+   "url": "https://www.kdnuggets.com/open-source-vs-proprietary-llms-a-decision-framework-for-2026",
+   "summary": "A practical guide to choosing between open-weight and commercial models, built around the four questions that actually determine the right answer for your use case.",
+   "source": "KDnuggets",
+   "category": "Data Science",
+   "when": "2026-11-20T15:00:00+00:00",
+   "batch": "2026-11-21T09:19:16+00:00"
+  },
+  {
+   "title": "YouTube is reportedly preparing to settle social media addiction claims for $3 billion",
+   "url": "https://www.theverge.com/streaming/1039096/youtube-social-media-addiction-school-districts-settlement",
+   "summary": "YouTube is preparing to pay $3 billion to thousands of school districts to settle claims that its \"addictive design\" harmed kids, according to Bloomberg.",
+   "source": "The Verge",
+   "category": "Tech",
+   "when": "2026-11-20T22:51:40+00:00",
+   "batch": "2026-11-21T09:19:16+00:00"
+  },
+  {
+   "title": "Startup sues Apple in India over tap-to-share contacts feature",
+   "url": "https://techcrunch.com/2026/11/20/startup-sues-apple-in-india-over-tap-to-share-contacts-feature/",
+   "summary": "A U.S. startup is seeking $162 million in damages and an injunction to impact iPhone and Apple Watch imports to India.",
+   "source": "TechCrunch",
+   "category": "Startups",
+   "when": "2026-11-21T04:00:00+00:00",
+   "batch": "2026-11-21T09:19:16+00:00"
+  },
+  {
+   "title": "Why you shouldn't depend on GTA 6 to auto-save",
+   "url": "https://www.engadget.com/2323929/why-you-shouldnt-rely-on-gta-6-auto-save/",
+   "summary": "We explain how GTA 6's auto-save system works, so you don't accidentally lose progress in the massive game.",
+   "source": "Engadget",
+   "category": "Gadgets",
+   "when": "2026-11-20T23:48:00+00:00",
+   "batch": "2026-11-21T09:19:16+00:00"
+  },
   {
    "title": "The most misunderstood graph in AI just got a major update",
    "url": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
@@ -648,78 +720,6 @@
    "category": "Gadgets",
    "when": "2026-11-16T19:30:00+00:00",
    "batch": "2026-11-16T20:51:05+00:00"
-  },
-  {
-   "title": "Apple's new research app is designed to make AI health tools more user-friendly",
-   "url": "https://www.engadget.com/2317303/apple-new-research-app-designed-to-make-ai-health-tools-user-friendly/",
-   "summary": "Apple has unveiled a new research study with the aim of learning how people use AI health tools.",
-   "source": "Engadget",
-   "category": "AI",
-   "when": "2026-11-16T06:06:05+00:00",
-   "batch": "2026-11-16T09:06:45+00:00"
-  },
-  {
-   "title": "Apple launches new app to study how people use AI for health",
-   "url": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/",
-   "summary": "Apple's new app for a study will answer everyday medical questions.",
-   "source": "TechCrunch AI",
-   "category": "AI",
-   "when": "2026-11-16T01:30:00+00:00",
-   "batch": "2026-11-16T09:06:45+00:00"
-  },
-  {
-   "title": "Data Engineering Weekly #296",
-   "url": "https://www.dataengineeringweekly.com/p/data-engineering-weekly-296",
-   "summary": "The Weekly Data Engineering Newsletter.",
-   "source": "Data Engineering Weekly",
-   "category": "Data Engineering",
-   "when": "2026-11-16T03:32:40+00:00",
-   "batch": "2026-11-16T09:06:45+00:00"
-  },
-  {
-   "title": "Fabric Influencers Spotlight: October 2026",
-   "url": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Fabric-Influencers-Spotlight-October-2026/ba-p/5420043",
-   "summary": "The October Fabric Influencers Spotlight brings together 46 posts, videos and tutorials from Microsoft MVPs, Fabric Super Users and community contributors, many of them inspired by the announcements at FabCon Barcelona.",
-   "source": "Microsoft Fabric",
-   "category": "Data Engineering",
-   "when": "2026-11-15T22:27:38+00:00",
-   "batch": "2026-11-16T09:06:45+00:00"
-  },
-  {
-   "title": "How to make almost anything",
-   "url": "https://pub.cba.mit.edu/863.26/site/",
-   "summary": "Trending on Hacker News — 220 points, 36 comments.",
-   "source": "Hacker News",
-   "category": "Tech",
-   "when": "2026-11-16T05:50:37+00:00",
-   "batch": "2026-11-16T09:06:45+00:00"
-  },
-  {
-   "title": "Jensen Huang might be plotting a return and more of the latest Nvidia drama",
-   "url": "https://www.theverge.com/tech/1033999/jensen-huang-return-nvidia-megaspeed",
-   "summary": "The drama around Nvidia co-founder and former CEO Jensen Huang is evolving quickly. The latest edition of our Stepback newsletter should get you up to speed, but there have already been a number of new developments since this…",
-   "source": "The Verge",
-   "category": "Tech",
-   "when": "2026-11-16T04:17:05+00:00",
-   "batch": "2026-11-16T09:06:45+00:00"
-  },
-  {
-   "title": "Helsing backer Plural raises $1.1B to fund Europe’s next moonshots",
-   "url": "https://techcrunch.com/2026/11/15/helsing-backer-plural-raises-1-1b-to-fund-europes-next-moonshots/",
-   "summary": "Operator-led VC firm Plural has raised €1 billion in new capital ($1.1 billion), joining a growing cohort of larger European funds that also includes Mundi Ventures’ Kembara and EQT-managed Scaleup Europe Fund.",
-   "source": "TechCrunch",
-   "category": "Startups",
-   "when": "2026-11-16T07:00:00+00:00",
-   "batch": "2026-11-16T09:06:45+00:00"
-  },
-  {
-   "title": "ULA Vulcan rocket failure destroys 40 Amazon Leo satellites",
-   "url": "https://www.engadget.com/2317283/ula-vulcan-rocket-failure-destroys-40-amazon-leo-satellites/",
-   "summary": "United Launch Alliance is known for its ultra-dependable Atlas V, but its its latest rocket is off to a shaky start.",
-   "source": "Engadget",
-   "category": "Gadgets",
-   "when": "2026-11-16T04:56:53+00:00",
-   "batch": "2026-11-16T09:06:45+00:00"
   }
  ]
 }
