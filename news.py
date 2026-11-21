@@ -28,7 +28,7 @@ from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 
 # ----------------------------------------------------------------- settings
-MAX_ITEMS = 8            # stories per run
+MAX_ITEMS = 12           # stories per run
 ITEMS_PER_MESSAGE = 4    # stories per block in the dry-run printout
 MAX_PER_SOURCE = 2       # keeps one site from dominating a digest
 MAX_AGE_HOURS = 36       # ignore anything older than this
@@ -36,40 +36,118 @@ SUMMARY_CHARS = 230
 STATE_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "state", "sent.json")
 STATE_KEEP_DAYS = 30
 NEWS_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "docs", "news.json")
-FEED_KEEP = 80           # stories kept in the app's feed
+FEED_KEEP = 160          # stories kept in the app's feed
 PUSH_TTL = 3 * 3600      # seconds a notification may wait if the phone is offline
 IST = timezone(timedelta(hours=5, minutes=30))
 
-AI, DE, DS, BI, TECH, STARTUP, GADGET = (
+AI, DE, DS, BI, TECH, STARTUP, GADGET, SEC = (
     "AI", "Data Engineering", "Data Science", "BI & Analytics",
-    "Tech", "Startups", "Gadgets",
+    "Tech", "Startups", "Gadgets", "Security",
 )
-EMOJI = {AI: "🤖", DE: "🛠️", DS: "📊", BI: "📈", TECH: "💻", STARTUP: "🚀", GADGET: "📱"}
-CATEGORY_ORDER = [AI, DE, DS, BI, TECH, STARTUP, GADGET]
+EMOJI = {AI: "🤖", DE: "🛠️", DS: "📊", BI: "📈", TECH: "💻", STARTUP: "🚀", GADGET: "📱",
+         SEC: "🔒"}
+CATEGORY_ORDER = [AI, DE, DS, BI, TECH, STARTUP, GADGET, SEC]
 
-# (source name, default category, url)
+# (source name, default category, url). Checked 21 Nov 2026: every feed except
+# VentureBeat (which blocks some IPs) returned items. A failing feed is skipped.
 FEEDS = [
-    ("TechCrunch AI", AI, "https://techcrunch.com/category/artificial-intelligence/feed/"),
-    ("VentureBeat", AI, "https://venturebeat.com/category/ai/feed/"),
+    # --- AI and machine learning
+    ("TechCrunch AI",   AI, "https://techcrunch.com/category/artificial-intelligence/feed/"),
+    ("VentureBeat AI",  AI, "https://venturebeat.com/category/ai/feed/"),
     ("MIT Tech Review", AI, "https://www.technologyreview.com/feed/"),
-    ("Google AI", AI, "https://blog.google/technology/ai/rss/"),
-    ("OpenAI", AI, "https://openai.com/news/rss.xml"),
-    ("Hugging Face", AI, "https://huggingface.co/blog/feed.xml"),
-    ("Databricks", DE, "https://www.databricks.com/feed"),
-    ("Microsoft Fabric", DE, "https://blog.fabric.microsoft.com/en-us/blog/feed/"),
-    ("AWS Big Data", DE, "https://aws.amazon.com/blogs/big-data/feed/"),
+    ("MIT News AI",     AI, "https://news.mit.edu/rss/topic/artificial-intelligence2"),
+    ("Google AI",       AI, "https://blog.google/technology/ai/rss/"),
+    ("OpenAI",          AI, "https://openai.com/news/rss.xml"),
+    ("Hugging Face",    AI, "https://huggingface.co/blog/feed.xml"),
+    ("NVIDIA",          AI, "https://blogs.nvidia.com/feed/"),
+    ("Ars AI",          AI, "https://arstechnica.com/ai/feed/"),
+    ("Simon Willison",  AI, "https://simonwillison.net/atom/everything/"),
+    ("Berkeley AI",     AI, "https://bair.berkeley.edu/blog/feed.xml"),
+    ("Import AI",       AI, "https://importai.substack.com/feed"),
+    ("Ahead of AI",     AI, "https://magazine.sebastianraschka.com/feed"),
+    ("MarkTechPost",    AI, "https://www.marktechpost.com/feed/"),
+    ("Analytics India", AI, "https://analyticsindiamag.com/feed/"),
+    # --- Data engineering and platforms
+    ("Databricks",              DE, "https://www.databricks.com/feed"),
+    ("Microsoft Fabric",        DE, "https://blog.fabric.microsoft.com/en-us/blog/feed/"),
+    ("AWS Big Data",            DE, "https://aws.amazon.com/blogs/big-data/feed/"),
+    ("Google Cloud Data",       DE, "https://cloudblog.withgoogle.com/products/data-analytics/rss/"),
+    ("Confluent",               DE, "https://www.confluent.io/rss.xml"),
+    ("dbt Labs",                DE, "https://www.getdbt.com/blog/rss.xml"),
+    ("Dagster",                 DE, "https://dagster.io/rss.xml"),
+    ("Astronomer",              DE, "https://www.astronomer.io/blog/rss.xml"),
+    ("DuckDB",                  DE, "https://duckdb.org/feed.xml"),
+    ("ClickHouse",              DE, "https://clickhouse.com/rss.xml"),
+    ("Monte Carlo",             DE, "https://www.montecarlodata.com/feed/"),
+    ("Fivetran",                DE, "https://www.fivetran.com/blog/rss.xml"),
     ("Data Engineering Weekly", DE, "https://www.dataengineeringweekly.com/feed"),
-    ("Seattle Data Guy", DE, "https://seattledataguy.substack.com/feed"),
-    ("Confluent", DE, "https://www.confluent.io/rss.xml"),
-    ("KDnuggets", DS, "https://www.kdnuggets.com/feed"),
+    ("Seattle Data Guy",        DE, "https://seattledataguy.substack.com/feed"),
+    # --- Data science
+    ("KDnuggets",            DS, "https://www.kdnuggets.com/feed"),
     ("Towards Data Science", DS, "https://towardsdatascience.com/feed"),
+    ("R-bloggers",           DS, "https://www.r-bloggers.com/feed/"),
+    ("Netflix Tech",         DS, "https://netflixtechblog.com/feed"),
+    # --- BI and analytics
     ("Power BI Blog", BI, "https://powerbi.microsoft.com/en-us/blog/feed/"),
-    ("Tableau", BI, "https://www.tableau.com/blog/feed"),
-    ("The Verge", TECH, "https://www.theverge.com/rss/index.xml"),
-    ("Ars Technica", TECH, "https://feeds.arstechnica.com/arstechnica/index"),
-    ("Hacker News", TECH, "https://hnrss.org/frontpage?points=200"),
-    ("TechCrunch", STARTUP, "https://techcrunch.com/feed/"),
-    ("Engadget", GADGET, "https://www.engadget.com/rss.xml"),
+    ("Tableau",       BI, "https://www.tableau.com/blog/feed"),
+    ("SQLBI",         BI, "https://www.sqlbi.com/feed/"),
+    ("Chris Webb BI", BI, "https://blog.crossjoin.co.uk/feed/"),
+    ("Metabase",      BI, "https://www.metabase.com/feed.xml"),
+    # --- General tech news, including the major newsrooms
+    ("Techmeme",             TECH, "https://www.techmeme.com/feed.xml"),
+    ("The Verge",            TECH, "https://www.theverge.com/rss/index.xml"),
+    ("Ars Technica",         TECH, "https://feeds.arstechnica.com/arstechnica/index"),
+    ("Hacker News",          TECH, "https://hnrss.org/frontpage?points=200"),
+    ("BBC Technology",       TECH, "http://feeds.bbci.co.uk/news/technology/rss.xml"),
+    ("Guardian Tech",        TECH, "https://www.theguardian.com/uk/technology/rss"),
+    ("New York Times Tech",  TECH, "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml"),
+    ("Financial Times Tech", TECH, "https://www.ft.com/technology?format=rss"),
+    ("Bloomberg Tech",       TECH, "https://feeds.bloomberg.com/technology/news.rss"),
+    ("CNBC Tech",            TECH, "https://www.cnbc.com/id/19854910/device/rss/rss.html"),
+    ("Wired",                TECH, "https://www.wired.com/feed/rss"),
+    ("The Register",         TECH, "https://www.theregister.com/headlines.atom"),
+    ("IEEE Spectrum",        TECH, "https://spectrum.ieee.org/feeds/feed.rss"),
+    ("ZDNET",                TECH, "https://www.zdnet.com/news/rss.xml"),
+    ("CNET",                 TECH, "https://www.cnet.com/rss/news/"),
+    ("TechRadar",            TECH, "https://www.techradar.com/rss"),
+    ("Gizmodo",              TECH, "https://gizmodo.com/rss"),
+    ("Slashdot",             TECH, "https://rss.slashdot.org/Slashdot/slashdotMain"),
+    ("Lobsters",             TECH, "https://lobste.rs/rss"),
+    ("The Next Web",         TECH, "https://thenextweb.com/feed"),
+    ("Hacker Noon",          TECH, "https://hackernoon.com/feed"),
+    ("InfoQ",                TECH, "https://feed.infoq.com/"),
+    ("GitHub Blog",          TECH, "https://github.blog/feed/"),
+    ("Stack Overflow Blog",  TECH, "https://stackoverflow.blog/feed/"),
+    ("Cloudflare",           TECH, "https://blog.cloudflare.com/rss/"),
+    ("AWS News",             TECH, "https://aws.amazon.com/blogs/aws/feed/"),
+    ("Apple Newsroom",       TECH, "https://www.apple.com/newsroom/rss-feed.rss"),
+    ("MIT News Computing",   TECH, "https://news.mit.edu/rss/topic/computers"),
+    ("Platformer",           TECH, "https://www.platformer.news/rss/"),
+    ("Rest of World",        TECH, "https://restofworld.org/feed/latest/"),
+    ("ET Tech",              TECH, "https://economictimes.indiatimes.com/tech/rssfeeds/13357270.cms"),
+    ("Livemint Tech",        TECH, "https://www.livemint.com/rss/technology"),
+    ("The Hindu Tech",       TECH, "https://www.thehindu.com/sci-tech/technology/feeder/default.rss"),
+    # --- Startups and funding
+    ("TechCrunch",      STARTUP, "https://techcrunch.com/feed/"),
+    ("Crunchbase News", STARTUP, "https://news.crunchbase.com/feed/"),
+    ("Sifted",          STARTUP, "https://sifted.eu/feed"),
+    ("YourStory",       STARTUP, "https://yourstory.com/feed"),
+    ("Inc42",           STARTUP, "https://inc42.com/feed/"),
+    ("Entrackr",        STARTUP, "https://entrackr.com/rss"),
+    # --- Gadgets and hardware
+    ("Engadget",          GADGET, "https://www.engadget.com/rss.xml"),
+    ("Android Authority", GADGET, "https://www.androidauthority.com/feed/"),
+    ("9to5Google",        GADGET, "https://9to5google.com/feed/"),
+    ("9to5Mac",           GADGET, "https://9to5mac.com/feed/"),
+    ("Tom's Hardware",    GADGET, "https://www.tomshardware.com/feeds/all"),
+    ("GSMArena",          GADGET, "https://www.gsmarena.com/rss-news-reviews.php3"),
+    ("Digital Trends",    GADGET, "https://www.digitaltrends.com/feed/"),
+    # --- Security
+    ("The Hacker News",      SEC, "https://feeds.feedburner.com/TheHackersNews"),
+    ("BleepingComputer",     SEC, "https://www.bleepingcomputer.com/feed/"),
+    ("Krebs on Security",    SEC, "https://krebsonsecurity.com/feed/"),
+    ("Schneier on Security", SEC, "https://www.schneier.com/feed/atom/"),
+    ("Project Zero",         SEC, "https://googleprojectzero.blogspot.com/feeds/posts/default"),
 ]
 
 # Stories from general feeds are re-filed when the title matches a topic.
@@ -80,10 +158,41 @@ TOPIC_RULES = [
     (BI, re.compile(r"\b(power ?bi|tableau|looker|qlik|business intelligence|dashboards?|"
                     r"data analysts?|dax)\b", re.I)),
     (DS, re.compile(r"\b(data scien\w+|pandas|scikit|statistics|jupyter|kaggle)\b", re.I)),
+    (SEC, re.compile(r"\b(ransomware|malware|phishing|zero[- ]day|data breach(?:es)?|"
+                     r"breached|vulnerabilit\w+|cve-\d|exploit\w*|cyber\w*|hackers?|"
+                     r"hacked|spyware|botnet|ddos|infostealer|patch tuesday)\b", re.I)),
     (AI, re.compile(r"\b(ai|a\.i\.|llms?|gpt\S*|openai|anthropic|claude|gemini|copilot|"
                     r"machine learning|deep learning|neural|agentic|chatbots?|generative)\b", re.I)),
 ]
 GENERAL = {TECH, STARTUP, GADGET}
+
+# Headlines that are not news: shopping deals, sports streaming guides, puzzle answers.
+# Gadget and consumer sites publish many of these, especially around Black Friday.
+NOISE = re.compile(r"\b(?:how|where) to watch\b|\blive ?stream|\bkick-?off\b|\bwordle\b|"
+                   r"\bquordle\b|\bcrossword\b|\b(?:connections|strands)\b.{0,24}\bhints?\b|"
+                   r"\bhints? (?:and|&) answers?\b|\btoday'?s (?:hints?|answers?)\b|"
+                   r"\bhoroscope\b|\bcoupons?\b|\bpromo code\b|\brecord[- ]low\b|"
+                   r"\blowest price\b|\bbest price\b|\bprice drop\b|\bdeal of the day\b", re.I)
+# A shopping event only counts as noise next to a shopping word, so that, say,
+# "Scaling Black Friday pipelines with Airflow" still gets through.
+EVENT = re.compile(r"\b(?:black friday|cyber monday|prime day)\b", re.I)
+SHOP = re.compile(r"\bdeals?\b|\bsale\b|\bdiscounts?\b|\bsave\b|\$\d|\d{1,3}% off|"
+                  r"\bgift guide\b|\bshop\b|\bbuy\b|\bprices?\b|\boffers?\b", re.I)
+PRICED = re.compile(r"\$\d|\b\d{1,3}% off\b", re.I)
+BARGAIN = re.compile(r"\b(?:deals?|save|sale|discounts?|drops? to|now just|cheapest|"
+                     r"bargain|under \$|off)\b", re.I)
+# ... unless the money is the story: funding, valuations, revenue.
+MONEY_NEWS = re.compile(r"\b(?:raise[sd]?|raising|funding|valuation|rounds?|acquir\w+|"
+                        r"acquisitions?|millions?|billions?|ipo|revenue|series [a-f]|"
+                        r"invest\w+|fined?|lawsuits?|contracts?)\b", re.I)
+
+
+def is_noise(title):
+    if NOISE.search(title):
+        return True
+    if EVENT.search(title) and SHOP.search(title):
+        return True
+    return bool(PRICED.search(title) and BARGAIN.search(title) and not MONEY_NEWS.search(title))
 
 UA = "Mozilla/5.0 (compatible; tech-news-digest/1.0)"
 
@@ -163,6 +272,8 @@ def parse_feed(source, category, raw):
         when = parse_date(child_text(el, "pubdate", "published", "updated", "date"))
         if not (title and link and when):
             continue
+        if is_noise(title):
+            continue
         raw_desc = child_text(el, "description", "summary") or child_text(el, "encoded", "content")
         if source == "Hacker News":
             pts = re.search(r"Points:\s*(\d+)", raw_desc)
@@ -197,7 +308,7 @@ def fetch_all():
         except Exception as e:
             print("  FAIL {:<24} {}".format(source, e))
             return []
-    with ThreadPoolExecutor(max_workers=8) as pool:
+    with ThreadPoolExecutor(max_workers=16) as pool:
         return [i for got in pool.map(one, FEEDS) for i in got]
 
 

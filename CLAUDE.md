@@ -18,6 +18,11 @@ phone number or other personal details to a third party. One user only.
 - **Notifications:** yes, one per digest.
 - **Topics:** general tech, AI, data science, data engineering and its tools (Databricks,
   Fabric, Spark, dbt, etc.), data analyst / BI (Power BI, Tableau), gadgets, startups.
+  On 21 Nov 2026 the owner asked for "all kinds of tech news, from various sources,
+  reputed news channels": the feed list went from 21 to 89 sources, adding the major
+  newsrooms (BBC, Guardian, NYT, FT, Bloomberg, CNBC, Wired, Reuters-style wires),
+  aggregators (Techmeme), Indian outlets (ET Tech, Livemint, The Hindu, Inc42, Entrackr,
+  YourStory, Analytics India) and a Security category.
 - **Format:** each story has a headline, a short description and a link to the article.
 - **Hosting:** the owner's personal GitHub account.
 
@@ -53,12 +58,22 @@ phone number or other personal details to a third party. One user only.
   for the latest digest in `docs/news.json`), `--notify --test` (send a test push without
   fetching; in Actions tick "Only send a test notification" on Run workflow). The push
   outcome is written as an annotation on the run's summary page.
-- **Settings at the top:** `MAX_ITEMS = 8` stories per run, `MAX_PER_SOURCE = 2`,
-  `MAX_AGE_HOURS = 36`, `SUMMARY_CHARS = 230`, `FEED_KEEP = 80`, `PUSH_TTL = 3h`.
-- **Feeds:** `FEEDS` list of `(source name, default category, url)`, 21 entries.
+- **Settings at the top:** `MAX_ITEMS = 12` stories per run, `MAX_PER_SOURCE = 2`,
+  `MAX_AGE_HOURS = 36`, `SUMMARY_CHARS = 230`, `FEED_KEEP = 160`, `PUSH_TTL = 3h`.
+- **Feeds:** `FEEDS` list of `(source name, default category, url)`, 89 entries, grouped
+  by category with a comment per group. Fetched 16 at a time. Every one was checked on
+  21 Nov 2026; only VentureBeat failed, and it fails only from some IPs.
 - **Categories:** AI, Data Engineering, Data Science, BI & Analytics, Tech, Startups,
-  Gadgets. Stories from the general feeds are re-filed when the title matches a regex in
-  `TOPIC_RULES`.
+  Gadgets, Security. Stories from the general feeds (Tech, Startups, Gadgets) are re-filed
+  when the title matches a regex in `TOPIC_RULES`.
+- **Noise filter (`is_noise`):** drops a headline before it is ever considered. Three
+  tests: an outright pattern (`NOISE`: "how to watch", live streams, Wordle/Connections
+  answers, horoscopes, "record low", coupons); a shopping event next to a shopping word
+  (`EVENT` + `SHOP`, so "Black Friday deals" goes but "Scaling Black Friday pipelines"
+  stays); or a price next to a bargain word (`PRICED` + `BARGAIN`) unless the money is the
+  story (`MONEY_NEWS`: funding, valuation, revenue, fines). On 21 Nov 2026 this removed
+  15% of fresh headlines, almost all Black Friday posts and sports streaming guides.
+  **If real stories start disappearing, loosen `BARGAIN` first** — it is the broadest.
 - **Selection (`select`):** stories from the last 36 hours not in the sent list;
   round-robin across categories, newest first, max 2 per source.
 - **De-duplication:** by cleaned URL and by title similarity (`similar`), against this
@@ -102,8 +117,15 @@ was lost before it was saved as a secret, so the key pair was regenerated; the p
 is in the local git-ignored `.env`. The app page was redesigned and checked in headless
 Chrome at phone and desktop widths with sample stories.
 
-Never tested: the GitHub Actions workflow, installing the app on the phone, and the push
-notification end to end.
+16-21 Nov 2026: ran on schedule and delivered notifications to the phone. Two problems
+surfaced and were fixed. (1) The push subscription expired on 20 Nov; the owner re-copied
+it from the app into the `PUSH_SUBSCRIPTION` secret. (2) GitHub was firing only about 2 of
+the 6 daily runs, so the cron moved off the top of the hour (see "Schedule").
+
+21 Nov 2026: feed list expanded to 89 sources and the `is_noise` filter added. Checked
+with `--dry-run` against the live feeds: 88 of 89 loaded, 796 fresh headlines, 118 (15%)
+dropped as noise, 12 selected across 7 of the 8 categories (BI had nothing fresh — its
+blogs post on weekdays). Not yet seen on the phone with the new sources.
 
 ## Owner setup steps
 
@@ -123,8 +145,11 @@ notification end to end.
 - **Battery savers** on some Android brands can delay notifications; exempt Chrome.
 - **Repeated big stories:** differently worded takes on one event can land in one digest.
 - **VentureBeat** returns HTTP 429 from the owner's laptop; failed feeds are skipped.
-- **Windows laptop quirk (15 Nov 2026):** C: was full and only PowerShell could write
-  into this folder (Git Bash, Python and Node writes were refused).
+- **Windows laptop quirk (15 and 21 Nov 2026):** writes into this folder from Git Bash,
+  Python (`open(..., "w")`) and Node are refused with `OSError: [Errno 9] Bad file
+  descriptor`, while reads work normally. PowerShell (`Copy-Item`, `Set-Content`) and the
+  editor both write fine. To change a file from a script: write it to a temp folder, then
+  `Copy-Item` it into place.
 
 ## History / options rejected
 
