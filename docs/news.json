@@ -1,6 +1,114 @@
 {
- "updated": "2026-11-21T13:18:16+00:00",
+ "updated": "2026-11-21T20:36:40+00:00",
  "stories": [
+  {
+   "title": "Forget searching for GIFs, Gemini can now make its own",
+   "url": "https://www.digitaltrends.com/cool-tech/google-gemini-ai-gif-generation/",
+   "summary": "Gemini can now turn text prompts, photos, and videos into short looping GIFs using Google's Omni 1.2 Flash model.",
+   "source": "Digital Trends",
+   "category": "AI",
+   "when": "2026-11-21T20:35:18+00:00",
+   "batch": "2026-11-21T20:36:40+00:00"
+  },
+  {
+   "title": "Two groups verify mathematician’s claim that Claude helped prove mathematics problem",
+   "url": "https://www.theguardian.com/technology/2026/nov/21/anthropic-riemann-hypothesis-solved-claude-ai",
+   "summary": "Anthropic’s Levent Alpöge says it took six weeks for him using the AI tool to solve 19th-century Riemann hypothesis A mathematician at Anthropic has convincingly said that the San Francisco -based artificial intelligence (AI)…",
+   "source": "Guardian Tech",
+   "category": "AI",
+   "when": "2026-11-21T20:15:57+00:00",
+   "batch": "2026-11-21T20:36:40+00:00"
+  },
+  {
+   "title": "Agentic Data Quality: Why Your Data Needs It Twice",
+   "url": "https://montecarlo.ai/blog-agentic-data-quality",
+   "summary": "Agentic data quality means two things: quality for the data agents use, and agents that fix data issues. Here's why you need both, and how to start.",
+   "source": "Monte Carlo",
+   "category": "Data Engineering",
+   "when": "2026-11-20T17:01:41+00:00",
+   "batch": "2026-11-21T20:36:40+00:00"
+  },
+  {
+   "title": "Drowning in clicks: Scaling Black Friday pipelines with Managed Airflow agents",
+   "url": "https://cloud.google.com/blog/products/data-analytics/scaling-airflow-pipelines-with-ai-agents-on-managed-airflow/",
+   "summary": "When an Airflow pipeline fails in production, the hard part is rarely the fix. It's finding out what to fix. A task dies without a traceback. Is it the code, the data, or the environment?",
+   "source": "Google Cloud Data",
+   "category": "Data Engineering",
+   "when": "2026-11-20T17:00:00+00:00",
+   "batch": "2026-11-21T20:36:40+00:00"
+  },
+  {
+   "title": "How to Learn Supply Chain Analytics in 2027 with Claude Code",
+   "url": "https://towardsdatascience.com/how-to-learn-supply-chain-analytics-in-2027-with-claude-code/",
+   "summary": "Each 5-minute case study pairs operational context, a problem statement, and documented code, so data scientists and non-coding planners learn together.",
+   "source": "Towards Data Science",
+   "category": "Data Science",
+   "when": "2026-11-21T15:00:00+00:00",
+   "batch": "2026-11-21T20:36:40+00:00"
+  },
+  {
+   "title": "Five Guardrails That Limit the Damage an AI Agent Can Do",
+   "url": "https://towardsdatascience.com/five-guardrails-that-limit-the-damage-an-ai-agent-can-do/",
+   "summary": "AI Agents for Beginners, Part three: strict Pydantic arguments, a tool allowlist, read-only SQLite, a step cap, and confirmed writes, all verified by five pytest tests in 0.68s.",
+   "source": "Towards Data Science",
+   "category": "Data Science",
+   "when": "2026-11-20T12:00:00+00:00",
+   "batch": "2026-11-21T20:36:40+00:00"
+  },
+  {
+   "title": "Grafana 13.3 Adds Shared Dashboard Variables and Notebooks",
+   "url": "https://www.infoq.com/news/2026/11/grafana-13-3-shared-variables/",
+   "summary": "Grafana 13.3 introduces shared variables across dashboards and adds Notebooks to record investigations. Both features are in public preview and require feature toggles for self-managed installations. By Mark Silvester.",
+   "source": "InfoQ",
+   "category": "BI & Analytics",
+   "when": "2026-11-21T14:30:00+00:00",
+   "batch": "2026-11-21T20:36:40+00:00"
+  },
+  {
+   "title": "The UN fails to agree on rules regulating ‘killer robots’",
+   "url": "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
+   "summary": "One of the items on the agenda for UN diplomats meeting in Geneva this week was working towards rules regarding the use of autonomous weapons, or so-called \"killer robots.\" Eventually, representatives left the meetings agreeing…",
+   "source": "The Verge",
+   "category": "Tech",
+   "when": "2026-11-21T20:03:37+00:00",
+   "batch": "2026-11-21T20:36:40+00:00"
+  },
+  {
+   "title": "After all this time, the first Baldur’s Gate is still a whimsical masterpiece, and BioWare’s gift to the world",
+   "url": "https://www.techradar.com/gaming/as-we-mourn-bioware-its-the-perfect-time-to-revisit-baldurs-gate",
+   "summary": "Baldur’s Gate might be intimidating in 2026, but it still proves why BioWare is the grandfather of modern RPGs.",
+   "source": "TechRadar",
+   "category": "Tech",
+   "when": "2026-11-21T20:00:00+00:00",
+   "batch": "2026-11-21T20:36:40+00:00"
+  },
+  {
+   "title": "Trump says reported FBI database hack is ‘not good’",
+   "url": "https://techcrunch.com/2026/11/21/trump-says-reported-fbi-database-hack-is-not-good/",
+   "summary": "The FBI is reportedly investigating a hack of the National Crime Information Center.",
+   "source": "TechCrunch",
+   "category": "Startups",
+   "when": "2026-11-21T18:44:53+00:00",
+   "batch": "2026-11-21T20:36:40+00:00"
+  },
+  {
+   "title": "Why Apple Vision Pro never took off like Meta's VR headsets",
+   "url": "https://www.engadget.com/2318875/why-apple-vision-pro-did-not-take-off-vs-meta-vr/",
+   "summary": "The Apple Vision Pro debuted to massive hype in 2024, but the years since then have not been kind to Apple's megabucks mixed-reality headset.",
+   "source": "Engadget",
+   "category": "Gadgets",
+   "when": "2026-11-21T20:15:00+00:00",
+   "batch": "2026-11-21T20:36:40+00:00"
+  },
+  {
+   "title": "Crowdstrike’s Talks With Zscaler Show AI-Led Cyber Consolidation",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-21/crowdstrike-s-talks-with-zscaler-show-ai-led-cyber-consolidation",
+   "summary": "A wave of multibillion-dollar takeovers is reshaping the cybersecurity industry as the biggest companies race to expand their defenses against increasingly sophisticated attacks powered by artificial intelligence.",
+   "source": "Bloomberg Tech",
+   "category": "Security",
+   "when": "2026-11-21T19:02:24+00:00",
+   "batch": "2026-11-21T20:36:40+00:00"
+  },
   {
    "title": "Anthropic mathematician says he and Claude proved the Riemann hypothesis",
    "url": "https://thenextweb.com/news/anthropic-alpoge-claude-riemann-hypothesis-proof-lean",
