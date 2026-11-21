@@ -2,8 +2,11 @@ name: Tech News Digest
 
 on:
   schedule:
-    # UTC. Equals 7:30, 10:30, 13:30, 16:30, 19:30 and 22:30 IST.
-    - cron: "0 2,5,8,11,14,17 * * *"
+    # UTC. Equals 7:57, 10:57, 13:57, 16:57, 19:57 and 22:57 IST.
+    # Minute 27, not 0: GitHub's shared scheduler is busiest at the top of the hour and
+    # silently drops runs then. Between 15 and 21 Nov 2026 only about 2 of the 6 daily
+    # runs actually fired while this was set to minute 0.
+    - cron: "27 2,5,8,11,14,17 * * *"
   workflow_dispatch:
     inputs:
       test_push:

@@ -224,7 +224,7 @@
 
 <footer>
   <div id="summary"></div>
-  <div>6 digests daily &middot; 07:30 &ndash; 22:30 IST</div>
+  <div>Up to 6 digests daily &middot; 08:00 &ndash; 23:00 IST</div>
 </footer>
 
 <script>
@@ -233,6 +233,7 @@ const VAPID_PUBLIC_KEY = "BPjTWSjESnNwzeSGDTXrjPEZqsElBll4kOw5Hj4GdvjVvfEcXIbME3
 const CATS = { "AI": "--ai", "Data Engineering": "--de", "Data Science": "--ds", "BI & Analytics": "--bi",
                "Tech": "--tech", "Startups": "--su", "Gadgets": "--ga" };
 const RUN_HOURS_UTC = [2, 5, 8, 11, 14, 17];   // keep in step with the cron in news.yml
+const RUN_MINUTE_UTC = 27;
 const $ = (id) => document.getElementById(id);
 let stories = [], filter = "All", query = "", loaded = false;
 
@@ -255,7 +256,7 @@ function nextRun() {
   const now = new Date();
   for (let day = 0; day < 2; day++) {
     for (const h of RUN_HOURS_UTC) {
-      const t = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() + day, h, 0));
+      const t = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() + day, h, RUN_MINUTE_UTC));
       if (t > now) return t;
     }
   }

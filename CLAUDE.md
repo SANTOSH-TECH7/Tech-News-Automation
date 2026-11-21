@@ -81,9 +81,15 @@ phone number or other personal details to a third party. One user only.
 
 ## Schedule
 
-`cron: "0 2,5,8,11,14,17 * * *"` (UTC) = 7:30, 10:30, 13:30, 16:30, 19:30, 22:30 IST.
-Six digests a day, up to 8 stories each. GitHub's scheduler can start several minutes
-late. Also has `workflow_dispatch` for manual runs.
+`cron: "27 2,5,8,11,14,17 * * *"` (UTC) = 7:57, 10:57, 13:57, 16:57, 19:57, 22:57 IST.
+Six digests a day, up to 8 stories each. Also has `workflow_dispatch` for manual runs,
+with a "test push" tick box.
+
+GitHub's shared scheduler is best-effort: it starts runs late and drops them under load.
+With the cron on minute 0 (15-21 Nov 2026) only about 2 of the 6 daily runs fired, 30 min
+to 3 h late. Moved to minute 27 on 21 Nov 2026 because the top of the hour is the busiest
+slot. If runs are still dropped, the fallback is to keep the cron but have the workflow
+re-run itself, or accept fewer digests.
 
 ## Status (15 Nov 2026)
 
