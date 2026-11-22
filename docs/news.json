@@ -1,6 +1,114 @@
 {
- "updated": "2026-11-22T09:57:21+00:00",
+ "updated": "2026-11-22T18:35:47+00:00",
  "stories": [
+  {
+   "title": "OpenAI shares its models' perplexity, or how well they predict data, and proposes pacing limits on such metrics, citing a possible 2027 \"avalanche\" of advances (Jakub Pachocki/OpenAI)",
+   "url": "https://www.techmeme.com/261122/p9",
+   "summary": "Jakub Pachocki / OpenAI : OpenAI shares its models' perplexity, or how well they predict data, and proposes pacing limits on such metrics, citing a possible 2027 “avalanche” of advances — - Difficulty of comparison across labs.",
+   "source": "Techmeme",
+   "category": "AI",
+   "when": "2026-11-22T18:25:01+00:00",
+   "batch": "2026-11-22T18:35:47+00:00"
+  },
+  {
+   "title": "Binding of Isaac developer removes AI music from Repentance Plus",
+   "url": "https://www.theverge.com/games/1039770/binding-of-isaac-ai-music",
+   "summary": "The Binding of Isaac: Repentance Plus has spent the last few days getting review-bombed on Steam after it was discovered that a particular segment of the game used AI music.",
+   "source": "The Verge",
+   "category": "AI",
+   "when": "2026-11-22T17:25:20+00:00",
+   "batch": "2026-11-22T18:35:47+00:00"
+  },
+  {
+   "title": "RANSAC, Explained: Consensus Fitting for Image Feature Matching",
+   "url": "https://towardsdatascience.com/ransac-explained-consensus-fitting-for-image-feature-matching/",
+   "summary": "How random sampling of 4 matched pairs, an error threshold, and inlier counts turn noisy SIFT matches into an accurate homography matrix.",
+   "source": "Towards Data Science",
+   "category": "Data Science",
+   "when": "2026-11-22T15:00:00+00:00",
+   "batch": "2026-11-22T18:35:47+00:00"
+  },
+  {
+   "title": "How AI Changes the Four Types of Analytics for Data Scientists",
+   "url": "https://towardsdatascience.com/how-ai-changes-the-four-types-of-analytics-for-data-scientists/",
+   "summary": "Treat AI agents as junior teammates and move up the abstraction ladder, owning problem framing, model evaluation, and business partnership.",
+   "source": "Towards Data Science",
+   "category": "Data Science",
+   "when": "2026-11-22T13:00:00+00:00",
+   "batch": "2026-11-22T18:35:47+00:00"
+  },
+  {
+   "title": "Combining Fabric Semantic Views",
+   "url": "https://blog.crossjoin.co.uk/2026/11/22/combining-fabric-semantic-views/",
+   "summary": "One of the most interesting things about Fabric semantic views (announced this week at Ignite) is the way you can combine multiple semantic views together, allowing you to reuse semantic modelling and metrics easily.",
+   "source": "Chris Webb BI",
+   "category": "BI & Analytics",
+   "when": "2026-11-22T17:09:43+00:00",
+   "batch": "2026-11-22T18:35:47+00:00"
+  },
+  {
+   "title": "Calculate radio link placement and node amount for your city's mesh network",
+   "url": "https://meshcoveragecalculator.lalala.ing/",
+   "summary": "FSPL + Delta-Bullington based local-first WASM radio mesh network calculator with the end goal of making calls over mesh networks possible without pissing off anybody in the process (yes, I'm talking about you, Meshtastic…",
+   "source": "Lobsters",
+   "category": "Tech",
+   "when": "2026-11-22T18:17:44+00:00",
+   "batch": "2026-11-22T18:35:47+00:00"
+  },
+  {
+   "title": "Bessent refuses to rule out Huang’s return to Nvidia",
+   "url": "https://www.ft.com/content/91b7a3a6-8ac5-4327-ad03-6d951f287346?syn-25a6b1a6=1",
+   "summary": "Treasury secretary says it depends ‘where the buck stops’ as US president and key tech leaders call for former chief’s reinstatement.",
+   "source": "Financial Times Tech",
+   "category": "Tech",
+   "when": "2026-11-22T18:11:01+00:00",
+   "batch": "2026-11-22T18:35:47+00:00"
+  },
+  {
+   "title": "Why data centers are at the center of the Big Tech backlash",
+   "url": "https://techcrunch.com/2026/11/22/why-data-centers-are-at-the-center-of-the-big-tech-backlash/",
+   "summary": "Journalist Paris Marx unpacks his new book \"Hyperscale.\".",
+   "source": "TechCrunch",
+   "category": "Startups",
+   "when": "2026-11-22T18:08:43+00:00",
+   "batch": "2026-11-22T18:35:47+00:00"
+  },
+  {
+   "title": "TechCrunch Mobility: A/B testing robots vs. humans",
+   "url": "https://techcrunch.com/2026/11/22/techcrunch-mobility-a-b-testing-robots-vs-humans/",
+   "summary": "Welcome back to TechCrunch Mobility, your hub for the future of transportation and, now more than ever, the role AI is playing in it.",
+   "source": "TechCrunch",
+   "category": "Startups",
+   "when": "2026-11-22T17:06:00+00:00",
+   "batch": "2026-11-22T18:35:47+00:00"
+  },
+  {
+   "title": "Give your gaming setup a serious upgrade with the Razer Basilisk V3 for half price",
+   "url": "https://www.tomshardware.com/pc-components/give-your-gaming-setup-a-serious-upgrade-with-the-razer-basilisk-v3-for-half-price-for-just-usd32-99-you-get-26-000-dpi-sensitivity-programmable-buttons-and-plenty-of-rgb",
+   "summary": "Whether you play competitive shooters, racing games, or RPGs, the Basilisk V3 offers customizable controls and an adjustable scroll wheel to suit different gaming preferences.",
+   "source": "Tom's Hardware",
+   "category": "Gadgets",
+   "when": "2026-11-22T18:17:53+00:00",
+   "batch": "2026-11-22T18:35:47+00:00"
+  },
+  {
+   "title": "Grab Keychron's full-sized low-profile K5 V2 wireless mechanical keyboard for its lowest-ever price of just $56",
+   "url": "https://www.tomshardware.com/peripherals/mice/grab-keychrons-full-sized-low-profile-k5-v2-wireless-mechanical-keyboard-for-its-lowest-ever-price-of-just-usd56-108-key-low-profile-clacker-supports-qmk-sports-three-layers-of-foam",
+   "summary": "If you're after a full-sized mechanical keyboard on a budget, this is one of the best deals around during early Black Friday. It has a white backlight and supports either Bluteooth or wired connectivity.",
+   "source": "Tom's Hardware",
+   "category": "Gadgets",
+   "when": "2026-11-22T18:15:16+00:00",
+   "batch": "2026-11-22T18:35:47+00:00"
+  },
+  {
+   "title": "Google claims it has seen the first fully autonomous cyberattack — and says a 'significant threshold' has been crossed in terms of cybersecurity",
+   "url": "https://www.techradar.com/pro/security/google-says-it-just-saw-the-first-fully-autonomous-cyberattack-and-says-a-significant-threshold-has-been-crossed-in-terms-of-cybersecurity",
+   "summary": "Google warns hackers have moved past chatbots to fully autonomous AI agents capable of discovering bugs and hijacking networks at machine speed.",
+   "source": "TechRadar",
+   "category": "Security",
+   "when": "2026-11-22T17:05:00+00:00",
+   "batch": "2026-11-22T18:35:47+00:00"
+  },
   {
    "title": "The Claude Delusion",
    "url": "https://www.netmeister.org/blog/claude-delusion.html",
