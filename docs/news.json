@@ -1,6 +1,114 @@
 {
- "updated": "2026-11-21T20:36:40+00:00",
+ "updated": "2026-11-22T09:57:21+00:00",
  "stories": [
+  {
+   "title": "The Claude Delusion",
+   "url": "https://www.netmeister.org/blog/claude-delusion.html",
+   "summary": "Comments.",
+   "source": "Lobsters",
+   "category": "AI",
+   "when": "2026-11-22T09:21:35+00:00",
+   "batch": "2026-11-22T09:57:21+00:00"
+  },
+  {
+   "title": "AI is redrawing the line between product and engineering - creating a competitive edge",
+   "url": "https://www.techradar.com/pro/ai-is-redrawing-the-line-between-product-and-engineering-creating-a-competitive-edge",
+   "summary": "AI is reshaping how product and engineering work together, shifting advantage toward judgement and ownership.",
+   "source": "TechRadar",
+   "category": "AI",
+   "when": "2026-11-22T09:00:00+00:00",
+   "batch": "2026-11-22T09:57:21+00:00"
+  },
+  {
+   "title": "Classical Test Theory Analysis of the 16 Factor Personality Measure",
+   "url": "https://www.r-bloggers.com/2026/11/classical-test-theory-analysis-of-the-16-factor-personality-measure/",
+   "summary": "In my last post, I talked through how to clean the dataset of careless responders, responders with too much missing data, and people older than time itself.",
+   "source": "R-bloggers",
+   "category": "Data Science",
+   "when": "2026-11-21T20:13:46+00:00",
+   "batch": "2026-11-22T09:57:21+00:00"
+  },
+  {
+   "title": "blorr 0.3.2",
+   "url": "https://www.r-bloggers.com/2026/11/blorr-0-3-2/",
+   "summary": "blorr 0.3.2 is on CRAN. blorr provides tools for binary logistic regression in R: model fit statistics, variable selection, bivariate analysis, weight of evidence, and the validation charts used in credit scoring (gains table…",
+   "source": "R-bloggers",
+   "category": "Data Science",
+   "when": "2026-11-21T00:00:00+00:00",
+   "batch": "2026-11-22T09:57:21+00:00"
+  },
+  {
+   "title": "Passive 'ghost' radar can detect airborne threats without revealing its own position",
+   "url": "https://www.theregister.com/offbeat/2026/11/22/passive-ghost-radar-can-detect-airborne-threats-without-revealing-its-own-position/5311023",
+   "summary": "Kit piggybacks off TV and mobile signals and can be neatly stuffed into an SUV.",
+   "source": "The Register",
+   "category": "Tech",
+   "when": "2026-11-22T09:15:00+00:00",
+   "batch": "2026-11-22T09:57:21+00:00"
+  },
+  {
+   "title": "It will soon be too late to regulate use of autonomous weapons, warns Red Cross",
+   "url": "https://www.theguardian.com/science/2026/nov/22/red-cross-warns-too-late-regulate-autonomous-weapons-united-nations",
+   "summary": "Warning about putting ‘genie back in the bottle’ comes as UN conference fails to agree on regulation instrument The International Committee of the Red Cross and rights groups have warned that it will soon be too late to put the…",
+   "source": "Guardian Tech",
+   "category": "Tech",
+   "when": "2026-11-22T09:00:22+00:00",
+   "batch": "2026-11-22T09:57:21+00:00"
+  },
+  {
+   "title": "The GTA VI-Sized Hole In Indian Gaming",
+   "url": "https://inc42.com/features/the-gta-vi-sized-hole-in-indian-gaming/",
+   "summary": "At midnight on Thursday, when Grand Theft Auto VI finally launched, India was just another market waiting to play the.",
+   "source": "Inc42",
+   "category": "Startups",
+   "when": "2026-11-22T05:30:37+00:00",
+   "batch": "2026-11-22T09:57:21+00:00"
+  },
+  {
+   "title": "Indian Startup IPO Tracker 2026",
+   "url": "https://inc42.com/features/indian-startup-ipo-tracker-2026/",
+   "summary": "Dalal Street emerged as a founder’s paradise in 2025, with 18 Indian startups listing on the bourses and collectively mopping.",
+   "source": "Inc42",
+   "category": "Startups",
+   "when": "2026-11-21T23:31:54+00:00",
+   "batch": "2026-11-22T09:57:21+00:00"
+  },
+  {
+   "title": "No new Galaxy Watch in 2027 as Samsung eyes a two-year cycle for smartwatches",
+   "url": "https://www.digitaltrends.com/wearables/no-new-galaxy-watch-in-2027-as-samsung-plans-a-two-year-release-cycle-for-smartwatches/",
+   "summary": "This would be the first time Samsung has skipped a yearly smartwatch release since the Galaxy Watch brand debuted in 2018,. as rising costs and stagnant growth demand radical changes.",
+   "source": "Digital Trends",
+   "category": "Gadgets",
+   "when": "2026-11-22T09:18:08+00:00",
+   "batch": "2026-11-22T09:57:21+00:00"
+  },
+  {
+   "title": "Moto Tag 3 shows up in new colors before Motorola even announces it",
+   "url": "https://www.digitaltrends.com/phones/moto-tag-3-appears-in-new-color-options-before-motorola-has-even-announced-it/",
+   "summary": "Premature retailer listings show the unannounced Moto Tag 3 in Lucent White and Indigo Blue. It has the same model number and specs as the Moto Tag 2.",
+   "source": "Digital Trends",
+   "category": "Gadgets",
+   "when": "2026-11-22T09:08:36+00:00",
+   "batch": "2026-11-22T09:57:21+00:00"
+  },
+  {
+   "title": "OpenRouter Drops 3 Providers After Researchers Catch Months of Prompt Theft at AI Hosting Firms",
+   "url": "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html",
+   "summary": "Attackers stole data from inside three AI inference providers for months, and none of the three knew until researchers told them, the industrial cybersecurity company Dragos said this week.",
+   "source": "The Hacker News",
+   "category": "Security",
+   "when": "2026-11-22T05:06:55+00:00",
+   "batch": "2026-11-22T09:57:21+00:00"
+  },
+  {
+   "title": "Researchers Demonstrate Ghostscript Sandbox-Escape RCE via Crafted File Uploads in Popular Apps",
+   "url": "https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html",
+   "summary": "A now-patched flaw in Ghostscript allows a crafted file to escape the program's security sandbox and run commands on the server that processes it.",
+   "source": "The Hacker News",
+   "category": "Security",
+   "when": "2026-11-22T05:03:41+00:00",
+   "batch": "2026-11-22T09:57:21+00:00"
+  },
   {
    "title": "Forget searching for GIFs, Gemini can now make its own",
    "url": "https://www.digitaltrends.com/cool-tech/google-gemini-ai-gif-generation/",
