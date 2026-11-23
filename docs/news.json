@@ -1,6 +1,114 @@
 {
- "updated": "2026-11-23T10:56:14+00:00",
+ "updated": "2026-11-23T22:46:11+00:00",
  "stories": [
+  {
+   "title": "Google Search AI Mode adds Wallet Personal Intelligence, with Drive and Gemini coming soon",
+   "url": "https://www.androidauthority.com/personal-intelligence-ai-mode-3738563/",
+   "summary": "Google Drive and Gemini connections hit AI Mode in the next few weeks.",
+   "source": "Android Authority",
+   "category": "AI",
+   "when": "2026-11-23T22:17:15+00:00",
+   "batch": "2026-11-23T22:46:11+00:00"
+  },
+  {
+   "title": "US to blacklist Asian AI firm Megaspeed after Nvidia scandal",
+   "url": "https://www.bbc.co.uk/news/articles/cv98xpg5dg5zo?at_medium=RSS&at_campaign=rss",
+   "summary": "Megaspeed has been accused of funneling AI chips to China after a former executive's affair with Jensen Huang became public.",
+   "source": "BBC Technology",
+   "category": "AI",
+   "when": "2026-11-23T22:15:26+00:00",
+   "batch": "2026-11-23T22:46:11+00:00"
+  },
+  {
+   "title": "Closing the gender gap in tech sales | Blog | Fivetran",
+   "url": "https://wf.fivetran.com/blog/closing-the-gender-gap-in-tech-sales",
+   "summary": "How we strive to create the best experience for the women we support and promote at Fivetran.",
+   "source": "Fivetran",
+   "category": "Data Engineering",
+   "when": "2026-11-23T20:33:28+00:00",
+   "batch": "2026-11-23T22:46:11+00:00"
+  },
+  {
+   "title": "Enable Azure Blob Storage Events Without Compromising Your Tenant Private Links Policy",
+   "url": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Enable-Azure-Blob-Storage-Events-Without-Compromising-Your/ba-p/5408564",
+   "summary": "Learn how to keep Microsoft Fabric tenant private links enabled while allowing approved Azure Blob Storage events through workspace Resource Instance Rules.",
+   "source": "Microsoft Fabric",
+   "category": "Data Engineering",
+   "when": "2026-11-23T20:00:00+00:00",
+   "batch": "2026-11-23T22:46:11+00:00"
+  },
+  {
+   "title": "How to Use AI Tools to Learn Data Science Faster in 2026",
+   "url": "https://www.kdnuggets.com/how-to-use-ai-tools-to-learn-data-science-faster-in-2026",
+   "summary": "Discover how to combine AI assistants, coding tools, and adaptive platforms to cut your learning curve and build practical skills more efficiently.",
+   "source": "KDnuggets",
+   "category": "Data Science",
+   "when": "2026-11-23T15:00:00+00:00",
+   "batch": "2026-11-23T22:46:11+00:00"
+  },
+  {
+   "title": "AI Math Proofs Aren't Knowledge Until Someone Explains Them",
+   "url": "https://towardsdatascience.com/ai-math-proofs-arent-knowledge-until-someone-explains-them/",
+   "summary": "From the Four Color Theorem to OpenAI's October 2026 claims, why computer-checked proofs still need people to explain, test, and extend them.",
+   "source": "Towards Data Science",
+   "category": "Data Science",
+   "when": "2026-11-23T15:00:00+00:00",
+   "batch": "2026-11-23T22:46:11+00:00"
+  },
+  {
+   "title": "Katy Kaminsky Reacts to NVDA Surge After Huang Returns",
+   "url": "https://www.bloomberg.com/news/videos/2026-11-23/katy-kaminsky-reacts-to-nvda-surge-after-huang-returns-video",
+   "summary": "Katy Kaminski, Chief Research Strategist and Portfolio Manager at AlphaSimplex Group, says Nvidia’s sharp jump underscored how concentrated and pervasive the AI trade has become.",
+   "source": "Bloomberg Tech",
+   "category": "Tech",
+   "when": "2026-11-23T22:38:33+00:00",
+   "batch": "2026-11-23T22:46:11+00:00"
+  },
+  {
+   "title": "Peterson: Expect a Lot of Damage From Keeping Huang",
+   "url": "https://www.bloomberg.com/news/videos/2026-11-23/peterson-expect-a-lot-of-damage-from-keeping-huang-video",
+   "summary": "Randall Peterson, a Professor of Organizational Behavior and Founding Director of the London Business School Leadership Institute, discusses why markets have reacted so strongly both to the upside today and to the downside over…",
+   "source": "Bloomberg Tech",
+   "category": "Tech",
+   "when": "2026-11-23T22:26:10+00:00",
+   "batch": "2026-11-23T22:46:11+00:00"
+  },
+  {
+   "title": "Elon Musk and others rejoice as Jensen Huang is reinstated at Nvidia amid scandal",
+   "url": "https://techcrunch.com/2026/11/23/elon-musk-and-others-rejoice-as-jensen-huang-is-reinstated-at-nvidia-amid-scandal/",
+   "summary": "\"The mistake has been corrected,\" Elon Musk chimed in.",
+   "source": "TechCrunch",
+   "category": "Startups",
+   "when": "2026-11-23T21:47:41+00:00",
+   "batch": "2026-11-23T22:46:11+00:00"
+  },
+  {
+   "title": "Steadview Capital Sells Lenskart Shares Worth ₹921 Cr",
+   "url": "https://inc42.com/buzz/steadview-capital-sells-lenskart-shares-worth-%e2%82%b9921-cr/",
+   "summary": "Early backer and hedge fund Steadview Capital has sold 1.27 Cr shares of omnichannel eyewear giant Lenskart via multiple block.",
+   "source": "Inc42",
+   "category": "Startups",
+   "when": "2026-11-23T19:59:22+00:00",
+   "batch": "2026-11-23T22:46:11+00:00"
+  },
+  {
+   "title": "Apple plans to put MacBook Neo on a colorful annual update cycle",
+   "url": "https://www.digitaltrends.com/computing/apple-plans-to-put-macbook-neo-on-a-colorful-annual-update-cycle-joining-macbook-air-and-macbook-pro/",
+   "summary": "Bloomberg's Mark Gurman reports that Apple has placed the MacBook Neo on an annual update cycle, with a spring follow-up code-named J701 expected to bring an A19 Pro chip, 12GB of RAM, and potential new color finishes.",
+   "source": "Digital Trends",
+   "category": "Gadgets",
+   "when": "2026-11-23T22:23:54+00:00",
+   "batch": "2026-11-23T22:46:11+00:00"
+  },
+  {
+   "title": "South Korea’s power giant KEPCO confirms data breach impacting 1.5 million",
+   "url": "https://www.bleepingcomputer.com/news/security/south-koreas-power-giant-kepco-confirms-data-breach-impacting-15-million/",
+   "summary": "A threat actor breached the internal network of Korea Electric Power Corporation (KEPCO) and accessed two systems containing customer, employee, and contractor data.",
+   "source": "BleepingComputer",
+   "category": "Security",
+   "when": "2026-11-23T20:54:51+00:00",
+   "batch": "2026-11-23T22:46:11+00:00"
+  },
   {
    "title": "From Sarvam Tie-Up to Drones, All That Happened at Bengaluru Tech Summit 2026",
    "url": "https://analyticsindiamag.com/ai-features/from-sarvam-to-all-that-happened-at-the-bengaluru-tech-summit-2026",
