@@ -1,6 +1,114 @@
 {
- "updated": "2026-11-22T18:35:47+00:00",
+ "updated": "2026-11-23T10:56:14+00:00",
  "stories": [
+  {
+   "title": "From Sarvam Tie-Up to Drones, All That Happened at Bengaluru Tech Summit 2026",
+   "url": "https://analyticsindiamag.com/ai-features/from-sarvam-to-all-that-happened-at-the-bengaluru-tech-summit-2026",
+   "summary": "At the Bengaluru Tech Summit 2026, Karnataka announced six initiatives to strengthen its research and innovation infrastructure.",
+   "source": "Analytics India",
+   "category": "AI",
+   "when": "2026-11-23T10:55:02+00:00",
+   "batch": "2026-11-23T10:56:14+00:00"
+  },
+  {
+   "title": "Z.ai launches GLM-5.4, a 750B-parameter flagship model built on its Loop Transformer architecture, reaching intelligence levels comparable to 2T-3T models (Z.ai)",
+   "url": "https://www.techmeme.com/261123/p11",
+   "summary": "Z.ai : Z.ai launches GLM-5.4, a 750B-parameter flagship model built on its Loop Transformer architecture, reaching intelligence levels comparable to 2T-3T models — Over the past three months, we have aggressively scaled both loop…",
+   "source": "Techmeme",
+   "category": "AI",
+   "when": "2026-11-23T10:50:12+00:00",
+   "batch": "2026-11-23T10:56:14+00:00"
+  },
+  {
+   "title": "Data Engineering Weekly #297",
+   "url": "https://www.dataengineeringweekly.com/p/data-engineering-weekly-297",
+   "summary": "The Weekly Data Engineering Newsletter.",
+   "source": "Data Engineering Weekly",
+   "category": "Data Engineering",
+   "when": "2026-11-23T03:27:26+00:00",
+   "batch": "2026-11-23T10:56:14+00:00"
+  },
+  {
+   "title": "Mind the Seams: KPIs for the AI Platform Team",
+   "url": "https://montecarlo.ai/kpis-for-the-ai-platform-team",
+   "summary": "AI platform team KPIs that go beyond uptime and token spend: how to measure adoption, speed, cost, and whether agents are right at every team handoff.",
+   "source": "Monte Carlo",
+   "category": "Data Engineering",
+   "when": "2026-11-22T19:40:06+00:00",
+   "batch": "2026-11-23T10:56:14+00:00"
+  },
+  {
+   "title": "Seeing nucleotides as images",
+   "url": "https://www.r-bloggers.com/2026/11/seeing-nucleotides-as-images/",
+   "summary": "In 2022 I spent a few months on a problem far from anything I had done before: finding single letters in the tails of RNA molecules, from the electric current of a nanopore sequencer.",
+   "source": "R-bloggers",
+   "category": "Data Science",
+   "when": "2026-11-22T00:00:00+00:00",
+   "batch": "2026-11-23T10:56:14+00:00"
+  },
+  {
+   "title": "pyr.js: Python and R in HTML, documentation and examples",
+   "url": "https://www.r-bloggers.com/2026/11/pyr-js-python-and-r-in-html-documentation-and-examples/",
+   "summary": "pyr.js runs Python and R code directly in HTML pages, in the browser, with one script tag: no server, no build step, no install. Pyodide and webR do the heavy lifting.",
+   "source": "R-bloggers",
+   "category": "Data Science",
+   "when": "2026-11-22T00:00:00+00:00",
+   "batch": "2026-11-23T10:56:14+00:00"
+  },
+  {
+   "title": "CrowdStrike agrees to acquire Zscaler, which develops network security tools, for $43.9B in an all-stock deal, one of the largest-ever deals in the sector (Bloomberg)",
+   "url": "https://www.techmeme.com/261123/p12",
+   "summary": "Bloomberg : CrowdStrike agrees to acquire Zscaler, which develops network security tools, for $43.9B in an all-stock deal, one of the largest-ever deals in the sector — CrowdStrike Holdings Inc.",
+   "source": "Techmeme",
+   "category": "Tech",
+   "when": "2026-11-23T10:55:03+00:00",
+   "batch": "2026-11-23T10:56:14+00:00"
+  },
+  {
+   "title": "Simple Sudoku Solver in Verilog",
+   "url": "https://blog.veitheller.de/Simple_Sudoku_Solvers_SIII%2C_EIII%3A_Verilog.html",
+   "summary": "Comments.",
+   "source": "Lobsters",
+   "category": "Tech",
+   "when": "2026-11-23T10:40:21+00:00",
+   "batch": "2026-11-23T10:56:14+00:00"
+  },
+  {
+   "title": "Taking a personal loan with variable income? Here's how to plan your EMI smartly",
+   "url": "https://yourstory.com/2026/11/taking-a-personal-loan-with-variable-income-heres-how-to-plan-your-emi-smartly",
+   "summary": "Taking a personal loan with variable income? Here's how to plan your EMI smartly For freelancers and self-employed professionals, monthly income can fluctuate significantly.",
+   "source": "YourStory",
+   "category": "Startups",
+   "when": "2026-11-23T10:35:00+00:00",
+   "batch": "2026-11-23T10:56:14+00:00"
+  },
+  {
+   "title": "Pee Safe’s revenue jumps 54% to Rs 126 Cr in FY26, posts Rs 7 Cr loss",
+   "url": "https://entrackr.com/fintrackr/pee-safes-revenue-jumps-54-to-rs-126-cr-in-fy26-posts-rs-7-cr-loss-12834219",
+   "summary": "Personal hygiene and wellness brand Pee Safe reported a 54% year-on-year growth in its operating revenue in FY26. However, the company continued to remain in the red during the fiscal year.",
+   "source": "Entrackr",
+   "category": "Startups",
+   "when": "2026-11-23T10:27:34+00:00",
+   "batch": "2026-11-23T10:56:14+00:00"
+  },
+  {
+   "title": "Reader survey says this is the best new Android app launched in 2026",
+   "url": "https://www.androidauthority.com/best-new-android-app-2026-poll-results-3738186/",
+   "summary": "A free PDF toolkit takes home the win.",
+   "source": "Android Authority",
+   "category": "Gadgets",
+   "when": "2026-11-23T10:50:27+00:00",
+   "batch": "2026-11-23T10:56:14+00:00"
+  },
+  {
+   "title": "Cybercriminals may hijack account if WhatsApp Web session left logged in on public computer: Govt",
+   "url": "https://www.thehindu.com/news/national/cybercriminals-may-hijack-account-if-whatsapp-web-session-left-logged-in-on-public-computer-govt/article71734286.ece",
+   "summary": "NCTAU, I4C advised users that simply closing a browser window or a tab is not enough to end an authenticated session, and that they must manually log out after each session.",
+   "source": "The Hindu Tech",
+   "category": "Security",
+   "when": "2026-11-23T10:45:58+00:00",
+   "batch": "2026-11-23T10:56:14+00:00"
+  },
   {
    "title": "OpenAI shares its models' perplexity, or how well they predict data, and proposes pacing limits on such metrics, citing a possible 2027 \"avalanche\" of advances (Jakub Pachocki/OpenAI)",
    "url": "https://www.techmeme.com/261122/p9",
