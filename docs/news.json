@@ -1,6 +1,114 @@
 {
- "updated": "2026-11-24T12:41:54+00:00",
+ "updated": "2026-11-24T23:33:07+00:00",
  "stories": [
+  {
+   "title": "Meet Facebook’s Your Algorithm: How Meta Turns Plain-Language Preferences Into Ranking",
+   "url": "https://www.marktechpost.com/2026/11/24/meta-facebook-your-algorithm-llm-recommendations/",
+   "summary": "Meta's engineering team explains how Facebook's Your Algorithm turns plain-language interests into ranking signals for Feed and Reels, using LLM validation, 4 retrieval sources, layered filtering and a fine-tuned LLM reranker.",
+   "source": "MarkTechPost",
+   "category": "AI",
+   "when": "2026-11-24T23:06:17+00:00",
+   "batch": "2026-11-24T23:33:07+00:00"
+  },
+  {
+   "title": "Three LLM inflection points in twelve months",
+   "url": "https://simonwillison.net/2026/Nov/24/llm-inflection-points/",
+   "summary": "I gave a keynote at the AI Engineer Code Summit a couple of weeks ago, constructed around the idea that there have been three significant inflection points in the abilities of LLMs and coding agents in the past twelve months.",
+   "source": "Simon Willison",
+   "category": "AI",
+   "when": "2026-11-24T23:02:07+00:00",
+   "batch": "2026-11-24T23:33:07+00:00"
+  },
+  {
+   "title": "Data Modeling Best Practices for an Agentic CDP, Part 1: The Data Foundation",
+   "url": "https://www.databricks.com/blog/agentic-cdp-data-modeling-data-foundation",
+   "summary": "A customer saved a jacket to their wishlist on your site 9 days ago. This morning.",
+   "source": "Databricks",
+   "category": "Data Engineering",
+   "when": "2026-11-24T19:36:52+00:00",
+   "batch": "2026-11-24T23:33:07+00:00"
+  },
+  {
+   "title": "We Didn’t Need a Faster Data Warehouse",
+   "url": "https://seattledataguy.substack.com/p/we-didnt-need-a-faster-data-warehouse",
+   "summary": "Why the next evolution of data platforms needs to go beyond technical friction.",
+   "source": "Seattle Data Guy",
+   "category": "Data Engineering",
+   "when": "2026-11-24T18:59:08+00:00",
+   "batch": "2026-11-24T23:33:07+00:00"
+  },
+  {
+   "title": "How to Run Inkling 2 Mini Locally on an RTX 3090 Using Unsloth Studio",
+   "url": "https://www.kdnuggets.com/how-to-run-inkling-2-mini-locally-on-an-rtx-3090-using-unsloth-studio",
+   "summary": "American open-source AI is making a comeback, and this powerful local LLM is proving that fast inference, AI coding agents, and impressive results don't require expensive APIs.",
+   "source": "KDnuggets",
+   "category": "Data Science",
+   "when": "2026-11-24T17:00:00+00:00",
+   "batch": "2026-11-24T23:33:07+00:00"
+  },
+  {
+   "title": "From Messy to Clean: Taming Real-World CSV Files with pandas read csv()",
+   "url": "https://www.kdnuggets.com/from-messy-to-clean-taming-real-world-csv-files-with-pandas-read_csv",
+   "summary": "The process of building a bulletproof Python loader based on Pandas' read csv() function to turn messy data into pristine data.",
+   "source": "KDnuggets",
+   "category": "Data Science",
+   "when": "2026-11-24T15:00:00+00:00",
+   "batch": "2026-11-24T23:33:07+00:00"
+  },
+  {
+   "title": "Paginated reports in Power BI support outbound access protection (Preview)",
+   "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Paginated-reports-in-Power-BI-support-outbound-access-protection/ba-p/5435045",
+   "summary": "Paginated reports can combine data from Power BI semantic models and other data sources with external resources such as maps and images.",
+   "source": "Power BI Blog",
+   "category": "BI & Analytics",
+   "when": "2026-11-24T18:00:00+00:00",
+   "batch": "2026-11-24T23:33:07+00:00"
+  },
+  {
+   "title": "45 Agent Skills Turn Claude Into a Data Analyst That Writes SQL, Runs Stats and Builds Charts",
+   "url": "https://hackernoon.com/45-agent-skills-turn-claude-into-a-data-analyst-that-writes-sql-runs-stats-and-builds-charts?source=rss",
+   "summary": "45 agent skills that teach Claude to load data with Polars, write fast SQL, pick the right statistical test and chart results stakeholders understand.",
+   "source": "Hacker Noon",
+   "category": "BI & Analytics",
+   "when": "2026-11-24T15:02:26+00:00",
+   "batch": "2026-11-24T23:33:07+00:00"
+  },
+  {
+   "title": "Blanche Downplays Questions Over Nvidia as Investigators Examine Company’s Customers",
+   "url": "https://www.nytimes.com/2026/11/24/us/politics/nvidia-justice-department-todd-blanche.html",
+   "summary": "Justice Department investigators have gathered evidence of Nvidia’s high-powered computer chips being illegally diverted by other firms to China, according to people familiar with the inquiries.",
+   "source": "New York Times Tech",
+   "category": "Tech",
+   "when": "2026-11-24T23:27:36+00:00",
+   "batch": "2026-11-24T23:33:07+00:00"
+  },
+  {
+   "title": "Jensen Huang still thinks a succession plan creates unnecessary hierarchy",
+   "url": "https://techcrunch.com/2026/11/24/jensen-huang-still-thinks-a-succession-plan-creates-unnecessary-hierarchy/",
+   "summary": "It's a remarkable stance for a company that spent the last two weeks finding out what happens without its founder.",
+   "source": "TechCrunch",
+   "category": "Startups",
+   "when": "2026-11-24T22:27:52+00:00",
+   "batch": "2026-11-24T23:33:07+00:00"
+  },
+  {
+   "title": "I tried gaming on Nvidia’s new RTX Spark, and those 180fps hide half the story",
+   "url": "https://www.digitaltrends.com/computing/i-tried-gaming-on-nvidias-new-rtx-spark-and-those-180fps-hide-half-the-story/",
+   "summary": "It’s fascinating to see how RTX Spark is catering to three core pillars: As someone who has sunk more than 150 hours into Marvel Rivals, my curiosity was piqued when Nvidia announced native compatibility with NetEase Game…",
+   "source": "Digital Trends",
+   "category": "Gadgets",
+   "when": "2026-11-24T23:29:35+00:00",
+   "batch": "2026-11-24T23:33:07+00:00"
+  },
+  {
+   "title": "WiseTech says Australian police took no action against founder Richard White after probing allegations he exploited a woman's immigration status for sex (Angus Whitley/Bloomberg)",
+   "url": "https://www.techmeme.com/261124/p43",
+   "summary": "Angus Whitley / Bloomberg : WiseTech says Australian police took no action against founder Richard White after probing allegations he exploited a woman's immigration status for sex — WiseTech Global Ltd.",
+   "source": "Techmeme",
+   "category": "Security",
+   "when": "2026-11-24T23:25:08+00:00",
+   "batch": "2026-11-24T23:33:07+00:00"
+  },
   {
    "title": "Amazon says hackers' AI agents found and exploited 0-day with little human input",
    "url": "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/",
@@ -1332,114 +1440,6 @@
    "category": "Gadgets",
    "when": "2026-11-18T09:41:44+00:00",
    "batch": "2026-11-18T09:50:31+00:00"
-  },
-  {
-   "title": "Model ML raises $250M to automate investment banking grunt work",
-   "url": "https://techcrunch.com/2026/11/17/model-ml-raises-250m-to-automate-investment-banking-grunt-work/",
-   "summary": "The three-year-old Model ML was valued at $1.5 billion in a new round co-led by General Atlantic and QED Investors.",
-   "source": "TechCrunch AI",
-   "category": "AI",
-   "when": "2026-11-17T19:32:11+00:00",
-   "batch": "2026-11-17T19:40:23+00:00"
-  },
-  {
-   "title": "Google expands access to Gemini Tasks, which can help with calls, purchases",
-   "url": "https://techcrunch.com/2026/11/17/google-expands-access-to-gemini-tasks-which-can-help-with-calls-purchases/",
-   "summary": "Gemini's Task mode can help users coordinate calls, log into websites, and even make purchases on the user's behalf.",
-   "source": "TechCrunch AI",
-   "category": "AI",
-   "when": "2026-11-17T19:02:20+00:00",
-   "batch": "2026-11-17T19:40:23+00:00"
-  },
-  {
-   "title": "Azure Databricks sessions at Microsoft Ignite 2026",
-   "url": "https://www.databricks.com/blog/azure-databricks-sessions-microsoft-ignite-2026",
-   "summary": "Azure Databricks is a Visionary-level sponsor at Microsoft Ignite 2026, November.",
-   "source": "Databricks",
-   "category": "Data Engineering",
-   "when": "2026-11-17T19:00:00+00:00",
-   "batch": "2026-11-17T19:40:23+00:00"
-  },
-  {
-   "title": "How to Improve Coding Agent Efficiency by 30% with an Orchestrator",
-   "url": "https://towardsdatascience.com/how-to-improve-coding-agent-efficiency-by-30-with-an-orchestrator/",
-   "summary": "Stop hunting through sessions for pending questions: a herder agent surfaces them by priority, kept current by webhooks or cheap Haiku polling.",
-   "source": "Towards Data Science",
-   "category": "Data Science",
-   "when": "2026-11-17T16:30:00+00:00",
-   "batch": "2026-11-17T19:40:23+00:00"
-  },
-  {
-   "title": "Power BI November 2026 Feature Summary",
-   "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Power-BI-November-2026-Feature-Summary/ba-p/5414287",
-   "summary": "If you haven’t already, read Arun Ulag’s Ignite blog post to learn how Microsoft is bringing together databases, analytics, and intelligent applications across Azure and Microsoft Fabric.",
-   "source": "Power BI Blog",
-   "category": "BI & Analytics",
-   "when": "2026-11-17T19:21:45+00:00",
-   "batch": "2026-11-17T19:40:23+00:00"
-  },
-  {
-   "title": "Meta is testing a new standalone messaging app called Direct",
-   "url": "https://www.theverge.com/tech/1035740/meta-instagram-direct-messaging-app",
-   "summary": "Meta announced Direct, a new messaging app from Instagram that it's currently testing in Turkey and Thailand on iOS and Android. Direct is essentially Instagram's direct messaging without Instagram's other features.",
-   "source": "The Verge",
-   "category": "Tech",
-   "when": "2026-11-17T18:33:02+00:00",
-   "batch": "2026-11-17T19:40:23+00:00"
-  },
-  {
-   "title": "Apple services, including iCloud, App Store, and Apple Music, hit by outage",
-   "url": "https://techcrunch.com/2026/11/17/apple-services-including-icloud-app-store-and-apple-music-hit-by-outage/",
-   "summary": "Apple's status page confirms its services are facing outages, but has not confirmed the cause.",
-   "source": "TechCrunch",
-   "category": "Startups",
-   "when": "2026-11-17T18:55:40+00:00",
-   "batch": "2026-11-17T19:40:23+00:00"
-  },
-  {
-   "title": "Google Wallet is launching on iOS",
-   "url": "https://www.engadget.com/2319673/google-wallet-is-launching-on-ios/",
-   "summary": "In case you, for some reason, don't want to use the nearly identical Apple Wallet.",
-   "source": "Engadget",
-   "category": "Gadgets",
-   "when": "2026-11-17T19:33:27+00:00",
-   "batch": "2026-11-17T19:40:23+00:00"
-  },
-  {
-   "title": "Apple adds new disk controls to prevent AI agents from running amok",
-   "url": "https://www.engadget.com/2318790/apple-adds-new-disk-controls-to-prevent-ai-agents-from-running-amok/",
-   "summary": "After sounding an alarm about the issue, Apple is taking steps to limit Mac disk access to AI agents.",
-   "source": "Engadget",
-   "category": "AI",
-   "when": "2026-11-17T06:22:11+00:00",
-   "batch": "2026-11-17T10:19:03+00:00"
-  },
-  {
-   "title": "Strengthening NATO and allied cyber defenses with AI",
-   "url": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai",
-   "summary": "How OpenAI is working with NATO and allied cyber agencies to help trusted defenders find vulnerabilities, test fixes and protect essential systems.",
-   "source": "OpenAI",
-   "category": "AI",
-   "when": "2026-11-17T00:00:00+00:00",
-   "batch": "2026-11-17T10:19:03+00:00"
-  },
-  {
-   "title": "Talk to your clinical data: unlocking AWS HealthLake with OpenSharing and Genie One",
-   "url": "https://www.databricks.com/blog/talk-your-clinical-data-unlocking-aws-healthlake-opensharing-and-genie-one",
-   "summary": "Many healthcare and life sciences organizations have standardized on AWS HealthLake to manage clinical data.",
-   "source": "Databricks",
-   "category": "Data Engineering",
-   "when": "2026-11-17T08:30:00+00:00",
-   "batch": "2026-11-17T10:19:03+00:00"
-  },
-  {
-   "title": "Introducing enhanced snapshots for Amazon Managed Service for Apache Flink",
-   "url": "https://aws.amazon.com/blogs/big-data/introducing-enhanced-snapshots-for-amazon-managed-service-for-apache-flink/",
-   "summary": "Enhanced snapshots for Amazon Managed Service for Apache Flink are now generally available. An enhanced snapshot is an AWS resource with its own ARN, decoupled from the application that created it, so you can start another…",
-   "source": "AWS Big Data",
-   "category": "Data Engineering",
-   "when": "2026-11-16T18:17:18+00:00",
-   "batch": "2026-11-17T10:19:03+00:00"
   }
  ]
 }
