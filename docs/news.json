@@ -1,6 +1,114 @@
 {
- "updated": "2026-11-23T22:46:11+00:00",
+ "updated": "2026-11-24T12:41:54+00:00",
  "stories": [
+  {
+   "title": "Amazon says hackers' AI agents found and exploited 0-day with little human input",
+   "url": "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/",
+   "summary": "The Cairn AI framework is proving to be a boon for defenders and attackers.",
+   "source": "Ars AI",
+   "category": "AI",
+   "when": "2026-11-24T12:30:05+00:00",
+   "batch": "2026-11-24T12:41:54+00:00"
+  },
+  {
+   "title": "Franklin Templeton Urges Investors to Look Beyond AI",
+   "url": "https://www.bloomberg.com/news/videos/2026-11-24/franklin-templeton-urges-investors-to-look-beyond-ai-video",
+   "summary": "Franklin Templeton Chief Market Strategist, Stephen Dover, sees Nvidia’s rebound as a near-term positive, with the “Bank of Nvidia” back in play, but warns that circular AI funding and corporate-governance risks remain.",
+   "source": "Bloomberg Tech",
+   "category": "AI",
+   "when": "2026-11-24T12:23:45+00:00",
+   "batch": "2026-11-24T12:41:54+00:00"
+  },
+  {
+   "title": "PostgreSQL 19 on ClickHouse Managed Postgres, from day one",
+   "url": "https://clickhouse.com/blog/postgresql-19-on-clickhouse-managed-postgres-from-day-one",
+   "summary": "PostgreSQL 19 is available on ClickHouse Managed Postgres from day one, with new replication, maintenance, observability, and performance features.",
+   "source": "ClickHouse",
+   "category": "Data Engineering",
+   "when": "2026-11-24T11:54:58+00:00",
+   "batch": "2026-11-24T12:41:54+00:00"
+  },
+  {
+   "title": "Your agents don't care that you're a batch shop",
+   "url": "https://clickhouse.com/blog/your-agents-dont-care-that-youre-a-batch-shop",
+   "summary": "Once agents start querying your data at scale, you need a real-time engine. Even if your data arrives in nightly batches. Even if you only query old data.",
+   "source": "ClickHouse",
+   "category": "Data Engineering",
+   "when": "2026-11-24T08:22:07+00:00",
+   "batch": "2026-11-24T12:41:54+00:00"
+  },
+  {
+   "title": "How to Calculate and Operationalize Customer Lifetime Value",
+   "url": "https://towardsdatascience.com/how-to-calculate-and-operationalize-customer-lifetime-value/",
+   "summary": "For analysts and commercial leaders: how cohort churn, BTYD models, and behavioral segments turn CLV from a board-deck KPI into daily decisions.",
+   "source": "Towards Data Science",
+   "category": "Data Science",
+   "when": "2026-11-24T12:00:00+00:00",
+   "batch": "2026-11-24T12:41:54+00:00"
+  },
+  {
+   "title": "How Stale PostgreSQL Statistics Made a Query 580 Times Slower",
+   "url": "https://hackernoon.com/how-stale-postgresql-statistics-made-a-query-580-times-slower?source=rss",
+   "summary": "PostgreSQL 18, like 17, auto-analyzes a table only after 10% of it changes, and a 9.3% backfill left a query on the wrong index.",
+   "source": "Hacker Noon",
+   "category": "Data Science",
+   "when": "2026-11-24T06:30:03+00:00",
+   "batch": "2026-11-24T12:41:54+00:00"
+  },
+  {
+   "title": "Arianespace's Ariane 6 rocket launches 36 Amazon Leo satellites from ESA's spaceport in French Guiana, its fourth Amazon mission and the rocket's 10th flight (Summer Maxwell/Bloomberg)",
+   "url": "https://www.techmeme.com/261124/p15",
+   "summary": "Summer Maxwell / Bloomberg : Arianespace's Ariane 6 rocket launches 36 Amazon Leo satellites from ESA's spaceport in French Guiana, its fourth Amazon mission and the rocket's 10th flight — A European rocket blasted off Tuesday…",
+   "source": "Techmeme",
+   "category": "Tech",
+   "when": "2026-11-24T12:35:00+00:00",
+   "batch": "2026-11-24T12:41:54+00:00"
+  },
+  {
+   "title": "8 Best Espresso Machines for Home (2026), Tested by Coffee Pros",
+   "url": "https://www.wired.com/gallery/best-espresso-machines/",
+   "summary": "The best espresso makers can turn your kitchen into a café and help you hone the art of the perfect shot.",
+   "source": "Wired",
+   "category": "Tech",
+   "when": "2026-11-24T12:32:00+00:00",
+   "batch": "2026-11-24T12:41:54+00:00"
+  },
+  {
+   "title": "GST department conducts search at Turtlemint subsidiary in Mumbai",
+   "url": "https://entrackr.com/news/gst-department-conducts-search-at-turtlemint-subsidiary-in-mumbai-12838148",
+   "summary": "The Maharashtra Goods and Services Tax (GST) Department has initiated inspection, search and seizure proceedings at the premises of Turtlemint Insurance Broking Services, a wholly owned subsidiary of insurance distribution…",
+   "source": "Entrackr",
+   "category": "Startups",
+   "when": "2026-11-24T12:12:51+00:00",
+   "batch": "2026-11-24T12:41:54+00:00"
+  },
+  {
+   "title": "Fintech startup Vegapay to raise Rs 38.4 Cr in Series A funding round led by Prosus",
+   "url": "https://yourstory.com/2026/11/vegapay-to-raise-rs-384-cr-series-a-funding-led-by-prosus",
+   "summary": "The round will also see participation from existing investors Elevation Capital, Vertex Ventures and Eximius Ventures.",
+   "source": "YourStory",
+   "category": "Startups",
+   "when": "2026-11-24T12:07:53+00:00",
+   "batch": "2026-11-24T12:41:54+00:00"
+  },
+  {
+   "title": "Go ad-free across Tom’s Hardware by subscribing to Premium from $7 a month, or $29 annually",
+   "url": "https://www.tomshardware.com/tech-industry/go-ad-free-across-toms-hardware-by-subscribing-to-premium-from-usd7-a-month-or-usd29-annually-support-us-to-get-seamless-browsing-read-a-treasure-trove-of-exclusive-content-and-unlock-access-to-bench",
+   "summary": "Tom’s Hardware is going ad-free, exclusively for Premium members.",
+   "source": "Tom's Hardware",
+   "category": "Gadgets",
+   "when": "2026-11-24T12:30:00+00:00",
+   "batch": "2026-11-24T12:41:54+00:00"
+  },
+  {
+   "title": "La Liga confirms hackers stole football fans personal data — and it still doesn't know who was responsible",
+   "url": "https://www.techradar.com/pro/security/la-liga-confirms-hackers-stole-football-fans-personal-data-and-it-still-doesnt-know-who-was-responsible",
+   "summary": "La Liga doesn't even know how many people are exposed, but it did oust the attackers.",
+   "source": "TechRadar",
+   "category": "Security",
+   "when": "2026-11-24T12:30:00+00:00",
+   "batch": "2026-11-24T12:41:54+00:00"
+  },
   {
    "title": "Google Search AI Mode adds Wallet Personal Intelligence, with Drive and Gemini coming soon",
    "url": "https://www.androidauthority.com/personal-intelligence-ai-mode-3738563/",
@@ -1331,42 +1439,6 @@
    "source": "AWS Big Data",
    "category": "Data Engineering",
    "when": "2026-11-16T18:17:18+00:00",
-   "batch": "2026-11-17T10:19:03+00:00"
-  },
-  {
-   "title": "5 Things That Break When AI Agents Start Acting on Their Own",
-   "url": "https://www.kdnuggets.com/2026/11/collibra/5-things-that-break-when-ai-agents-start-acting-on-their-own",
-   "summary": "Five governance problems emerge when AI agents begin taking real-world actions, from unmanaged access and identity sprawl to approval bottlenecks and manual oversight.",
-   "source": "KDnuggets",
-   "category": "Data Science",
-   "when": "2026-11-16T18:00:47+00:00",
-   "batch": "2026-11-17T10:19:03+00:00"
-  },
-  {
-   "title": "United Airlines system outage disrupts departures just days after the big ground stop",
-   "url": "https://www.theverge.com/transportation/1035025/united-airlines-outage-down-departures",
-   "summary": "Less than a week after an issue with air traffic control communications and radar caused the FAA to halt takeoffs nationwide, United Airlines departing flights are being disrupted by an outage.",
-   "source": "The Verge",
-   "category": "Tech",
-   "when": "2026-11-17T01:02:40+00:00",
-   "batch": "2026-11-17T10:19:03+00:00"
-  },
-  {
-   "title": "Cyber giant Infoblox confirms security incident after hackers access ‘company information’",
-   "url": "https://techcrunch.com/2026/11/16/cyber-giant-infoblox-confirms-security-incident-after-hackers-access-company-information/",
-   "summary": "The cybersecurity and automation giant said it's working with outside investigators to understand the scale of the breach.",
-   "source": "TechCrunch",
-   "category": "Startups",
-   "when": "2026-11-16T22:12:31+00:00",
-   "batch": "2026-11-17T10:19:03+00:00"
-  },
-  {
-   "title": "Adam Mosseri thinks it will be 'pretty challenging' to design Instagram for the iPhone Duo",
-   "url": "https://www.engadget.com/2318832/adam-mosseri-pretty-challenging-design-instagram-iphone-duo/",
-   "summary": "Instagram head Adam Mosseri briefly talks about the challenges of redesigning the app for the iPhone Duo.",
-   "source": "Engadget",
-   "category": "Gadgets",
-   "when": "2026-11-17T09:09:40+00:00",
    "batch": "2026-11-17T10:19:03+00:00"
   }
  ]
