@@ -1,6 +1,114 @@
 {
- "updated": "2026-11-25T11:29:28+00:00",
+ "updated": "2026-11-25T23:10:42+00:00",
  "stories": [
+  {
+   "title": "S&P considers Nvidia credit downgrade over governance and ‘key man’ risks",
+   "url": "https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/",
+   "summary": "The credit rating agency may lower Nvidia's credit rating to AA-, the fourth-highest rating.",
+   "source": "TechCrunch AI",
+   "category": "AI",
+   "when": "2026-11-25T22:44:32+00:00",
+   "batch": "2026-11-25T23:10:42+00:00"
+  },
+  {
+   "title": "Still in Early Innings of AI Adoption: PSP’s Momei Qu",
+   "url": "https://www.bloomberg.com/news/videos/2026-11-25/still-in-early-innings-of-ai-adoption-psp-s-momei-qu-video",
+   "summary": "Momei Qu, Managing Director and Head of Venture at PSP Growth, says Anthropic is in a period of price discovery as public-market investors work out how to value a frontier AI company.",
+   "source": "Bloomberg Tech",
+   "category": "AI",
+   "when": "2026-11-25T22:39:03+00:00",
+   "batch": "2026-11-25T23:10:42+00:00"
+  },
+  {
+   "title": "Hints and hazards: pg plan advice in PG19",
+   "url": "https://clickhouse.com/blog/pg-plan-advice-postgresql-19",
+   "summary": "Explore PostgreSQL 19’s pg plan advice with examples on ClickHouse Managed Postgres, showing when query hints improve performance and when stale hints make it worse.",
+   "source": "ClickHouse",
+   "category": "Data Engineering",
+   "when": "2026-11-25T20:49:01+00:00",
+   "batch": "2026-11-25T23:10:42+00:00"
+  },
+  {
+   "title": "How well is ClickHouse tested? A detailed view of increasing our own coverage",
+   "url": "https://clickhouse.com/blog/how-well-is-clickhouse-tested",
+   "summary": "A deep dive into how ClickHouse measures and improves test coverage with LLVM instrumentation, per-test data, targeted CI, and AI-generated tests.",
+   "source": "ClickHouse",
+   "category": "Data Engineering",
+   "when": "2026-11-25T17:13:02+00:00",
+   "batch": "2026-11-25T23:10:42+00:00"
+  },
+  {
+   "title": "Vibe Coding for Business Analytics: Custom CRM Dashboards, Reporting Apps, and AI Agents",
+   "url": "https://www.kdnuggets.com/2026/11/vibe-coding-for-business-analytics-custom-crm-dashboards-reporting-apps-and-ai-agents",
+   "summary": "Discover how Alaio Vibecode, an AI app builder for Bitrix24, helps teams create custom CRM analytics dashboards, reporting tools, lead scoring apps, and AI agents.",
+   "source": "KDnuggets",
+   "category": "Data Science",
+   "when": "2026-11-25T18:00:33+00:00",
+   "batch": "2026-11-25T23:10:42+00:00"
+  },
+  {
+   "title": "Survivor Stats DB: the companion site to {survivoR}",
+   "url": "https://www.r-bloggers.com/2026/11/survivor-stats-db-the-companion-site-to-survivor/",
+   "summary": "The {survivoR} package has been the go-to home for Survivor data in R. It has 5 versions, 76 seasons, 1,198.",
+   "source": "R-bloggers",
+   "category": "Data Science",
+   "when": "2026-11-25T16:54:23+00:00",
+   "batch": "2026-11-25T23:10:42+00:00"
+  },
+  {
+   "title": "Today I learned why Tim Berners-Lee chose not to patent the World Wide Web",
+   "url": "https://www.techradar.com/pro/today-i-learned-why-tim-berners-lee-chose-not-to-patent-the-world-wide-web",
+   "summary": "Giving the web away was the whole plan.",
+   "source": "TechRadar",
+   "category": "Tech",
+   "when": "2026-11-25T23:00:00+00:00",
+   "batch": "2026-11-25T23:10:42+00:00"
+  },
+  {
+   "title": "Suspected Chinese Agents Are Trying to Dupe Americans with Fake Listings on Job Platforms",
+   "url": "https://tech.slashdot.org/story/26/11/25/069227/suspected-chinese-agents-are-trying-to-dupe-americans-with-fake-listings-on-job-platforms",
+   "summary": "\"LinkedIn is probably the greatest intelligence tool that's ever been created,\" CNN heard from Holden Triplett, director of counterintelligence at the National Security Council in the first Trump administration.",
+   "source": "Slashdot",
+   "category": "Tech",
+   "when": "2026-11-25T23:00:00+00:00",
+   "batch": "2026-11-25T23:10:42+00:00"
+  },
+  {
+   "title": "Delhi Police Arrests Four Suspects In Crypto Fraud Case",
+   "url": "https://inc42.com/buzz/delhi-police-arrests-four-suspects-in-crypto-fraud-case/",
+   "summary": "A Delhi Police cyber team has busted an alleged organised cryptocurrency fraud syndicate. In a statement, additional deputy commissioner of.",
+   "source": "Inc42",
+   "category": "Startups",
+   "when": "2026-11-25T21:42:05+00:00",
+   "batch": "2026-11-25T23:10:42+00:00"
+  },
+  {
+   "title": "Jensen Huang broke Nvidia’s code of conduct, and his employees may not forget it",
+   "url": "https://techcrunch.com/2026/11/25/jensen-huang-broke-nvidias-code-of-conduct-and-his-employees-may-not-forget-it/",
+   "summary": "Most codes of conduct serve as a reflection of corporate culture. In Nvidia's case, that could have consequences.",
+   "source": "TechCrunch",
+   "category": "Startups",
+   "when": "2026-11-25T19:54:57+00:00",
+   "batch": "2026-11-25T23:10:42+00:00"
+  },
+  {
+   "title": "Amazon might reopen its doors to Meta’s Muse, but it wants a few things sorted first",
+   "url": "https://www.digitaltrends.com/computing/amazon-meta-muse-ai-shopping-deal/",
+   "summary": "Back in September, Amazon blocked Meta’s Muse AI shopping agent from accessing its online store. Walmart and Shopify, meanwhile, went in the opposite direction and partnered with Meta.",
+   "source": "Digital Trends",
+   "category": "Gadgets",
+   "when": "2026-11-25T22:59:11+00:00",
+   "batch": "2026-11-25T23:10:42+00:00"
+  },
+  {
+   "title": "US Treasury financial crime watchdog hit by suspected cyber attack",
+   "url": "https://www.ft.com/content/43aa7321-2a95-463c-8cb9-77fcc7e39291?syn-25a6b1a6=1",
+   "summary": "FinCen takes systems offline after detecting unauthorised access amid growing fears over vulnerability of technology systems.",
+   "source": "Financial Times Tech",
+   "category": "Security",
+   "when": "2026-11-25T22:24:37+00:00",
+   "batch": "2026-11-25T23:10:42+00:00"
+  },
   {
    "title": "Dell’s revenue doubles to $54.9bn as its AI server backlog hits $132.3bn",
    "url": "https://thenextweb.com/news/dell-q3-fy27-earnings-ai-server-backlog-202bn-forecast",
@@ -1332,114 +1440,6 @@
    "category": "Gadgets",
    "when": "2026-11-19T19:16:42+00:00",
    "batch": "2026-11-19T19:23:16+00:00"
-  },
-  {
-   "title": "Microsoft CEO Satya Nadella explains why he asked 60K employees to quit",
-   "url": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit/",
-   "summary": "Microsoft CEO Satya Nadella explained why he offered buyouts to 60,000 of his employees in October, essentially urging them to voluntarily quit, rather than reducing the workforce via another massive layoff.",
-   "source": "TechCrunch AI",
-   "category": "AI",
-   "when": "2026-11-19T00:42:56+00:00",
-   "batch": "2026-11-19T09:58:06+00:00"
-  },
-  {
-   "title": "Amidst fears of AI cyberattacks, Satya Nadella says lots of critical infrastructure is ‘unpatchable’",
-   "url": "https://techcrunch.com/2026/11/18/amidst-fears-of-ai-cyberattacks-satya-nadella-says-lots-of-critical-infrastructure-is-unpatchable/",
-   "summary": "The Microsoft CEO downplayed the recent Outlook outage while noting that AI was causing both opportunities and new challenges for securing much of the connected world.",
-   "source": "TechCrunch AI",
-   "category": "AI",
-   "when": "2026-11-18T23:45:00+00:00",
-   "batch": "2026-11-19T09:58:06+00:00"
-  },
-  {
-   "title": "Databricks Wins A-Team Award for AI in Capital Markets",
-   "url": "https://www.databricks.com/blog/databricks-wins-team-award-ai-capital-markets-0",
-   "summary": "Recognized for AI and governance, together.Capital markets have no shortage of AI.",
-   "source": "Databricks",
-   "category": "Data Engineering",
-   "when": "2026-11-19T03:54:28+00:00",
-   "batch": "2026-11-19T09:58:06+00:00"
-  },
-  {
-   "title": "Introducing automatic version upgrades for AWS Glue jobs",
-   "url": "https://aws.amazon.com/blogs/big-data/introducing-automatic-version-upgrades-for-aws-glue-jobs/",
-   "summary": "Today we're announcing automatic version upgrades for AWS Glue jobs. Set a job's version to auto, and AWS Glue checks for breaking changes, asks for your approval, then moves the job to the latest stable version and validates the…",
-   "source": "AWS Big Data",
-   "category": "Data Engineering",
-   "when": "2026-11-19T00:45:54+00:00",
-   "batch": "2026-11-19T09:58:06+00:00"
-  },
-  {
-   "title": "Introducing Gemini Decision 1: A Model That Picks Answers Instead of Writing Them",
-   "url": "https://www.kdnuggets.com/introducing-gemini-decision-1-a-model-that-picks-answers-instead-of-writing-them",
-   "summary": "Google's newest model has one job, and it never writes a word doing it. Decision 1 reads text, images, video, audio and PDFs in a single forward pass, up to 262,144 input tokens per request.",
-   "source": "KDnuggets",
-   "category": "Data Science",
-   "when": "2026-11-18T17:00:00+00:00",
-   "batch": "2026-11-19T09:58:06+00:00"
-  },
-  {
-   "title": "Elon Musk tries to explain what’s going on with Ukraine and Starlink",
-   "url": "https://www.theverge.com/tech/1037448/elon-musk-ukraine-starlink-starshield-nyt-dealbook",
-   "summary": "Elon Musk said Ukrainian president Volodymyr Zelenskyy is lying about disruptions to Starshield in Ukraine and that he's trying to misuse SpaceX's consumer service, Starlink, for military purposes.",
-   "source": "The Verge",
-   "category": "Tech",
-   "when": "2026-11-19T01:39:45+00:00",
-   "batch": "2026-11-19T09:58:06+00:00"
-  },
-  {
-   "title": "Palmer Luckey doesn’t deny that he’s a prepper",
-   "url": "https://techcrunch.com/2026/11/18/palmer-luckey-doesnt-deny-that-hes-a-prepper/",
-   "summary": "The Anduril founder said Wednesday that Americans should always have three days of food, water, and medicine — just in case.",
-   "source": "TechCrunch",
-   "category": "Startups",
-   "when": "2026-11-18T22:04:03+00:00",
-   "batch": "2026-11-19T09:58:06+00:00"
-  },
-  {
-   "title": "Waymo pauses service in San Francisco after robotaxis get stuck on flooded streets",
-   "url": "https://www.engadget.com/2321312/waymo-pauses-service-in-san-francisco-after-robotaxis-get-stuck-on-flooded-streets/",
-   "summary": "Waymo temporarily paused service in San Francisco after several robotaxis caused traffic jams as they were unable to navigate flooded streets during a storm.",
-   "source": "Engadget",
-   "category": "Gadgets",
-   "when": "2026-11-18T23:23:57+00:00",
-   "batch": "2026-11-19T09:58:06+00:00"
-  },
-  {
-   "title": "Why your fine-tuning job takes longer than the FLOPs say",
-   "url": "https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time",
-   "summary": "",
-   "source": "Hugging Face",
-   "category": "AI",
-   "when": "2026-11-18T18:53:43+00:00",
-   "batch": "2026-11-18T19:15:38+00:00"
-  },
-  {
-   "title": "What is Nvidia without AI’s sugar daddy in charge?",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1036776/nvidia-earnings-kress-jensen-huang-petition",
-   "summary": "If the glorious AI revolution rests entirely on the well-being of one man, AI is perhaps not as robust a technology as I had previously been led to believe.",
-   "source": "The Verge",
-   "category": "AI",
-   "when": "2026-11-18T18:34:15+00:00",
-   "batch": "2026-11-18T19:15:38+00:00"
-  },
-  {
-   "title": "Bringing trusted Fabric IQ context to wherever people and agents work",
-   "url": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Bringing-trusted-Fabric-IQ-context-to-wherever-people-and-agents/ba-p/5423049",
-   "summary": "If you haven’t already, read Arun Ulag’s Ignite blog post to learn how Microsoft is bringing together databases, analytics, and intelligent applications across Azure and Microsoft Fabric.",
-   "source": "Microsoft Fabric",
-   "category": "Data Engineering",
-   "when": "2026-11-18T17:59:46+00:00",
-   "batch": "2026-11-18T19:15:38+00:00"
-  },
-  {
-   "title": "Fabric Data Warehouse at Ignite: Built for AI-era analytics",
-   "url": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Fabric-Data-Warehouse-at-Ignite-Built-for-AI-era-analytics/ba-p/5414274",
-   "summary": "If you haven’t already, read Arun Ulag’s Ignite blog post to learn how Microsoft is bringing together databases, analytics, and intelligent applications across Azure and Microsoft Fabric.",
-   "source": "Microsoft Fabric",
-   "category": "Data Engineering",
-   "when": "2026-11-18T17:22:22+00:00",
-   "batch": "2026-11-18T19:15:38+00:00"
   }
  ]
 }
