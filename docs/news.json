@@ -1,6 +1,114 @@
 {
- "updated": "2026-11-24T23:33:07+00:00",
+ "updated": "2026-11-25T11:29:28+00:00",
  "stories": [
+  {
+   "title": "Dell’s revenue doubles to $54.9bn as its AI server backlog hits $132.3bn",
+   "url": "https://thenextweb.com/news/dell-q3-fy27-earnings-ai-server-backlog-202bn-forecast",
+   "summary": "Dell Technologies raised its revenue forecast for the year to $202bn on Tuesday, up from the $192bn it expected before. The new forecast covers the fiscal year that ends in January.",
+   "source": "The Next Web",
+   "category": "AI",
+   "when": "2026-11-25T11:20:55+00:00",
+   "batch": "2026-11-25T11:29:28+00:00"
+  },
+  {
+   "title": "Our ‘Paris manifesto’ proposes how to deal with extreme wealth in the AI age | Open letter",
+   "url": "https://www.theguardian.com/commentisfree/2026/nov/25/paris-manifesto-open-letter-ai-oligarchy",
+   "summary": "It is possible for democracy to reverse the dynamic of oligarchy. But we must act now The explosion of extreme wealth in the world is the defining social fact of our times.",
+   "source": "Guardian Tech",
+   "category": "AI",
+   "when": "2026-11-25T11:00:47+00:00",
+   "batch": "2026-11-25T11:29:28+00:00"
+  },
+  {
+   "title": "Sharing catalog metadata across data platforms, engines, and agents",
+   "url": "https://www.databricks.com/blog/sharing-catalog-metadata-across-data-platforms-engines-and-agents",
+   "summary": "We’re excited to announce support for catalog labels – a new capability in the Apache.",
+   "source": "Databricks",
+   "category": "Data Engineering",
+   "when": "2026-11-24T01:30:00+00:00",
+   "batch": "2026-11-25T11:29:28+00:00"
+  },
+  {
+   "title": "How SproutMe Cut Integration Test Time by 92.9% with DuckDB",
+   "url": "https://duckdb.org/2026/11/24/sproutme-faster-pipeline-testing.html",
+   "summary": "At [SproutMe](https://sproutme.ai/), a fast-moving, early-stage AI marketing startup, data engineer [Archit Dukhande](https://www.linkedin.com/in/archit-dukhande/) added DuckDB to their local development and CI workflow for a…",
+   "source": "DuckDB",
+   "category": "Data Engineering",
+   "when": "2026-11-24T00:00:00+00:00",
+   "batch": "2026-11-25T11:29:28+00:00"
+  },
+  {
+   "title": "I Built a Bayesian Neural Network From One Neuron and Football Shots",
+   "url": "https://towardsdatascience.com/i-built-a-bayesian-neural-network-from-one-neuron-and-football-shots/",
+   "summary": "Gaussian weights, the reparameterisation trick, and Monte Carlo sampling turn a single sigmoid neuron into a Bayesian expected-goals model on StatsBomb data.",
+   "source": "Towards Data Science",
+   "category": "Data Science",
+   "when": "2026-11-24T15:00:00+00:00",
+   "batch": "2026-11-25T11:29:28+00:00"
+  },
+  {
+   "title": "How to Plan Retries for Multi-Agent Workflows Before You Write Code",
+   "url": "https://towardsdatascience.com/how-to-plan-retries-for-multi-agent-workflows-before-you-write-code/",
+   "summary": "A Mermaid blueprint, Python dataclasses, and a retryable flag decide when a failed agent tries again and when the task goes to a person.",
+   "source": "Towards Data Science",
+   "category": "Data Science",
+   "when": "2026-11-24T13:30:00+00:00",
+   "batch": "2026-11-25T11:29:28+00:00"
+  },
+  {
+   "title": "Tech lobby CCIA urges EU leaders to reject a 3% digital services tax",
+   "url": "https://thenextweb.com/news/ccia-eu-digital-services-tax-budget",
+   "summary": "The tech industry group CCIA Europe has called on EU leaders to throw out a proposed 3% tax on digital services as leaders meet in Brussels this week to negotiate the bloc’s 2028-2034 budget.",
+   "source": "The Next Web",
+   "category": "Tech",
+   "when": "2026-11-25T11:02:39+00:00",
+   "batch": "2026-11-25T11:29:28+00:00"
+  },
+  {
+   "title": "Liquid Compute: Asian data centers and neoclouds are seeking US clients to offload excess capacity after new US compute rules, as B300 hourly rental costs fall (Newley Purnell/Bloomberg)",
+   "url": "https://www.techmeme.com/261125/p14",
+   "summary": "Newley Purnell / Bloomberg : Liquid Compute: Asian data centers and neoclouds are seeking US clients to offload excess capacity after new US compute rules, as B300 hourly rental costs fall — Data centers across Asia are racing to…",
+   "source": "Techmeme",
+   "category": "Tech",
+   "when": "2026-11-25T11:00:46+00:00",
+   "batch": "2026-11-25T11:29:28+00:00"
+  },
+  {
+   "title": "7 Underrated non-fiction books worth adding to your reading list",
+   "url": "https://yourstory.com/2026/11/7-underrated-non-fiction-books-worth-adding-to-your-reading-list",
+   "summary": "Discover seven underrated non-fiction books on psychology, creativity, personal growth and human behaviour that deserve a place on your reading list.",
+   "source": "YourStory",
+   "category": "Startups",
+   "when": "2026-11-25T11:15:00+00:00",
+   "batch": "2026-11-25T11:29:28+00:00"
+  },
+  {
+   "title": "VU Venture Partners launches India VC accelerator, investment platform",
+   "url": "https://yourstory.com/2026/11/vu-venture-partners-launches-india-vc-accelerator-investment-platform",
+   "summary": "VU Venture Partners is bringing its venture-capital accelerator and startup investment platform to India, targeting early-stage companies while training prospective investors through Venture University.",
+   "source": "YourStory",
+   "category": "Startups",
+   "when": "2026-11-25T10:55:54+00:00",
+   "batch": "2026-11-25T11:29:28+00:00"
+  },
+  {
+   "title": "This Acer Nitro V laptop with Nvidia RTX 5060 GPU is $1,049 at Best Buy",
+   "url": "https://www.tomshardware.com/laptops/gaming-laptops/this-acer-nitro-v-laptop-with-nvidia-rtx-5060-gpu-is-usd1-049-at-best-buy-16-inch-boasts-16gb-ddr5-ram-and-a-512gb-ssd",
+   "summary": "This 15.6-inch Acer Nitro gaming laptop features an RTX 5060 GPU, a 10-core Intel CPU, and a 512GB SSD for $1,049.",
+   "source": "Tom's Hardware",
+   "category": "Gadgets",
+   "when": "2026-11-25T11:22:34+00:00",
+   "batch": "2026-11-25T11:29:28+00:00"
+  },
+  {
+   "title": "Microsoft fixes Microsoft 365 bug blocking access to Office apps",
+   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-blank-dialog-that-made-microsoft-365-office-apps-unusable/",
+   "summary": "Earlier this week, Microsoft resolved a known issue that was preventing some Microsoft 365 customers from accessing Office applications.",
+   "source": "BleepingComputer",
+   "category": "Security",
+   "when": "2026-11-25T11:16:32+00:00",
+   "batch": "2026-11-25T11:29:28+00:00"
+  },
   {
    "title": "Meet Facebook’s Your Algorithm: How Meta Turns Plain-Language Preferences Into Ranking",
    "url": "https://www.marktechpost.com/2026/11/24/meta-facebook-your-algorithm-llm-recommendations/",
@@ -1332,114 +1440,6 @@
    "category": "Data Engineering",
    "when": "2026-11-18T17:22:22+00:00",
    "batch": "2026-11-18T19:15:38+00:00"
-  },
-  {
-   "title": "How AI Agents Become a Tool for Attackers, and How to Stop It",
-   "url": "https://towardsdatascience.com/how-ai-agents-become-a-tool-for-attackers-and-how-to-stop-it/",
-   "summary": "Managing Security When You’re Deploying AI, Part 1: Compromised credentials, salaries inferred from budgets, and doctored documents show why agents need permission checks before the model ever sees the data.",
-   "source": "Towards Data Science",
-   "category": "Data Science",
-   "when": "2026-11-18T16:30:00+00:00",
-   "batch": "2026-11-18T19:15:38+00:00"
-  },
-  {
-   "title": "The leaked Lenovo Legion Go Beam could be the affordable handheld we need",
-   "url": "https://www.theverge.com/games/1036819/the-leaked-lenovo-legion-go-beam-could-be-the-affordable-handheld-we-need",
-   "summary": "For a while there, it seemed like Lenovo had given up on selling handheld gaming PCs, hiking the price of its Legion Go 2 and Legion Go S even higher than other RAM-starved competitors.",
-   "source": "The Verge",
-   "category": "Tech",
-   "when": "2026-11-18T19:13:35+00:00",
-   "batch": "2026-11-18T19:15:38+00:00"
-  },
-  {
-   "title": "David Ellison says HBO will air critical Elon Musk documentary despite his $1B investment in Skydance",
-   "url": "https://techcrunch.com/2026/11/18/david-ellison-says-hbo-will-air-critical-elon-musk-documentary-despite-1b-investment-in-skydance/",
-   "summary": "Following news of the investment, questions emerged over how Musk's sizable stake in the company might affect Skydance's plans to distribute a documentary that is highly critical of him.",
-   "source": "TechCrunch",
-   "category": "Startups",
-   "when": "2026-11-18T17:30:56+00:00",
-   "batch": "2026-11-18T19:15:38+00:00"
-  },
-  {
-   "title": "You can't use GTA 6 cheats until you beat the game",
-   "url": "https://www.engadget.com/2320852/you-cant-use-gta-6-cheats-until-you-beat-the-game/",
-   "summary": "Some even require players to complete specific challenges.",
-   "source": "Engadget",
-   "category": "Gadgets",
-   "when": "2026-11-18T18:25:40+00:00",
-   "batch": "2026-11-18T19:15:38+00:00"
-  },
-  {
-   "title": "AI is killing All About Berlin",
-   "url": "https://nicolasbouliane.com/blog/death-by-ai",
-   "summary": "Trending on Hacker News — 303 points, 265 comments.",
-   "source": "Hacker News",
-   "category": "AI",
-   "when": "2026-11-18T06:47:26+00:00",
-   "batch": "2026-11-18T09:50:31+00:00"
-  },
-  {
-   "title": "Copilot is \"the new OS for work,\" and now Office runs inside of it",
-   "url": "https://arstechnica.com/gadgets/2026/11/microsoft-calls-copilot-the-new-os-for-work-at-ignite-keynote/",
-   "summary": "Word, Excel, and PowerPoint now live inside Copilot; always-on agents are next.",
-   "source": "Ars Technica",
-   "category": "AI",
-   "when": "2026-11-18T00:27:29+00:00",
-   "batch": "2026-11-18T09:50:31+00:00"
-  },
-  {
-   "title": "How we raised Databricks cluster rate limits by 7.5×",
-   "url": "https://www.databricks.com/blog/how-we-raised-databricks-cluster-rate-limits-75",
-   "summary": "As part of the Compute Platform team at Databricks, we turn cloud infrastructure.",
-   "source": "Databricks",
-   "category": "Data Engineering",
-   "when": "2026-11-18T02:30:31+00:00",
-   "batch": "2026-11-18T09:50:31+00:00"
-  },
-  {
-   "title": "How to Calibrate Your Classifier’s Probabilities in Scikit-learn",
-   "url": "https://www.kdnuggets.com/how-to-calibrate-your-classifiers-probabilities-in-scikit-learn",
-   "summary": "In this tutorial, you will train two scikit-learn classifiers on a real dataset, expose their miscalibration with a reliability diagram and a Brier score, and fix it with Platt scaling and isotonic regression.",
-   "source": "KDnuggets",
-   "category": "Data Science",
-   "when": "2026-11-17T15:00:00+00:00",
-   "batch": "2026-11-18T09:50:31+00:00"
-  },
-  {
-   "title": "Power BI at Ignite: Building on the momentum",
-   "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Power-BI-at-Ignite-Building-on-the-momentum/ba-p/5422974",
-   "summary": "If you haven't already, read Bogdan Crivat's Microsoft Fabric Ignite blog post for a complete look at our Ignite announcements across Microsoft Fabric.",
-   "source": "Power BI Blog",
-   "category": "BI & Analytics",
-   "when": "2026-11-17T18:30:00+00:00",
-   "batch": "2026-11-18T09:50:31+00:00"
-  },
-  {
-   "title": "Interviewed at a YC startup, found out they used my LinkedIn without permission",
-   "url": "https://reddit.com/r/recruitinghell/comments/1xyr6ml/interviewed_at_a_yc_startup_spent_30_hours/",
-   "summary": "Trending on Hacker News — 386 points, 95 comments.",
-   "source": "Hacker News",
-   "category": "Tech",
-   "when": "2026-11-18T05:11:30+00:00",
-   "batch": "2026-11-18T09:50:31+00:00"
-  },
-  {
-   "title": "Nvidia’s startup stakes ballooned to $65B, but Huang’s exit puts future deals in doubt",
-   "url": "https://techcrunch.com/2026/11/17/nvidias-startup-stakes-ballooned-to-65b-but-huangs-exit-puts-future-deals-in-doubt/",
-   "summary": "The value of Nvidia’s private investments has nearly tripled over the past nine months, fueled by Jensen Huang’s aggressive dealmaking and rising valuations of its existing portfolio companies.",
-   "source": "TechCrunch",
-   "category": "Startups",
-   "when": "2026-11-18T01:44:21+00:00",
-   "batch": "2026-11-18T09:50:31+00:00"
-  },
-  {
-   "title": "Palmer Luckey says his SLAB seastead is 'way cooler' than a floating data center",
-   "url": "https://www.engadget.com/2320221/palmer-luckeys-slab-seastead-is-way-cooler-than-a-floating-data-center/",
-   "summary": "Palmer Luckey is touting a new 'SLAB' seastead that would act as a lawless city state.",
-   "source": "Engadget",
-   "category": "Gadgets",
-   "when": "2026-11-18T09:41:44+00:00",
-   "batch": "2026-11-18T09:50:31+00:00"
   }
  ]
 }
