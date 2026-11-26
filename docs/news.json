@@ -1,6 +1,114 @@
 {
- "updated": "2026-11-26T11:09:27+00:00",
+ "updated": "2026-11-26T20:19:30+00:00",
  "stories": [
+  {
+   "title": "Scott Aaronson says AI labs are sitting on cryptography ‘bombshells’",
+   "url": "https://thenextweb.com/news/scott-aaronson-ai-labs-cryptography-rsa-rumours",
+   "summary": "Computer scientist Scott Aaronson says he is “virtually certain” that leading AI labs are holding back results that would break some of today’s cryptography.",
+   "source": "The Next Web",
+   "category": "AI",
+   "when": "2026-11-26T20:15:34+00:00",
+   "batch": "2026-11-26T20:19:30+00:00"
+  },
+  {
+   "title": "Signal’s Moxie Marlinspike says AI safety is building mass surveillance",
+   "url": "https://thenextweb.com/news/moxie-marlinspike-ai-surveillance-confer-encryption",
+   "summary": "Moxie Marlinspike, who built Signal, says the way AI companies police misuse is turning into the biggest mass surveillance system ever built.",
+   "source": "The Next Web",
+   "category": "AI",
+   "when": "2026-11-26T19:42:36+00:00",
+   "batch": "2026-11-26T20:19:30+00:00"
+  },
+  {
+   "title": "Rethinking read replicas for the lakebase architecture",
+   "url": "https://www.databricks.com/blog/rethinking-read-replicas-lakebase-architecture",
+   "summary": "The idea behind read replicas makes sense: when your app gets busy, you add a couple.",
+   "source": "Databricks",
+   "category": "Data Engineering",
+   "when": "2026-11-26T13:45:08+00:00",
+   "batch": "2026-11-26T20:19:30+00:00"
+  },
+  {
+   "title": "ChatGPT Boosted Consultants' Scores, Not Their Knowledge",
+   "url": "https://towardsdatascience.com/chatgpt-boosted-consultants-scores-not-their-knowledge/",
+   "summary": "Consultants gained 49 points on coding with AI, while apprentices also gained comprehension — which is why assisted work and expertise need separate names.",
+   "source": "Towards Data Science",
+   "category": "Data Science",
+   "when": "2026-11-26T16:00:00+00:00",
+   "batch": "2026-11-26T20:19:30+00:00"
+  },
+  {
+   "title": "How to Future-Proof Your Data Career as Coding Agents Take Over Routine Work",
+   "url": "https://www.kdnuggets.com/how-to-future-proof-your-data-career-as-coding-agents-take-over-routine-work",
+   "summary": "The skills that keep you irreplaceable when AI handles the boilerplate.",
+   "source": "KDnuggets",
+   "category": "Data Science",
+   "when": "2026-11-26T15:00:00+00:00",
+   "batch": "2026-11-26T20:19:30+00:00"
+  },
+  {
+   "title": "The need for a formally verifiable mainstream programming language",
+   "url": "https://blainehansen.me/post/mainstream-verifiable-language/",
+   "summary": "Comments.",
+   "source": "Lobsters",
+   "category": "Tech",
+   "when": "2026-11-26T20:06:50+00:00",
+   "batch": "2026-11-26T20:19:30+00:00"
+  },
+  {
+   "title": "Australia Passes Tough Legislation Requiring Big Tech to Preempt Foreseeable Harms",
+   "url": "https://yro.slashdot.org/story/26/11/25/2326240/australia-passes-tough-legislation-requiring-big-tech-to-preempt-foreseeable-harms",
+   "summary": "Australia's Parliament has passed the Digital Duty of Care Act, requiring online platforms to proactively identify and mitigate foreseeable harms or face potentially billions of dollars in fines.",
+   "source": "Slashdot",
+   "category": "Tech",
+   "when": "2026-11-26T20:00:00+00:00",
+   "batch": "2026-11-26T20:19:30+00:00"
+  },
+  {
+   "title": "Nvidia hits pause on chip shipments to Southeast Asia",
+   "url": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
+   "summary": "Nvidia has told manufacturing partners to pause server shipments to Malaysia, Singapore, Thailand and Indonesia as the U.S. tightens its push to keep AI chips out of China.",
+   "source": "TechCrunch",
+   "category": "Startups",
+   "when": "2026-11-26T20:03:54+00:00",
+   "batch": "2026-11-26T20:19:30+00:00"
+  },
+  {
+   "title": "Is Alice Huang a spy or not?",
+   "url": "https://techcrunch.com/2026/11/26/is-alice-huang-a-spy-or-not/",
+   "summary": "The central, still-unproven claim in the Nvidia scandal is that Alice Huang, the former Megaspeed exec with whom Nvidia CEO Jensen Huang had an extramarital affair, is a Chinese spy.",
+   "source": "TechCrunch",
+   "category": "Startups",
+   "when": "2026-11-26T20:00:00+00:00",
+   "batch": "2026-11-26T20:19:30+00:00"
+  },
+  {
+   "title": "X’s photo editor gains new tools, now at par with basic photo editors",
+   "url": "https://www.digitaltrends.com/social-media/xs-photo-editor-gains-new-tools-at-par-with-basic-photo-editors/",
+   "summary": "X for Android is highlighting a more capable built-in image editor, showcasing color and lighting controls, fresh filters, eyedropper text styling, pinch-to-zoom, and detail blurring.",
+   "source": "Digital Trends",
+   "category": "Gadgets",
+   "when": "2026-11-26T20:12:01+00:00",
+   "batch": "2026-11-26T20:19:30+00:00"
+  },
+  {
+   "title": "Google’s new Play Store rule could put developers’ home addresses on display for everyone",
+   "url": "https://www.digitaltrends.com/phones/googles-new-play-store-rule-could-put-developers-home-addresses-on-display-for-everyone/",
+   "summary": "Google's upcoming Play Store rules could expose the home addresses and phone numbers of independent Android developers worldwide, even though the European regulations behind the change don't require global disclosure.",
+   "source": "Digital Trends",
+   "category": "Gadgets",
+   "when": "2026-11-26T19:59:59+00:00",
+   "batch": "2026-11-26T20:19:30+00:00"
+  },
+  {
+   "title": "1Password says it was hacked but users' vaults are safe",
+   "url": "https://www.engadget.com/2329013/1password-hacked-but-users-vaults-are-safe/",
+   "summary": "1Password assures customers that their logins and other sensitive information were not compromised in a recent data breach.",
+   "source": "Engadget",
+   "category": "Security",
+   "when": "2026-11-26T20:00:00+00:00",
+   "batch": "2026-11-26T20:19:30+00:00"
+  },
   {
    "title": "Global stocks climb after volatile US trading over AI risks",
    "url": "https://www.ft.com/content/6e217409-9fbb-456c-b405-2eb15bb69679?syn-25a6b1a6=1",
@@ -1332,114 +1440,6 @@
    "category": "Gadgets",
    "when": "2026-11-20T23:48:00+00:00",
    "batch": "2026-11-21T09:19:16+00:00"
-  },
-  {
-   "title": "The most misunderstood graph in AI just got a major update",
-   "url": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
-   "summary": "A new report from the AI evaluation nonprofit METR finds that some AI capabilities are continuing to improve along an exponential trajectory—but it also indicates that models aren’t quite as good at tasks that require judgment as…",
-   "source": "MIT Tech Review",
-   "category": "AI",
-   "when": "2026-11-20T18:15:15+00:00",
-   "batch": "2026-11-20T18:59:13+00:00"
-  },
-  {
-   "title": "OpenAI brings its collaborative Space hubs to Plus users",
-   "url": "https://www.engadget.com/2323016/openai-brings-its-collaborative-space-hubs-to-plus-users/",
-   "summary": "You can upload documents, files and more to the hubs for easy sharing.",
-   "source": "Engadget",
-   "category": "AI",
-   "when": "2026-11-20T18:00:00+00:00",
-   "batch": "2026-11-20T18:59:13+00:00"
-  },
-  {
-   "title": "Interactive Databricks Reference Architectures Across 70 Industries",
-   "url": "https://www.databricks.com/blog/interactive-databricks-reference-architectures-across-70-industries",
-   "summary": "Why we built itMost Databricks architecture talks used to start with the same slide: ingestion on the left.",
-   "source": "Databricks",
-   "category": "Data Engineering",
-   "when": "2026-11-20T14:48:28+00:00",
-   "batch": "2026-11-20T18:59:13+00:00"
-  },
-  {
-   "title": "On-premises data gateway November 2026 release",
-   "url": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/On-premises-data-gateway-November-2026-release/ba-p/5430005",
-   "summary": "The November 2026 release of the on-premises data gateway (version 3000.342) continues our commitment to secure, reliable and accessible connectivity between on-premises data sources and Microsoft Fabric services.",
-   "source": "Microsoft Fabric",
-   "category": "Data Engineering",
-   "when": "2026-11-20T12:45:00+00:00",
-   "batch": "2026-11-20T18:59:13+00:00"
-  },
-  {
-   "title": "LightGBM vs. a Four-Week Average for Forecasting Bike-Share Rentals",
-   "url": "https://towardsdatascience.com/lightgbm-vs-a-four-week-average-for-forecasting-bike-share-rentals/",
-   "summary": "A 48-hour Capital Bikeshare experiment pits XGBoost, Ridge, SARIMA, and Prophet against simple baselines, with care for missing hours and leakage.",
-   "source": "Towards Data Science",
-   "category": "Data Science",
-   "when": "2026-11-20T16:30:00+00:00",
-   "batch": "2026-11-20T18:59:13+00:00"
-  },
-  {
-   "title": "Google says it’s going to shut off Google Assistant on smart speakers next year",
-   "url": "https://www.theverge.com/tech/1038834/google-assistant-smart-speakers-nest-app-killed-shut-down",
-   "summary": "Google is announcing some significant changes to its smart home software. Starting next year, the company will shut down the Nest app in favor of the Google Home app and retire Google Assistant on its smart home devices.",
-   "source": "The Verge",
-   "category": "Tech",
-   "when": "2026-11-20T18:06:41+00:00",
-   "batch": "2026-11-20T18:59:13+00:00"
-  },
-  {
-   "title": "Super-hot rock geothermal could end data center energy woes",
-   "url": "https://techcrunch.com/2026/11/20/super-hot-rock-geothermal-could-end-data-center-energy-woes/",
-   "summary": "A new wave of geothermal startups are betting that they can leapfrog today's leaders to deliver terawatts of electricity nearly anywhere.",
-   "source": "TechCrunch",
-   "category": "Startups",
-   "when": "2026-11-20T18:34:00+00:00",
-   "batch": "2026-11-20T18:59:13+00:00"
-  },
-  {
-   "title": "Here's everything GTA+ gets you in GTA 6: Is it worth $8 a month?",
-   "url": "https://www.engadget.com/2323323/gta-plus-benefits-gta-6-is-it-worth-it/",
-   "summary": "A GTA+ membership adds a few extras to GTA 6 for $8 a month. Here's what's included and which players are most likely to get their money's worth.",
-   "source": "Engadget",
-   "category": "Gadgets",
-   "when": "2026-11-20T18:27:59+00:00",
-   "batch": "2026-11-20T18:59:13+00:00"
-  },
-  {
-   "title": "OpenAI is testing Dots personal agents on its $20 per month Plus tier",
-   "url": "https://www.engadget.com/2322656/openai-is-testing-dots-personal-agents-on-its-20-per-month-plus-tier/",
-   "summary": "OpenAI is expanding access to Dots, the proactive AI agents that can work for you without any supervision or assistance.",
-   "source": "Engadget",
-   "category": "AI",
-   "when": "2026-11-20T07:31:25+00:00",
-   "batch": "2026-11-20T09:46:26+00:00"
-  },
-  {
-   "title": "Apple may be developing its own AI agent that runs your Mac",
-   "url": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/",
-   "summary": "The iPhone maker appears to be building agents that can compete with the likes of Meta Muse, Instinct, Claude, and OpenAI Dots.",
-   "source": "TechCrunch AI",
-   "category": "AI",
-   "when": "2026-11-20T00:56:01+00:00",
-   "batch": "2026-11-20T09:46:26+00:00"
-  },
-  {
-   "title": "How Klaviyo processes 3 billion daily events at scale with Amazon MSK Express",
-   "url": "https://aws.amazon.com/blogs/big-data/how-klaviyo-processes-3-billion-daily-events-at-scale-with-amazon-msk-express/",
-   "summary": "Learn how Klaviyo migrated its event pipeline from RabbitMQ to Amazon MSK Express brokers, ingesting roughly 3 billion events per day.",
-   "source": "AWS Big Data",
-   "category": "Data Engineering",
-   "when": "2026-11-19T23:18:51+00:00",
-   "batch": "2026-11-20T09:46:26+00:00"
-  },
-  {
-   "title": "Announcing in-place upgrades from Standard brokers to Express brokers for Amazon MSK",
-   "url": "https://aws.amazon.com/blogs/big-data/announcing-in-place-upgrades-from-standard-brokers-to-express-brokers-for-amazon-msk/",
-   "summary": "Amazon MSK now supports in-place upgrades from Standard brokers to Express brokers. You can modernize an existing MSK Provisioned cluster through a fully managed workflow, with no new cluster, no application changes, and no…",
-   "source": "AWS Big Data",
-   "category": "Data Engineering",
-   "when": "2026-11-19T22:51:20+00:00",
-   "batch": "2026-11-20T09:46:26+00:00"
   }
  ]
 }
