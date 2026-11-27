@@ -1,6 +1,114 @@
 {
- "updated": "2026-11-27T11:01:59+00:00",
+ "updated": "2026-11-27T20:04:12+00:00",
  "stories": [
+  {
+   "title": "OpenAI countersues Apple and accuses it of stealing trade secrets",
+   "url": "https://www.engadget.com/2329747/openai-countersues-apple-and-accuses-it-of-stealing-trade-secrets/",
+   "summary": "The suit suggests that the iPhone maker is trying to \"compete unfairly by any means available.\".",
+   "source": "Engadget",
+   "category": "AI",
+   "when": "2026-11-27T19:44:38+00:00",
+   "batch": "2026-11-27T20:04:12+00:00"
+  },
+  {
+   "title": "OpenAI Says Apple Pressured Suppliers to Shun Its Devices",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-27/openai-says-apple-pressured-suppliers-to-shun-its-devices",
+   "summary": "The trade-secrets fight between OpenAI and Apple Inc. is widening, with the artificial intelligence company accusing the iPhone maker of undermining its supplier relationships and using unfair employment agreements to prevent…",
+   "source": "Bloomberg Tech",
+   "category": "AI",
+   "when": "2026-11-27T19:02:10+00:00",
+   "batch": "2026-11-27T20:04:12+00:00"
+  },
+  {
+   "title": "Blending Unsupervised Clustering Tasks with Scikit-LLM",
+   "url": "https://www.kdnuggets.com/blending-unsupervised-clustering-tasks-with-scikit-llm",
+   "summary": "A two-stage pipeline for document clustering and LLM-driven topic discovery, aided by Scikit-LLM's summarization tools.",
+   "source": "KDnuggets",
+   "category": "Data Science",
+   "when": "2026-11-27T15:00:00+00:00",
+   "batch": "2026-11-27T20:04:12+00:00"
+  },
+  {
+   "title": "Speculative Decoding Makes Tool Calls Faster. Agents Need a Cache",
+   "url": "https://towardsdatascience.com/speculative-decoding-makes-tool-calls-faster-agents-need-a-cache/",
+   "summary": "Benchmarks with Qwen3 and Llama on llama.cpp show a draft model sped up code, JSON, and tool calls up to 1.7x, while uncached agent loops ran 6% slower.",
+   "source": "Towards Data Science",
+   "category": "Data Science",
+   "when": "2026-11-27T14:00:00+00:00",
+   "batch": "2026-11-27T20:04:12+00:00"
+  },
+  {
+   "title": "Why optimistic updates are corrosive",
+   "url": "https://datastar-instant-intent.ndyg.cross.stream/corrosive/",
+   "summary": "Comments.",
+   "source": "Lobsters",
+   "category": "Tech",
+   "when": "2026-11-27T20:01:50+00:00",
+   "batch": "2026-11-27T20:04:12+00:00"
+  },
+  {
+   "title": "12 winter warmers under £40 this Black Friday — fan heaters, thermals and more",
+   "url": "https://www.techradar.com/home/air-quality/from-fan-heaters-to-thermal-socks-12-winter-warmers-under-gbp40-to-keep-you-cosy-this-black-friday-recommended-by-a-chilly-person",
+   "summary": "Whether you're feeling the cold yourself, or looking for a Christmas gift for someone who's perpetually chilly, I've got you covered.",
+   "source": "TechRadar",
+   "category": "Tech",
+   "when": "2026-11-27T20:01:45+00:00",
+   "batch": "2026-11-27T20:04:12+00:00"
+  },
+  {
+   "title": "Delhivery initiates arbitration against Ecom Express investors over Rs 52 Cr claims",
+   "url": "https://entrackr.com/news/delhivery-initiates-arbitration-against-ecom-express-investors-over-rs-52-cr-claims-12846794",
+   "summary": "Logistics major Delhivery has initiated arbitration proceedings against the former shareholders of Ecom Express, seeking Rs 51.88 crore in compensation for losses identified after its acquisition of the logistics company in July…",
+   "source": "Entrackr",
+   "category": "Startups",
+   "when": "2026-11-27T15:56:30+00:00",
+   "batch": "2026-11-27T20:04:12+00:00"
+  },
+  {
+   "title": "Rapido’s Ownly To Charge Customers For Deliveries Soon",
+   "url": "https://inc42.com/buzz/rapidos-ownly-to-charge-customers-for-deliveries-soon/",
+   "summary": "Rapido’s food delivery platform Ownly is set to introduce distance-based delivery charges for customers in Bengaluru from November 30, marking.",
+   "source": "Inc42",
+   "category": "Startups",
+   "when": "2026-11-27T15:26:19+00:00",
+   "batch": "2026-11-27T20:04:12+00:00"
+  },
+  {
+   "title": "9to5Mac Daily: November 27, 2026 – MacBook Air overhaul rumors, more",
+   "url": "https://9to5mac.com/2026/11/27/daily-november-27-2026/",
+   "summary": "Listen to a recap of the top stories of the day from 9to5Mac . 9to5Mac Daily is available on iTunes and Apple’s Podcasts app , Stitcher , TuneIn , Google Play , or through our dedicated RSS feed for Overcast and other podcast…",
+   "source": "9to5Mac",
+   "category": "Gadgets",
+   "when": "2026-11-27T20:01:59+00:00",
+   "batch": "2026-11-27T20:04:12+00:00"
+  },
+  {
+   "title": "Get a Sony WH-1000 MX5 headset with ANC for only $169.99 — aural bliss for your games and movies",
+   "url": "https://www.tomshardware.com/pc-components/get-a-sony-wh-1000-mx5-headset-with-anc-for-only-usd169-99-aural-bliss-for-your-games-and-movies",
+   "summary": "",
+   "source": "Tom's Hardware",
+   "category": "Gadgets",
+   "when": "2026-11-27T19:49:01+00:00",
+   "batch": "2026-11-27T20:04:12+00:00"
+  },
+  {
+   "title": "pCloud confirms password manager hack after suspicious login alerts",
+   "url": "https://www.bleepingcomputer.com/news/security/pcloud-confirms-password-manager-hack-after-suspicious-login-alerts/",
+   "summary": "The pCloud Pass password manager suffered a cyberattack, with users reporting that unknown devices had connected to their accounts even with two-factor authentication (2FA) enabled.",
+   "source": "BleepingComputer",
+   "category": "Security",
+   "when": "2026-11-27T19:26:04+00:00",
+   "batch": "2026-11-27T20:04:12+00:00"
+  },
+  {
+   "title": "American uranium plant forced offline following cyberattack — Peninsula Energy shuts down mining operation to investigate incident",
+   "url": "https://www.techradar.com/pro/security/american-uranium-plant-forced-offline-following-cyberattack-peninsula-energy-shuts-down-mining-operation-to-investigate-incident",
+   "summary": "Shutdown at its Strata Energy subsidiary hoped to be temporary, as Peninsula investigates the incident further.",
+   "source": "TechRadar",
+   "category": "Security",
+   "when": "2026-11-27T19:05:00+00:00",
+   "batch": "2026-11-27T20:04:12+00:00"
+  },
   {
    "title": "Our 2027 Innovators Under 35 competition is now open",
    "url": "https://www.technologyreview.com/2026/11/27/1149857/2027-innovators-under-35-competition-nominate/",
@@ -1332,114 +1440,6 @@
    "category": "Data Engineering",
    "when": "2026-11-20T19:19:28+00:00",
    "batch": "2026-11-21T13:18:16+00:00"
-  },
-  {
-   "title": "Censored vs. Truncated Regression in Python, Explained",
-   "url": "https://towardsdatascience.com/censored-vs-truncated-regression-in-python-explained/",
-   "summary": "A simulated salary survey shows OLS shrinking a $5k-per-year effect to $3.2k, then recovers it with Tobit and truncated likelihoods built from scratch.",
-   "source": "Towards Data Science",
-   "category": "Data Science",
-   "when": "2026-11-21T13:00:00+00:00",
-   "batch": "2026-11-21T13:18:16+00:00"
-  },
-  {
-   "title": "Decision AI Explained in 5 Minutes",
-   "url": "https://www.kdnuggets.com/decision-ai-explained-in-5-minutes",
-   "summary": "Learn how decision models work, how they turn LLMs into faster decision-making systems, and how to run open-source alternatives locally.",
-   "source": "KDnuggets",
-   "category": "Data Science",
-   "when": "2026-11-20T13:00:00+00:00",
-   "batch": "2026-11-21T13:18:16+00:00"
-  },
-  {
-   "title": "Apple TV 4K Review: New $299 Streaming Box is Excellent But Too Expensive",
-   "url": "https://www.bloomberg.com/news/features/2026-11-21/apple-tv-4k-review-new-299-streaming-box-is-excellent-but-too-expensive",
-   "summary": "At $299, the company’s excellent set-top box is suddenly hard to recommend.",
-   "source": "Bloomberg Tech",
-   "category": "Tech",
-   "when": "2026-11-21T13:00:15+00:00",
-   "batch": "2026-11-21T13:18:16+00:00"
-  },
-  {
-   "title": "The Outages Are Just Getting Started",
-   "url": "https://www.wired.com/story/brace-yourself-for-years-of-outage-chaos/",
-   "summary": "AI is forcing companies to patch their systems faster as attackers race to exploit newly discovered vulnerabilities. Welcome to internet outage hell.",
-   "source": "Wired",
-   "category": "Tech",
-   "when": "2026-11-21T13:00:00+00:00",
-   "batch": "2026-11-21T13:18:16+00:00"
-  },
-  {
-   "title": "Funding and acquisitions in Indian startups this week [Nov 16- Nov 21",
-   "url": "https://entrackr.com/report/weekly-funding-report-weekly-funding-report/funding-and-acquisitions-in-indian-startups-this-week-nov-16-nov-21-12829487",
-   "summary": "This week, 23 Indian startups raised $290 million across 6 growth-stage and 17 early-stage deals, including two undisclosed rounds. The week also saw five key appointments, two exits and one fund launch.",
-   "source": "Entrackr",
-   "category": "Startups",
-   "when": "2026-11-21T11:56:03+00:00",
-   "batch": "2026-11-21T13:18:16+00:00"
-  },
-  {
-   "title": "Momentum by Google and YourStory to bring India’s founders, investors, and policymakers into one room in New Delhi",
-   "url": "https://yourstory.com/2026/11/momentum-by-google--yourstory-uniting-indias-startup-ecos",
-   "summary": "Momentum by Google, in collaboration with YourStory, puts India’s startup future on one stage, with the people who will build, fund, and shape it.",
-   "source": "YourStory",
-   "category": "Startups",
-   "when": "2026-11-21T11:10:07+00:00",
-   "batch": "2026-11-21T13:18:16+00:00"
-  },
-  {
-   "title": "Engadget review recap: Apple HomeView, Ray-Ban Meta (Gen 3) and more",
-   "url": "https://www.engadget.com/2323697/engadget-review-recap-apple-homeview-ray-ban-meta-gen-3-and-more/",
-   "summary": "A roundup of recent reviews from Engadget.",
-   "source": "Engadget",
-   "category": "Gadgets",
-   "when": "2026-11-21T12:30:00+00:00",
-   "batch": "2026-11-21T13:18:16+00:00"
-  },
-  {
-   "title": "A Single Malicious Webpage Let Researchers Hijack Meta Muse and Access Private Chats",
-   "url": "https://thehackernews.com/2026/11/a-single-malicious-webpage-let.html",
-   "summary": "A malicious webpage could extract a Meta Muse user's private conversations and stored memories from the assistant without triggering any approval prompt, researchers have shown.",
-   "source": "The Hacker News",
-   "category": "Security",
-   "when": "2026-11-21T11:53:07+00:00",
-   "batch": "2026-11-21T13:18:16+00:00"
-  },
-  {
-   "title": "Researcher plants 2m canaries into the AI supply chain. A privacy disaster surfaced",
-   "url": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
-   "summary": "Test using prompts with unique, trackable secrets proves that data doesn't stay private.",
-   "source": "Ars Technica",
-   "category": "AI",
-   "when": "2026-11-20T20:59:08+00:00",
-   "batch": "2026-11-21T12:37:43+00:00"
-  },
-  {
-   "title": "Experts warn: Nearly everyone in AI is susceptible to a honey-trap scheme right now",
-   "url": "https://techcrunch.com/2026/11/20/experts-warn-nearly-everyone-in-ai-is-susceptible-to-a-honey-trap-scheme-right-now/",
-   "summary": "Techies are building technology that can advance all aspects of the world — but can they protect their hearts? That's the vulnerability that honey pots exploit.",
-   "source": "TechCrunch",
-   "category": "AI",
-   "when": "2026-11-20T20:58:29+00:00",
-   "batch": "2026-11-21T12:37:43+00:00"
-  },
-  {
-   "title": "Clairic Hit 98% Accuracy on 72.8% of Questions via Confidence Scores",
-   "url": "https://towardsdatascience.com/clairic-hit-98-accuracy-on-728-of-questions-via-confidence-scores/",
-   "summary": "With a 0.9 confidence cutoff, Cloudflare's System One model handles the easy cases and routes the rest to a bigger, slower LLM like Luna.",
-   "source": "Towards Data Science",
-   "category": "Data Science",
-   "when": "2026-11-20T15:00:00+00:00",
-   "batch": "2026-11-21T12:37:43+00:00"
-  },
-  {
-   "title": "How to Prepare for a Credit Risk Internship Interview in Nine Steps",
-   "url": "https://towardsdatascience.com/how-to-prepare-for-a-credit-risk-internship-interview-in-nine-steps/",
-   "summary": "Two years of interviewing master's students distilled into one logistic regression scoring model, from missing values and VIF to AUC and Gini.",
-   "source": "Towards Data Science",
-   "category": "Data Science",
-   "when": "2026-11-20T13:30:00+00:00",
-   "batch": "2026-11-21T12:37:43+00:00"
   }
  ]
 }
