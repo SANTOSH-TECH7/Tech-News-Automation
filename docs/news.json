@@ -1,6 +1,114 @@
 {
- "updated": "2026-11-26T20:19:30+00:00",
+ "updated": "2026-11-27T11:01:59+00:00",
  "stories": [
+  {
+   "title": "Our 2027 Innovators Under 35 competition is now open",
+   "url": "https://www.technologyreview.com/2026/11/27/1149857/2027-innovators-under-35-competition-nominate/",
+   "summary": "Every year, the editors at MIT Technology Review select 35 of the world’s top young scientists, entrepreneurs, and inventors to honor as our newest class of Innovators Under 35.",
+   "source": "MIT Tech Review",
+   "category": "AI",
+   "when": "2026-11-27T10:48:47+00:00",
+   "batch": "2026-11-27T11:01:59+00:00"
+  },
+  {
+   "title": "AI boom leaves network operators waiting up to 18 months for kit",
+   "url": "https://www.theregister.com/networks/2026/11/27/ai-boom-leaves-network-operators-waiting-up-to-18-months-for-kit/5312366",
+   "summary": "Optical equipment prices up around 50% this year as telcos compete with datacenters for components, says RETN.",
+   "source": "The Register",
+   "category": "AI",
+   "when": "2026-11-27T10:45:00+00:00",
+   "batch": "2026-11-27T11:01:59+00:00"
+  },
+  {
+   "title": "mvgam 2.0 on CRAN: State-Space models built on brms",
+   "url": "https://www.r-bloggers.com/2026/11/mvgam-2-0-on-cran-state-space-models-built-on-brms/",
+   "summary": "Welcoming mvgam 2.0 to CRAN Version 2.0 of mvgam has now been published on CRAN. When I announced the first CRAN release, I finished with a list of features I wanted to add. Two of those were zero-inflated observation model.",
+   "source": "R-bloggers",
+   "category": "Data Science",
+   "when": "2026-11-27T00:00:00+00:00",
+   "batch": "2026-11-27T11:01:59+00:00"
+  },
+  {
+   "title": "Shuffle the Questions to Catch an LLM That Memorized Its Benchmark",
+   "url": "https://towardsdatascience.com/shuffle-the-questions-to-catch-an-llm-that-memorized-its-benchmark/",
+   "summary": "Two short Python functions and a free Colab GPU score a model in about half an hour; a z above 3 merits a look, while a near-zero score is more of a shrug.",
+   "source": "Towards Data Science",
+   "category": "Data Science",
+   "when": "2026-11-26T14:00:00+00:00",
+   "batch": "2026-11-27T11:01:59+00:00"
+  },
+  {
+   "title": "Fed's Dec. Meeting May Mark Turning Point for Markets: Economist",
+   "url": "https://www.bloomberg.com/news/videos/2026-11-27/why-next-fed-meeting-may-mark-turning-point-for-markets-video",
+   "summary": "Mohit Kumar, chief European economist and strategist at Jefferies, discusses the outlook for the Federal Reserve's December policy meeting and its potential impact on markets.",
+   "source": "Bloomberg Tech",
+   "category": "Tech",
+   "when": "2026-11-27T10:36:01+00:00",
+   "batch": "2026-11-27T11:01:59+00:00"
+  },
+  {
+   "title": "The HEDD Heddphone DX are designed to be the bassiest headphones around",
+   "url": "https://www.techradar.com/audio/headphones/we-gave-these-headphones-a-glowing-5-star-review-and-their-pricier-successors-are-designed-to-be-the-best-bass-cans-youve-ever-heard-of",
+   "summary": "Hedd has launched Heddphone DX, a follow up set of cans to the excellent Heddphone D1 — and we can't wait to hear them.",
+   "source": "TechRadar",
+   "category": "Tech",
+   "when": "2026-11-27T10:30:40+00:00",
+   "batch": "2026-11-27T11:01:59+00:00"
+  },
+  {
+   "title": "Can Europe’s neolabs live up to the hype?",
+   "url": "https://sifted.eu/articles/europe-neolab-live-up-to-hype/",
+   "summary": "",
+   "source": "Sifted",
+   "category": "Startups",
+   "when": "2026-11-27T10:50:20+00:00",
+   "batch": "2026-11-27T11:01:59+00:00"
+  },
+  {
+   "title": "indē wild Slips Into Red In FY26 Despite 2.4X YoY Surge In Operating Revenue",
+   "url": "https://inc42.com/buzz/inde-wild-slips-into-red-in-fy26-despite-2-4x-yoy-surge-in-operating-revenue/",
+   "summary": "Nikhil Kamath-backed beauty and personal care (BPC) startup indē wild slipped back into the red in the financial year ended.",
+   "source": "Inc42",
+   "category": "Startups",
+   "when": "2026-11-27T10:24:44+00:00",
+   "batch": "2026-11-27T11:01:59+00:00"
+  },
+  {
+   "title": "Texas lifts freeze on 1,800+ data center projects in Greg Abbott U-turn",
+   "url": "https://www.tomshardware.com/tech-industry/data-centers/texas-lifts-freeze-on-1-800-data-center-projects-in-greg-abbott-u-turn-companies-rush-for-permits-before-gina-hinojosas-january-arrival",
+   "summary": "After pausing the approval of new data center building permits in August, Texas has now reversed the decision and has once again begun approving applications as builders rush to get the go-ahead before Democratic governor Gina…",
+   "source": "Tom's Hardware",
+   "category": "Gadgets",
+   "when": "2026-11-27T11:00:00+00:00",
+   "batch": "2026-11-27T11:01:59+00:00"
+  },
+  {
+   "title": "The US is pretty close to a law banning Chinese cars, and automakers are on board",
+   "url": "https://www.digitaltrends.com/cars/the-us-is-pretty-close-to-a-law-banning-chinese-cars-and-automakers-are-on-board/",
+   "summary": "Interestingly, the report mentions that the discussions are at the \"one yard line,\" which means the chances are high that the bill could pass before the current Congress ends.",
+   "source": "Digital Trends",
+   "category": "Gadgets",
+   "when": "2026-11-27T10:10:56+00:00",
+   "batch": "2026-11-27T11:01:59+00:00"
+  },
+  {
+   "title": "Switzerland confirms first AI agent cyberattacks on critical infrastructure",
+   "url": "https://thenextweb.com/news/switzerland-ai-agent-cyberattacks-critical-infrastructure",
+   "summary": "Attackers are now using AI agents against companies and critical infrastructure operators in Switzerland. The country’s National Cyber Security Centre (NCSC) confirmed its first such cyberattacks in an advisory on Tuesday.",
+   "source": "The Next Web",
+   "category": "Security",
+   "when": "2026-11-27T10:48:11+00:00",
+   "batch": "2026-11-27T11:01:59+00:00"
+  },
+  {
+   "title": "Drupal warns of new site takeover flaw exploited in attacks",
+   "url": "https://www.bleepingcomputer.com/news/security/drupal-warns-of-new-access-bypass-flaw-exploited-in-attacks/",
+   "summary": "The Drupal security team says attackers are exploiting a second critical vulnerability that lets them breach and hijack unpatched websites.",
+   "source": "BleepingComputer",
+   "category": "Security",
+   "when": "2026-11-27T10:10:15+00:00",
+   "batch": "2026-11-27T11:01:59+00:00"
+  },
   {
    "title": "Scott Aaronson says AI labs are sitting on cryptography ‘bombshells’",
    "url": "https://thenextweb.com/news/scott-aaronson-ai-labs-cryptography-rsa-rumours",
@@ -1332,114 +1440,6 @@
    "category": "Data Science",
    "when": "2026-11-20T13:30:00+00:00",
    "batch": "2026-11-21T12:37:43+00:00"
-  },
-  {
-   "title": "“Race realism” isn’t realistic—and it isn’t good science",
-   "url": "https://arstechnica.com/science/2026/11/race-realism-isnt-realistic-and-it-isnt-good-science/",
-   "summary": "Modern genetics does not support claims of innate racial differences in intelligence.",
-   "source": "Ars Technica",
-   "category": "Tech",
-   "when": "2026-11-21T12:01:13+00:00",
-   "batch": "2026-11-21T12:37:43+00:00"
-  },
-  {
-   "title": "Ask HN: I have been unemployed for 2y. 15 years of experience, US. What to do?",
-   "url": "https://news.ycombinator.com/item?id=50583761",
-   "summary": "Trending on Hacker News — 262 points, 230 comments.",
-   "source": "Hacker News",
-   "category": "Tech",
-   "when": "2026-11-20T23:18:32+00:00",
-   "batch": "2026-11-21T12:37:43+00:00"
-  },
-  {
-   "title": "Chips can survive the space environment — can their financing?",
-   "url": "https://techcrunch.com/2026/11/20/chips-can-survive-the-space-environment-can-their-financing/",
-   "summary": "Lenders don't want SpaceX shooting their collateral into orbit. What does that mean for space data centers writ large?",
-   "source": "TechCrunch",
-   "category": "Startups",
-   "when": "2026-11-20T17:40:01+00:00",
-   "batch": "2026-11-21T12:37:43+00:00"
-  },
-  {
-   "title": "The Internet Archive's workers are unionizing",
-   "url": "https://www.engadget.com/2323828/the-internet-archives-workers-are-unionizing/",
-   "summary": "None of their asks are radical: better pay, additional benefits that apply to everyone and paths for career development and promotion.",
-   "source": "Engadget",
-   "category": "Gadgets",
-   "when": "2026-11-20T22:15:03+00:00",
-   "batch": "2026-11-21T12:37:43+00:00"
-  },
-  {
-   "title": "Google rolls out new search homepage with AI chat history and no search button",
-   "url": "https://arstechnica.com/ai/2026/11/googles-latest-search-page-redesign-drops-the-search-button-adds-ai-sidebar/",
-   "summary": "Google search is making it even easier to access AI tools on the search page.",
-   "source": "Ars Technica",
-   "category": "AI",
-   "when": "2026-11-20T21:58:29+00:00",
-   "batch": "2026-11-21T09:19:16+00:00"
-  },
-  {
-   "title": "Meta reconsiders 2030 net-zero goal amid record emissions from AI data centers",
-   "url": "https://arstechnica.com/ai/2026/11/meta-reconsiders-2030-net-zero-goal-amid-record-emissions-from-ai-data-centers/",
-   "summary": "Meta is “re-evaluating” 2030 sustainability goals. Will others follow?",
-   "source": "Ars Technica",
-   "category": "AI",
-   "when": "2026-11-20T21:47:10+00:00",
-   "batch": "2026-11-21T09:19:16+00:00"
-  },
-  {
-   "title": "How Twilio modernized billing at 70% lower cost with Amazon Redshift",
-   "url": "https://aws.amazon.com/blogs/big-data/how-twilio-modernized-billing-at-70-lower-cost-with-amazon-redshift/",
-   "summary": "How Twilio's Commerce Platform team modernized their billing pipeline on Amazon Redshift Serverless, cutting infrastructure costs 70% and speeding billing recalculations 12x with streaming ingestion from Amazon MSK and Zero-ETL…",
-   "source": "AWS Big Data",
-   "category": "Data Engineering",
-   "when": "2026-11-19T22:24:02+00:00",
-   "batch": "2026-11-21T09:19:16+00:00"
-  },
-  {
-   "title": "Why PostgreSQL 19 shipped late",
-   "url": "https://www.databricks.com/blog/why-postgresql-19-shipped-late",
-   "summary": "PostgreSQL 19 is now generally available, and there are some really cool things in.",
-   "source": "Databricks",
-   "category": "Data Engineering",
-   "when": "2026-11-19T22:04:02+00:00",
-   "batch": "2026-11-21T09:19:16+00:00"
-  },
-  {
-   "title": "Open Source vs. Proprietary LLMs: A Decision Framework for 2026",
-   "url": "https://www.kdnuggets.com/open-source-vs-proprietary-llms-a-decision-framework-for-2026",
-   "summary": "A practical guide to choosing between open-weight and commercial models, built around the four questions that actually determine the right answer for your use case.",
-   "source": "KDnuggets",
-   "category": "Data Science",
-   "when": "2026-11-20T15:00:00+00:00",
-   "batch": "2026-11-21T09:19:16+00:00"
-  },
-  {
-   "title": "YouTube is reportedly preparing to settle social media addiction claims for $3 billion",
-   "url": "https://www.theverge.com/streaming/1039096/youtube-social-media-addiction-school-districts-settlement",
-   "summary": "YouTube is preparing to pay $3 billion to thousands of school districts to settle claims that its \"addictive design\" harmed kids, according to Bloomberg.",
-   "source": "The Verge",
-   "category": "Tech",
-   "when": "2026-11-20T22:51:40+00:00",
-   "batch": "2026-11-21T09:19:16+00:00"
-  },
-  {
-   "title": "Startup sues Apple in India over tap-to-share contacts feature",
-   "url": "https://techcrunch.com/2026/11/20/startup-sues-apple-in-india-over-tap-to-share-contacts-feature/",
-   "summary": "A U.S. startup is seeking $162 million in damages and an injunction to impact iPhone and Apple Watch imports to India.",
-   "source": "TechCrunch",
-   "category": "Startups",
-   "when": "2026-11-21T04:00:00+00:00",
-   "batch": "2026-11-21T09:19:16+00:00"
-  },
-  {
-   "title": "Why you shouldn't depend on GTA 6 to auto-save",
-   "url": "https://www.engadget.com/2323929/why-you-shouldnt-rely-on-gta-6-auto-save/",
-   "summary": "We explain how GTA 6's auto-save system works, so you don't accidentally lose progress in the massive game.",
-   "source": "Engadget",
-   "category": "Gadgets",
-   "when": "2026-11-20T23:48:00+00:00",
-   "batch": "2026-11-21T09:19:16+00:00"
   }
  ]
 }
