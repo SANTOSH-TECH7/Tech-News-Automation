@@ -1,6 +1,114 @@
 {
- "updated": "2026-11-27T20:04:12+00:00",
+ "updated": "2026-11-28T10:39:38+00:00",
  "stories": [
+  {
+   "title": "Anthropic Introduces Claude Ship to Review, Fix, and Approve Pull Requests by Policy",
+   "url": "https://www.infoq.com/news/2026/11/anthropic-claude-ship/",
+   "summary": "Anthropic has introduced Claude Ship, a set of agents that can review GitHub pull requests, push fixes, and approve the changes a team's policy allows, on Claude Team and Enterprise plans. By Daniel Dominguez.",
+   "source": "InfoQ",
+   "category": "AI",
+   "when": "2026-11-28T10:08:00+00:00",
+   "batch": "2026-11-28T10:39:38+00:00"
+  },
+  {
+   "title": "Ant Group Releases LingSante-3.1-flash: An Open-Weight MoE Model with 560B Total Parameters and 25B Activations per Token",
+   "url": "https://www.marktechpost.com/2026/11/28/ant-group-lingsante-3-1-flash-open-source-medical-ai/",
+   "summary": "Ant Group's Afu team open-sourced LingSante-3.1-flash, a 560B-parameter MoE medical AI model with 25B active parameters, a 1M-token context and an MIT license. It ranks first among open models on InclusionMed.",
+   "source": "MarkTechPost",
+   "category": "AI",
+   "when": "2026-11-28T09:45:33+00:00",
+   "batch": "2026-11-28T10:39:38+00:00"
+  },
+  {
+   "title": "When will that elevator arrive? Elevator dispatching",
+   "url": "https://www.r-bloggers.com/2026/11/when-will-that-elevator-arrive-elevator-dispatching/",
+   "summary": "I was recently at a high-rise building with 23 floors and 6 elevators. There always seemed to be a long wait for an elevator. This made me think: there must be elevator algorithms where the set of elevators d.",
+   "source": "R-bloggers",
+   "category": "Data Science",
+   "when": "2026-11-27T19:30:35+00:00",
+   "batch": "2026-11-28T10:39:38+00:00"
+  },
+  {
+   "title": "10 GitHub Repositories to Master AI Decision Models",
+   "url": "https://www.kdnuggets.com/10-github-repositories-to-master-ai-decision-models",
+   "summary": "Explore 10 GitHub repositories to learn how to build, train, fine-tune, deploy, and evaluate AI decision models that make faster, more efficient decisions.",
+   "source": "KDnuggets",
+   "category": "Data Science",
+   "when": "2026-11-27T13:00:00+00:00",
+   "batch": "2026-11-28T10:39:38+00:00"
+  },
+  {
+   "title": "Dark Matter Might Have Its Own Periodic Table of Invisible Particles",
+   "url": "https://www.wired.com/story/dark-matter-might-have-its-own-periodic-table-of-invisible-particles/",
+   "summary": "Although it remains within the realm of theoretical physics, a new study hints at a parallel chemistry that would force us to rethink how we organize the fundamental components of the universe.",
+   "source": "Wired",
+   "category": "Tech",
+   "when": "2026-11-28T10:00:00+00:00",
+   "batch": "2026-11-28T10:39:38+00:00"
+  },
+  {
+   "title": "Let me Give You Worms",
+   "url": "https://untested.sonnet.io/notes/let-me-give-you-worms/",
+   "summary": "Comments.",
+   "source": "Lobsters",
+   "category": "Tech",
+   "when": "2026-11-28T09:41:52+00:00",
+   "batch": "2026-11-28T10:39:38+00:00"
+  },
+  {
+   "title": "Fintech Startups To Watch: Startups That Caught Our Eye In November",
+   "url": "https://inc42.com/startups/fintech-startups-to-watch-startups-that-caught-our-eye-in-november/",
+   "summary": "It was a stormy November for the Indian fintech sector. Even as the Diwali season brought a surge in digital.",
+   "source": "Inc42",
+   "category": "Startups",
+   "when": "2026-11-28T09:37:11+00:00",
+   "batch": "2026-11-28T10:39:38+00:00"
+  },
+  {
+   "title": "FY26 Financial Tracker: Tracking The Financial Performance Of Indian Startups",
+   "url": "https://inc42.com/features/fy26-financial-tracker-tracking-the-financial-performance-of-indian-startups/",
+   "summary": "The Indian startup ecosystem continued to mature in FY26, with 22 new-age tech companies making their public market debut as.",
+   "source": "Inc42",
+   "category": "Startups",
+   "when": "2026-11-28T07:45:38+00:00",
+   "batch": "2026-11-28T10:39:38+00:00"
+  },
+  {
+   "title": "HUAWEI MatePad Pro 12 review: Gorgeous screen, stunning build, and one big asterisk",
+   "url": "https://www.digitaltrends.com/tablets/huawei-matepad-pro-12-review/",
+   "summary": "The HUAWEI MatePad Pro 12 pairs a feather-light design with a crisp PaperMatte OLED display, excellent speakers, and a capable keyboard. But at that price, its Google app limitations and premium price deserve a closer look.",
+   "source": "Digital Trends",
+   "category": "Gadgets",
+   "when": "2026-11-28T10:37:43+00:00",
+   "batch": "2026-11-28T10:39:38+00:00"
+  },
+  {
+   "title": "Reading brain signals requires bulky gear. This dye turns your hair into electrodes and gets the job done",
+   "url": "https://www.digitaltrends.com/cool-tech/reading-brain-signals-requires-bulky-gear-this-dye-turns-your-hair-into-electrodes-and-gets-the-job-done/",
+   "summary": "A new bioelectronic approach called eHAIR uses mixed ionic-electronic conductive polymer dyes to turn hair strands themselves into scalable electrodes for recording brain activity without conductive gels.",
+   "source": "Digital Trends",
+   "category": "Gadgets",
+   "when": "2026-11-28T08:26:33+00:00",
+   "batch": "2026-11-28T10:39:38+00:00"
+  },
+  {
+   "title": "Pensions and benefits services still down after 'cyber incident'",
+   "url": "https://www.bbc.co.uk/news/articles/cm1wrgqyq4d8o?at_medium=RSS&at_campaign=rss",
+   "summary": "The UK's former chief technology officer says the Department for Work and Pensions may have been hit by hackers, but the government has not confirmed that.",
+   "source": "BBC Technology",
+   "category": "Security",
+   "when": "2026-11-28T09:10:32+00:00",
+   "batch": "2026-11-28T10:39:38+00:00"
+  },
+  {
+   "title": "Could AI break encryption? What mathematical breakthroughs mean for cybersecurity",
+   "url": "https://www.theguardian.com/technology/2026/nov/28/could-ai-break-encryption-what-mathematical-breakthroughs-mean-for-cybersecurity",
+   "summary": "Experts suggest AI companies may be sitting on ‘bombshell’ that could have severe consequences for secret information Leading experts and the governor of the Bank of England have suggested that top AI companies might have…",
+   "source": "Guardian Tech",
+   "category": "Security",
+   "when": "2026-11-28T05:00:30+00:00",
+   "batch": "2026-11-28T10:39:38+00:00"
+  },
   {
    "title": "OpenAI countersues Apple and accuses it of stealing trade secrets",
    "url": "https://www.engadget.com/2329747/openai-countersues-apple-and-accuses-it-of-stealing-trade-secrets/",
@@ -1332,114 +1440,6 @@
    "category": "Data Engineering",
    "when": "2026-11-20T17:00:00+00:00",
    "batch": "2026-11-21T20:36:40+00:00"
-  },
-  {
-   "title": "How to Learn Supply Chain Analytics in 2027 with Claude Code",
-   "url": "https://towardsdatascience.com/how-to-learn-supply-chain-analytics-in-2027-with-claude-code/",
-   "summary": "Each 5-minute case study pairs operational context, a problem statement, and documented code, so data scientists and non-coding planners learn together.",
-   "source": "Towards Data Science",
-   "category": "Data Science",
-   "when": "2026-11-21T15:00:00+00:00",
-   "batch": "2026-11-21T20:36:40+00:00"
-  },
-  {
-   "title": "Five Guardrails That Limit the Damage an AI Agent Can Do",
-   "url": "https://towardsdatascience.com/five-guardrails-that-limit-the-damage-an-ai-agent-can-do/",
-   "summary": "AI Agents for Beginners, Part three: strict Pydantic arguments, a tool allowlist, read-only SQLite, a step cap, and confirmed writes, all verified by five pytest tests in 0.68s.",
-   "source": "Towards Data Science",
-   "category": "Data Science",
-   "when": "2026-11-20T12:00:00+00:00",
-   "batch": "2026-11-21T20:36:40+00:00"
-  },
-  {
-   "title": "Grafana 13.3 Adds Shared Dashboard Variables and Notebooks",
-   "url": "https://www.infoq.com/news/2026/11/grafana-13-3-shared-variables/",
-   "summary": "Grafana 13.3 introduces shared variables across dashboards and adds Notebooks to record investigations. Both features are in public preview and require feature toggles for self-managed installations. By Mark Silvester.",
-   "source": "InfoQ",
-   "category": "BI & Analytics",
-   "when": "2026-11-21T14:30:00+00:00",
-   "batch": "2026-11-21T20:36:40+00:00"
-  },
-  {
-   "title": "The UN fails to agree on rules regulating ‘killer robots’",
-   "url": "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
-   "summary": "One of the items on the agenda for UN diplomats meeting in Geneva this week was working towards rules regarding the use of autonomous weapons, or so-called \"killer robots.\" Eventually, representatives left the meetings agreeing…",
-   "source": "The Verge",
-   "category": "Tech",
-   "when": "2026-11-21T20:03:37+00:00",
-   "batch": "2026-11-21T20:36:40+00:00"
-  },
-  {
-   "title": "After all this time, the first Baldur’s Gate is still a whimsical masterpiece, and BioWare’s gift to the world",
-   "url": "https://www.techradar.com/gaming/as-we-mourn-bioware-its-the-perfect-time-to-revisit-baldurs-gate",
-   "summary": "Baldur’s Gate might be intimidating in 2026, but it still proves why BioWare is the grandfather of modern RPGs.",
-   "source": "TechRadar",
-   "category": "Tech",
-   "when": "2026-11-21T20:00:00+00:00",
-   "batch": "2026-11-21T20:36:40+00:00"
-  },
-  {
-   "title": "Trump says reported FBI database hack is ‘not good’",
-   "url": "https://techcrunch.com/2026/11/21/trump-says-reported-fbi-database-hack-is-not-good/",
-   "summary": "The FBI is reportedly investigating a hack of the National Crime Information Center.",
-   "source": "TechCrunch",
-   "category": "Startups",
-   "when": "2026-11-21T18:44:53+00:00",
-   "batch": "2026-11-21T20:36:40+00:00"
-  },
-  {
-   "title": "Why Apple Vision Pro never took off like Meta's VR headsets",
-   "url": "https://www.engadget.com/2318875/why-apple-vision-pro-did-not-take-off-vs-meta-vr/",
-   "summary": "The Apple Vision Pro debuted to massive hype in 2024, but the years since then have not been kind to Apple's megabucks mixed-reality headset.",
-   "source": "Engadget",
-   "category": "Gadgets",
-   "when": "2026-11-21T20:15:00+00:00",
-   "batch": "2026-11-21T20:36:40+00:00"
-  },
-  {
-   "title": "Crowdstrike’s Talks With Zscaler Show AI-Led Cyber Consolidation",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-21/crowdstrike-s-talks-with-zscaler-show-ai-led-cyber-consolidation",
-   "summary": "A wave of multibillion-dollar takeovers is reshaping the cybersecurity industry as the biggest companies race to expand their defenses against increasingly sophisticated attacks powered by artificial intelligence.",
-   "source": "Bloomberg Tech",
-   "category": "Security",
-   "when": "2026-11-21T19:02:24+00:00",
-   "batch": "2026-11-21T20:36:40+00:00"
-  },
-  {
-   "title": "Anthropic mathematician says he and Claude proved the Riemann hypothesis",
-   "url": "https://thenextweb.com/news/anthropic-alpoge-claude-riemann-hypothesis-proof-lean",
-   "summary": "Levent Alpöge, a mathematician at Anthropic, says he has proved the Riemann hypothesis with the company’s AI model Claude. It is the most famous open problem in mathematics.",
-   "source": "The Next Web",
-   "category": "AI",
-   "when": "2026-11-21T13:12:58+00:00",
-   "batch": "2026-11-21T13:18:16+00:00"
-  },
-  {
-   "title": "DeepMind’s philosopher warns against building conscious AI, FT reports",
-   "url": "https://thenextweb.com/news/deepmind-henry-shevlin-conscious-ai-reckless-ft",
-   "summary": "Building conscious AI on purpose would be “pretty reckless” at this stage, says Henry Shevlin. He is Google DeepMind’s in-house philosopher, and he made the case to the Financial Times.",
-   "source": "The Next Web",
-   "category": "AI",
-   "when": "2026-11-21T12:48:26+00:00",
-   "batch": "2026-11-21T13:18:16+00:00"
-  },
-  {
-   "title": "Databricks in early talks to raise funds at $225 billion valuation: WSJ",
-   "url": "https://economictimes.indiatimes.com/tech/startups/databricks-in-early-talks-to-raise-funds-at-225-billion-valuation-wsj/articleshow/136044631.cms",
-   "summary": "Databricks is in early talks to raise several billion dollars in a new round that would value the data and artificial intelligence software company at about $225 billion, the Wall Street Journal reported on Friday, citing people…",
-   "source": "ET Tech",
-   "category": "Data Engineering",
-   "when": "2026-11-21T04:17:31+00:00",
-   "batch": "2026-11-21T13:18:16+00:00"
-  },
-  {
-   "title": "Agent Observability Example: Tracing One Bad Answer to Its Root Cause",
-   "url": "https://montecarlo.ai/blog-agent-observability-example",
-   "summary": "A step-by-step agent observability example: how one bad answer was traced across context, performance, behavior, and output to its root cause, and fixed.",
-   "source": "Monte Carlo",
-   "category": "Data Engineering",
-   "when": "2026-11-20T19:19:28+00:00",
-   "batch": "2026-11-21T13:18:16+00:00"
   }
  ]
 }
